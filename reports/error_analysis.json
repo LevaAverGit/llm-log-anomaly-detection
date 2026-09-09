@@ -1,0 +1,97 @@
+{
+  "rules_miss_llm_catch": [
+    {
+      "unit_id": "lx-0044",
+      "source": "linux_auth",
+      "truth": "incident",
+      "technique": "T1078",
+      "action": "ssh_accepted_password",
+      "actor": "203.0.113.99",
+      "rules_is_incident": false,
+      "llm_is_incident": true,
+      "headline": "rules stayed silent, the LLM flagged it",
+      "why": "Successful SSH login from an IP that had just brute-forced the host: valid-account access obtained through credential guessing.",
+      "raw": [
+        "Jan 10 09:14:00 web-01 sshd[1500]: Accepted password for root from 203.0.113.99 port 55099 ssh2"
+      ]
+    },
+    {
+      "unit_id": "win-0019",
+      "source": "windows_security",
+      "truth": "incident",
+      "technique": "T1110.001",
+      "action": "logon_failure",
+      "actor": "192.0.2.150",
+      "rules_is_incident": false,
+      "llm_is_incident": true,
+      "headline": "rules stayed silent, the LLM flagged it",
+      "why": "Burst of Windows failed logons (Event 4625) against administrator/admin from one source, preceding a backdoor account.",
+      "raw": [
+        "{\"timestamp\": \"2026-01-10T09:05:00+00:00\", \"event_code\": \"4625\", \"host\": \"WIN-SERVER01\", \"username\": \"administrator\", \"source_ip\": \"192.0.2.150\", \"failure_reas…",
+        "{\"timestamp\": \"2026-01-10T09:05:05+00:00\", \"event_code\": \"4625\", \"host\": \"WIN-SERVER01\", \"username\": \"administrator\", \"source_ip\": \"192.0.2.150\", \"failure_reas…"
+      ]
+    },
+    {
+      "unit_id": "win-0021",
+      "source": "windows_security",
+      "truth": "incident",
+      "technique": "T1059.001",
+      "action": "process_creation",
+      "actor": "jsmith",
+      "rules_is_incident": false,
+      "llm_is_incident": true,
+      "headline": "rules stayed silent, the LLM flagged it",
+      "why": "Encoded PowerShell command line (-enc): obfuscated script execution.",
+      "raw": [
+        "{\"timestamp\": \"2026-01-10T09:15:00+00:00\", \"event_code\": \"4688\", \"host\": \"WIN-SERVER01\", \"username\": \"jsmith\", \"source_ip\": null, \"process_name\": \"powershell.e…"
+      ]
+    }
+  ],
+  "llm_misfire_rules_right": [
+    {
+      "unit_id": "cld-0001",
+      "source": "cloud_audit",
+      "truth": "benign",
+      "technique": null,
+      "action": "console_login",
+      "actor": "198.51.100.60",
+      "rules_is_incident": false,
+      "llm_is_incident": true,
+      "headline": "the LLM raised a false alarm, the rules stayed silent",
+      "why": "Routine successful console login.",
+      "raw": [
+        "{\"action\": \"console_login\", \"status\": \"success\", \"username\": \"sre@example.com\", \"source_ip\": \"198.51.100.60\", \"region\": \"eu-central-1\"}"
+      ]
+    },
+    {
+      "unit_id": "lx-0002",
+      "source": "linux_auth",
+      "truth": "benign",
+      "technique": null,
+      "action": "ssh_accepted_password",
+      "actor": "203.0.113.6",
+      "rules_is_incident": false,
+      "llm_is_incident": true,
+      "headline": "the LLM raised a false alarm, the rules stayed silent",
+      "why": "Routine successful SSH login by a staff account.",
+      "raw": [
+        "web-01 sshd: Accepted password for backup from 203.0.113.6"
+      ]
+    },
+    {
+      "unit_id": "ng-0002",
+      "source": "nginx_access",
+      "truth": "benign",
+      "technique": null,
+      "action": "http_get",
+      "actor": "10.0.4.9",
+      "rules_is_incident": false,
+      "llm_is_incident": true,
+      "headline": "the LLM raised a false alarm, the rules stayed silent",
+      "why": "Ordinary page/asset request from a normal browser.",
+      "raw": [
+        "10.0.4.9 \"GET /blog\" 304"
+      ]
+    }
+  ]
+}

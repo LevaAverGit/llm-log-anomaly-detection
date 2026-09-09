@@ -1,0 +1,62 @@
+[
+  {
+    "run":"rules",
+    "approach":"Rules (Sigma baseline)",
+    "precision":0.9474,
+    "recall":0.8182,
+    "f1":0.878,
+    "fp_per_1000":4.33,
+    "tp":18,
+    "fp":1,
+    "fn":4,
+    "tn":208,
+    "technique_accuracy":1.0,
+    "n_units":231,
+    "n_missing":0
+  },
+  {
+    "run":"llm_v1",
+    "approach":"LLM \u2014 prompt v1",
+    "precision":0.2381,
+    "recall":0.9091,
+    "f1":0.3774,
+    "fp_per_1000":277.06,
+    "tp":20,
+    "fp":64,
+    "fn":2,
+    "tn":145,
+    "technique_accuracy":0.0,
+    "n_units":231,
+    "n_missing":0
+  },
+  {
+    "run":"llm_v3",
+    "approach":"LLM \u2014 prompt v3",
+    "precision":0.156,
+    "recall":1.0,
+    "f1":0.2699,
+    "fp_per_1000":515.15,
+    "tp":22,
+    "fp":119,
+    "fn":0,
+    "tn":90,
+    "technique_accuracy":0.727,
+    "n_units":231,
+    "n_missing":0
+  },
+  {
+    "run":"hybrid",
+    "approach":"Hybrid (rules \u222a LLM)",
+    "precision":0.156,
+    "recall":1.0,
+    "f1":0.2699,
+    "fp_per_1000":515.15,
+    "tp":22,
+    "fp":119,
+    "fn":0,
+    "tn":90,
+    "technique_accuracy":0.909,
+    "n_units":231,
+    "n_missing":0
+  }
+]

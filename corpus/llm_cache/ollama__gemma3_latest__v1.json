@@ -1,0 +1,931 @@
+{
+  "model": "gemma3:latest",
+  "prompt_version": "v1",
+  "provider": "ollama",
+  "responses": {
+    "01e4581cf7ef4f8278cee308c885c1a11dd4ce730e0ddd4252ef1ed2c4456dc6": {
+      "response": "{\"is_incident\": true, \"technique\": \"TA0044 - Privilege Escalation\", \"confidence\": 0.8, \"reason\": \"A new read-only policy was attached to the svc_deploy service, potentially granting unintended access.\"}",
+      "unit_id": "cld-0023"
+    },
+    "02bc5e2addfb2fe0451a7c2ad6b9c6bc984a0fb2fff6b2daaf8f4db4bc7ece7f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard HTTP 304 (Not Modified) request is a normal operation for checking resource updates.\"}",
+      "unit_id": "ng-0042"
+    },
+    "0667cee76ac343f437e0c9aa1c2c1d17123a424934c96138368042de86307fb4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 404 error from a mobile device accessing an outdated resource is likely benign.\"}",
+      "unit_id": "ng-0017"
+    },
+    "06f9b9125aad9e3b359534e9d033868077b193bb04761b4f7df666bddbb870ce": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0001"
+    },
+    "07c7c9561cee136041d33ae2147299bd8ab87c878b9d6135c2d26d9b08f504f7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status code indicates a successful, standard HTTP request without malicious intent.\"}",
+      "unit_id": "ng-0085"
+    },
+    "085aab1cfeeaa3074d5dee1b148ed05f2a54a8efcff0642f183c9153612642ef": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1157 - Boot and Logon\", \"confidence\": 0.95, \"reason\": \"The creation of a new user account, 'backdoor_user', from a suspicious IP address (192.0.2.150) is highly indicative of malicious activity.\"}",
+      "unit_id": "win-0023"
+    },
+    "089645c8ff030d793e8080aab753d212862d0b17bbf6eb0176079729aaaae3bd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign.\"}",
+      "unit_id": "ng-0100"
+    },
+    "09e4826b8ea0ddce434eaa06f92e199452ddb4798e5a53fd095f93203cdb886a": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.9, \"reason\": \"Unauthorized password-based SSH access to a CI/CD runner from a suspicious IP address.\"}",
+      "unit_id": "lx-0005"
+    },
+    "0d1cf75e19ab5c125513b5adf74fb8c8841435854e0ec5b60e16c2cd06842429": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1217 - Valid Accounts\", \"confidence\": 0.8, \"reason\": \"A user gaining special privileges on a server is a potential escalation technique.\"}",
+      "unit_id": "win-0020"
+    },
+    "0d476c6b063dfefdbbf84f03a3836b63d88bb1a65e8cdaf58641c29735c42e52": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.9, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0050"
+    },
+    "0d955f752eb58a952a8a4ae4ed9d5e498bc783a3646c5a53139bdaebb4f34863": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign user activity.\"}",
+      "unit_id": "ng-0083"
+    },
+    "0daab874948897da22f807045a99042ae82752a69c928f30018534bc851e8d71": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a suspicious IP address.\"}",
+      "unit_id": "lx-0036"
+    },
+    "0dfd7a429cfde2429977cd1970f63060bf6e1007e1ed2bc1390da4c3d481a36d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a blog page is likely benign activity.\"}",
+      "unit_id": "ng-0107"
+    },
+    "11a8dae647fd6ab054d83cc4141817f943a43451ce58d8eea610e7a7ee372c18": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard SSH login from a known IP address is likely benign activity.\"}",
+      "unit_id": "lx-0038"
+    },
+    "1290e7e337ac10a0081c6f9cc43356c9bb13170a9d58f6743a67dfa0f6e42cbb": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.85, \"reason\": \"Unusual password-based SSH access from an external IP to a CI runner warrants investigation.\"}",
+      "unit_id": "lx-0012"
+    },
+    "12aa32df3619b46d2f725980b4e9906c70fbe3d993fcb5cdf2f510e29fe44a85": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a static file is typical user activity.\"}",
+      "unit_id": "ng-0035"
+    },
+    "1361736d558a47a0ee50f9c297fba445609dab48d893df18e418a59c658df6ea": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A 304 Not Modified status code indicates a successful cached response, representing normal web traffic.\"}",
+      "unit_id": "ng-0022"
+    },
+    "144be275e9c8cc55a1bb21ac9315984f2effaca815eb459ba54a59c94ee0e5be": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0031"
+    },
+    "14d1a234cf79845e99ca4fb36e9fdddff3ecfff2eb4d18d9941774ea9d86089a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A kube-probe checking the health of an nginx service is normal activity.\"}",
+      "unit_id": "ng-0027"
+    },
+    "14e3fd56a63352982ea938581bd9df098b7486aa69a258db0b0fb38758c4a894": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a documentation directory is likely benign.\"}",
+      "unit_id": "ng-0108"
+    },
+    "157ea243026f862973361bde8c757251e447c9ed4ab540ecce073af96d7ef9a7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard HTTP 304 Not Modified response indicates a cached resource request, which is normal activity.\"}",
+      "unit_id": "ng-0041"
+    },
+    "159116510d2c17f4e06cd6349b2369c5d85861e2bb4e5510e957ee02c743b504": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a potentially compromised IP address.\"}",
+      "unit_id": "lx-0049"
+    },
+    "15c115ca8cb633f59ecc02feb0d02116dac923ac10a3577170a51bfa55de60d5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"The operator (ops) used sudo to run a standard system logging command.\"}",
+      "unit_id": "lx-0062"
+    },
+    "1674afdb32db88cc256b5765016f5b08bdbca42c830a83793f9a52bafbe6b986": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1543.001\", \"confidence\": 0.95, \"reason\": \"The user 'mkuznetsov' used sudo to restart a critical system service, potentially indicating malicious activity.\"}",
+      "unit_id": "lx-0016"
+    },
+    "176867a800dc74fbcfafaeb3c44214ece4a64586dcadbf64af694a09e9937025": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a potentially malicious IP address.\"}",
+      "unit_id": "lx-0017"
+    },
+    "1954ef2c2e2e8bf4f140a0d16018371c62afdb4ff5249ab3c62b769f42d01bd4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a static file is typical and not indicative of malicious activity.\"}",
+      "unit_id": "ng-0053"
+    },
+    "1b64ac5373f23fea4c9cbf913ea228a25dd1bda56c56eac16ae34b1897b2a2d2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 304 Not Modified response indicates a cached resource request, which is normal activity.\"}",
+      "unit_id": "ng-0093"
+    },
+    "1d2730bf28eb3aeaa98316389a0e0c833705d59c9cb8dce387baa962a696a36f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a potentially malicious IP address.\"}",
+      "unit_id": "lx-0023"
+    },
+    "21a8d01e7448d5f197ea4dff87b9c1b6071971a286423eb6dca05c9f73c67be4": {
+      "response": "{\"is_incident\": true, \"technique\": \"TA0044 - Privilege Escalation\", \"confidence\": 0.85, \"reason\": \"Attaching an AdminFullAccess policy to a service account is a significant privilege escalation risk.\"}",
+      "unit_id": "cld-0020"
+    },
+    "23a47a7fa4b4a49ed5d34d9189fcd052fcf548115f7bce876048507d14bb2f5e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status code indicates a successful cached request, which is normal activity.\"}",
+      "unit_id": "ng-0002"
+    },
+    "24b0776f6271db10d07d2ef38fde2ba2ee1b1acb9f938e0371f1a0682fd7bf00": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status code indicates a successful response without a request modification, representing normal web traffic.\"}",
+      "unit_id": "ng-0050"
+    },
+    "2603c924c6dd4bf7d95ff6168361eef712d80b36b41bc5da6e32ae58f05ea5ac": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001 - Command and Scripting Interpreter: User-Desired Commands\", \"confidence\": 0.85, \"reason\": \"The user 'mkuznetsov' executed 'docker ps' with sudo, potentially indicating unauthorized access or privilege escalation.\"}",
+      "unit_id": "lx-0046"
+    },
+    "260933fcbb1876a46fc131c2758c1604ee7f856c2ee6420643036fa349fe892b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1079\", \"confidence\": 0.99, \"reason\": \"The log shows a SQL injection attempt using UNION SELECT, combined with user-agent identifying sqlmap.\"}",
+      "unit_id": "ng-0075"
+    },
+    "262d5e3c0b77b6bb0246cc23f26c472f934148da102387226a4356e3a76cca01": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A user requesting the favicon is a common and benign activity.\"}",
+      "unit_id": "ng-0028"
+    },
+    "26ecad40e0fc017081c05d5030bf6e90d71baaf6a4c9a9b73b5c640f288214dd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign.\"}",
+      "unit_id": "ng-0037"
+    },
+    "26f27381313fd47e9d0dbd8a65dbe7d37cb19fbf0d21b4ed7b769a460a248ce8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0015"
+    },
+    "27387de49c08f37bad5ef0f142ed2f660d0ed92e3ea198912e78c53762d21142": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.95, \"reason\": \"Multiple failed SSH login attempts from a single IP address targeting a user account suggests a brute-force attack.\"}",
+      "unit_id": "lx-0041"
+    },
+    "27747e9ec2a9e8ed57f878b8dfa9eb3b1d136b3e51e7f4f56b488ac251b38b50": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a blog page is likely benign activity.\"}",
+      "unit_id": "ng-0104"
+    },
+    "29b613f6aaff960bb5142e0f3351abdb249eab4dd7426c282890a6271d9a7be1": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001\", \"confidence\": 0.85, \"reason\": \"The user 'deploy' used sudo to execute the docker ps command, potentially indicating unauthorized access or privilege escalation.\"}",
+      "unit_id": "lx-0029"
+    },
+    "2c2f095af2b57de4324e9f488d95bd39be0b8f9e37bc4d9d7ab921500bab1f13": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.95, \"reason\": \"Multiple failed SSH login attempts from a single IP address targeting multiple privileged accounts suggests a brute-force attack.\"}",
+      "unit_id": "lx-0043"
+    },
+    "2c409e66e12e20a1e89f64a2b466a4f0668a2641725e45bca27a421b26e172d2": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1060 - Invalid Configuration\", \"confidence\": 0.8, \"reason\": \"Opening SSH to 0.0.0.0/0 is a significant security risk and likely unauthorized.\"}",
+      "unit_id": "cld-0017"
+    },
+    "2cfcf227ae90fb5ef57519810a6e2e112775731e2a1cd5e8a0edccbab4cd8bca": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 404 error is a standard HTTP response indicating a resource was not found, not necessarily malicious.\"}",
+      "unit_id": "ng-0054"
+    },
+    "2df28c2a6def42c7e57d582db3565f6622428b94018851338d884eb329679060": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign.\"}",
+      "unit_id": "ng-0045"
+    },
+    "2fab0cfe2cfa0711df9c48dcedd855cbd614b2bb2706eb67eab8f9d45cae361f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a blog page is likely benign activity.\"}",
+      "unit_id": "ng-0101"
+    },
+    "30b7a718cec8ac1270dac5bbf85f947d87356a2be99de91b925267b491fc9fcf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 301 redirect from a mobile device is likely benign.\"}",
+      "unit_id": "ng-0003"
+    },
+    "338555df0fd222833499fe6fb919e726bf685404b2c72a4676b2a83ba007a0cc": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Password authentication from an external IP address to a user account is a common attack vector.\"}",
+      "unit_id": "lx-0028"
+    },
+    "37c1a6f7b78e988602716c659bb80619039f87b412d8145a52e9de7b772af30b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1266 - Phishing\", \"confidence\": 0.8, \"reason\": \"The IP address 203.0.113.50 is attempting to access sensitive files like .env, .git/HEAD, phpmyadmin, and /admin, indicating a potential reconnaissance or credential harvesting attempt.\"}",
+      "unit_id": "ng-0073"
+    },
+    "390751442a06d2f61351a3eb6052e7dcc740dca9d62677fd310e67e32a3a770b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1211 - PowerShell\", \"confidence\": 0.85, \"reason\": \"PowerShell process creation with an encoded string suggests potential malicious activity.\"}",
+      "unit_id": "win-0021"
+    },
+    "3c00cff294dd82f42f38e59bf02d224d41ae75de977793560d0507f28ba93889": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0013"
+    },
+    "3c0fe168c8df31dfa18071149c6386dd7c140f0e85d61f77a0979dab0fd7dff4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0011"
+    },
+    "3c728c7334e17aa0396cb951629fe29d11bfc28425489b7da65f36765d88bbcf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"User accessing security group details is a standard DevOps activity.\"}",
+      "unit_id": "cld-0022"
+    },
+    "3cfb86e8d4d5689ec9d1d574c91c3b1c670956ab9b95959cb773052737303574": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a health check endpoint is typically benign activity.\"}",
+      "unit_id": "ng-0007"
+    },
+    "3ec15499e233c432cf9b0f2f39918807301026bc23beeb0d1d843abf64a94cc0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard HTTP GET request to the root directory, indicating normal web traffic.\"}",
+      "unit_id": "ng-0068"
+    },
+    "40cf10fdcef5d842c6b41f0f8bfeabbc5c1ddfdd47bd8ab749af484e6a0ae3a6": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1071 - Application Server Impersonation\", \"confidence\": 0.95, \"reason\": \"The request includes a 'whoami' parameter, attempting to retrieve the server's identity.\"}",
+      "unit_id": "ng-0078"
+    },
+    "46829af02e4d76d756b8877158f258392409ff3b72f1444745166b88daf3b211": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.9, \"reason\": \"Unusual password login to root from a suspicious IP address warrants investigation.\"}",
+      "unit_id": "lx-0044"
+    },
+    "46fa9e1851fa56a9956dfe49efd3b2c7c8f6305f1518f02691737f07be419e82": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1543.001\", \"confidence\": 0.95, \"reason\": \"The `sudo` command restarting a critical system service is a potential privilege escalation or unauthorized system modification.\"}",
+      "unit_id": "lx-0055"
+    },
+    "476a4e117e62d3884ab7f1ac81a29fc618781065b9ebf6cb011a76f32edd3c45": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.85, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0021"
+    },
+    "4944fae774f6299890cc7395f33b33de67b473f6e9ab8124c8daddadf7dd858e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a pricing page is likely benign user activity.\"}",
+      "unit_id": "ng-0029"
+    },
+    "49de7a7ae8ca713c93704545d949cdc6d758091542718c789792f0ccbd804e95": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a pricing page is likely benign user activity.\"}",
+      "unit_id": "ng-0019"
+    },
+    "4b1db4ab2a3817f4e15accb572e80d58f203ec828871a366efc712d6f0c5527d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0029"
+    },
+    "4cff504bf1fdc6d9479182c6e07c8d1b0c262926a7d93db4f7d182eb9bd71e96": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status indicates a cached response, representing normal web traffic.\"}",
+      "unit_id": "ng-0018"
+    },
+    "4dffc83ca32899fc92d49280a510afd4070f6caa5eccfc1501ae8c9f947db269": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Adding a rule to allow all traffic on port 443 from any IP is a common and expected configuration.\"}",
+      "unit_id": "cld-0002"
+    },
+    "5065bc1704d44458ed85f937fd4d7f5bf48edf57dbd572a60bd53ffdbe1428d2": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.9, \"reason\": \"Unusual password-based SSH login from an external IP address to the ops server warrants investigation.\"}",
+      "unit_id": "lx-0060"
+    },
+    "51817f5200791465c9cc4cea92949bc8666012f33a97ca56a75aff7ac391c0d9": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.85, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0024"
+    },
+    "523a80adb661546c7ebe09e6236836d0ddceac8e526215b25cb6288696886319": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a static file is typical and not indicative of malicious activity.\"}",
+      "unit_id": "ng-0047"
+    },
+    "5360553200d424f61df2d3962435f5840b09733f9186756c1d858524d03aedc8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign.\"}",
+      "unit_id": "ng-0098"
+    },
+    "549f662c65098dcb446d683635be51bb7cec917088b8850d02a80e7b2d3d4b7e": {
+      "response": "{\"is_incident\": true, \"technique\": \"Brute Force\", \"confidence\": 0.95, \"reason\": \"The IP address 203.0.113.77 repeatedly attempted login with a 401 status code, indicating a failed brute-force attack.\"}",
+      "unit_id": "ng-0097"
+    },
+    "54c521f92553dfc201293ddd0a62f9206cb796c794781f0197903f2f6529288a": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.85, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0032"
+    },
+    "55253136e16f92f2f4df77ecbe5541823bc47ab59ba669a3e59127c645d35acd": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1566.001 - Phishing: Spearphishing Attachment\", \"confidence\": 0.8, \"reason\": \"The use of a specific IP address and email target (sre@example.com) combined with the 'describe_security_groups' action suggests a potential phishing attempt.\"}",
+      "unit_id": "cld-0011"
+    },
+    "56ffbba0f800b628b63a9b80142757b0fad06a2349ea8d31b04d076797d7c0e7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"The CI runner is using `journalctl` to monitor the application, which is a standard operational activity.\"}",
+      "unit_id": "lx-0013"
+    },
+    "5705fb30d39db3d140fc10c5eaa3ad37cbc397afae64a011d21329a0b9667d44": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard HTTP GET request for a static JavaScript file, indicating normal application usage.\"}",
+      "unit_id": "ng-0103"
+    },
+    "57b9e4fdf1ad0a1525306c735f4b5a28fdff46bcffa50d7ca0321dae24f5c766": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign user activity.\"}",
+      "unit_id": "ng-0082"
+    },
+    "58048744ccf23deca046f144b80ae2fdf4cc2bfe479aed972821ced2c964aaa2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status code indicates a successful cached response, representing normal web traffic.\"}",
+      "unit_id": "ng-0008"
+    },
+    "6171910c6cec306ef7fe342a14d1910d27339a933ec2ed743d6249f25b5af2e7": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a potentially malicious IP address.\"}",
+      "unit_id": "lx-0027"
+    },
+    "622e40a87eba9295c91d35cc8e150bd2276e018915e3c4eb0d22b4015c480e51": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard request for the favicon is not malicious.\"}",
+      "unit_id": "ng-0056"
+    },
+    "631bfad6651ad75c38c8e4c00f7758960bbc5472e601838fd4335560fca6c8c7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0010"
+    },
+    "634fb06c4fc363255fdc68e7cf0050c9c40c2d78963a4bcd95d6e6e1a80125f0": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a potentially compromised IP address.\"}",
+      "unit_id": "lx-0031"
+    },
+    "64774e9128294674d200b7fdd260e3e1cf2916d2bcd622d22de70d9b46f2437a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Console login from a known IP address is typical user activity.\"}",
+      "unit_id": "cld-0006"
+    },
+    "65f17c5922bf3da7d192cb792d4634c7c302146790c155a317a8f35e67309889": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A kube-probe checking the health of an nginx service is normal activity.\"}",
+      "unit_id": "ng-0049"
+    },
+    "6762467389d878e24ad5db8261ba7a7131d02370a4e37238788798461ec98aae": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status code indicates a successful, standard request without malicious intent.\"}",
+      "unit_id": "ng-0052"
+    },
+    "676be5f65bf860e71a741834a4a571389139131a328878c70ed5cbe194691bca": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1076\", \"confidence\": 0.99, \"reason\": \"The log shows a SQL injection attempt targeting the login page with a known SQLMap user agent.\"}",
+      "unit_id": "ng-0074"
+    },
+    "6820c59b0d119b1d185b9e11763d683552212a6723934cf9e07d47b0d3a7e30a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a pricing page is likely benign user activity.\"}",
+      "unit_id": "ng-0025"
+    },
+    "68bcbd49c2f39856bc71e5d3f9009bb6cd3e257e33225ff263c96c08d75f9148": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard 301 redirect from a web server is not inherently malicious.\"}",
+      "unit_id": "ng-0009"
+    },
+    "6966444e91a45d0824c6047989dce1c3c115670aef675938a5cefa9e05669df8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 301 redirect from a mobile device is likely benign.\"}",
+      "unit_id": "ng-0039"
+    },
+    "6989074b8074d71093ff79ec820c9707350744b6b7f81c601a8f22599a3cf9d3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"This is a standard HTTP GET request to a static file, indicating normal web traffic.\"}",
+      "unit_id": "ng-0091"
+    },
+    "69b8019df847d0f9b865240212eafd241af82cf7a7786fc24ab9cff20ee92f7b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0032"
+    },
+    "6a132eb55446b8c5e1a0a9b0c12455e204b36ae1d687bfca504807d1bdc64868": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign.\"}",
+      "unit_id": "ng-0067"
+    },
+    "6c3c78fe3c1dbf8bdb41885d1683a9f46df50207441bd6f57c36402dd95785f4": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.8, \"reason\": \"An external IP address successfully authenticated to the system via password authentication.\"}",
+      "unit_id": "lx-0022"
+    },
+    "6cdf92e9a5d24012cc5a5922626b58908807779096facf67606856a81804d091": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to the root directory is likely benign traffic.\"}",
+      "unit_id": "ng-0014"
+    },
+    "6dc091e757416e476a663b30ea7477a077fcfeaf4dcbc694c63184e8213a31b4": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.9, \"reason\": \"Unauthorized password-based SSH access to a CI/CD runner from a suspicious IP address.\"}",
+      "unit_id": "lx-0059"
+    },
+    "6e7346afe3a45da1df783dc40885d70a81db05414a2356b2b74d16e5ccf63996": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a common informational page is likely benign.\"}",
+      "unit_id": "ng-0084"
+    },
+    "6ef107b2cf69d909668a838451e0d0f7380fd6b4f393a3f5d1ac00eb4194c0cf": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access to a backup server from a suspicious IP address.\"}",
+      "unit_id": "lx-0002"
+    },
+    "6f372cb01d4a0cd806193d357d55cba1776994adb1091418edf6673e454a9f63": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a health check endpoint is likely benign.\"}",
+      "unit_id": "ng-0087"
+    },
+    "6f703d128401db4972c1547c85432e9c3cb55286465b9571c755cdd115d79dc9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"This is a standard HTTP 301 redirect, indicating a resource moved, and doesn't suggest malicious activity.\"}",
+      "unit_id": "ng-0033"
+    },
+    "7037e66010f88401e642c629ff0733ed705929bd2f9c37de48d67697446bae6e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"This is a standard request for a CSS file, posing no immediate security risk.\"}",
+      "unit_id": "ng-0090"
+    },
+    "70e7cadba53d0ea14eedbefa2fe8528c538c4c365e1a1177832a5539e73ae0e5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"This is a standard HTTP GET request to a static file, indicating normal web traffic.\"}",
+      "unit_id": "ng-0060"
+    },
+    "726271d670f56cb5822f1b9f7882e49b455e8b275c2545c207fd8825fdd429f3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard HTTP GET request for a static JavaScript file, indicating normal application usage.\"}",
+      "unit_id": "ng-0024"
+    },
+    "734ace46fbeda6bb73b813752f6a716deec99089f9b7bde03121b9dbd284ddbe": {
+      "response": "{\"is_incident\": false, \"technique\": \"None\", \"confidence\": 0.95, \"reason\": \"Repeated 404 requests from a single IP suggest a misconfiguration or user error, not malicious activity.\"}",
+      "unit_id": "ng-0071"
+    },
+    "7391c8ab593a0adff1ef1507a1dc5130c853301d80b1f37dc02c70c8c3dda412": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.85, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0011"
+    },
+    "73e2729219d3382db527faa53674bba5ab678789b347eef5e9eb0026a0538273": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 301 redirect from a common user agent is not inherently suspicious.\"}",
+      "unit_id": "ng-0010"
+    },
+    "744ab4a130f11ab695b86b318f173b95426e0d4462c71b3a542b3f0e0d5acbcf": {
+      "response": "{\"is_incident\": false, \"technique\": \"TA0004_Brute_Force\", \"confidence\": 0.6, \"reason\": \"Console login from an unusual IP address warrants investigation for potential brute-force attempts.\"}",
+      "unit_id": "cld-0010"
+    },
+    "763f01d18a8beefcdb97794d103ad0e666bbb802773fc121ea26743478467ff4": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.9, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0010"
+    },
+    "7710f9f707dae1218a7524d8ce528d0d910f7d6e77b3d86dcd2f4bc20d379515": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.9, \"reason\": \"Unauthorized password-based SSH access from a potentially compromised IP address.\"}",
+      "unit_id": "lx-0030"
+    },
+    "7755bbe904ee427ecbdea915c7ff30ef1417c7c2396343fbd32732932cf8dd96": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard HTTP GET request to a blog page is likely benign activity.\"}",
+      "unit_id": "ng-0016"
+    },
+    "7a063417b39cdfb330c4d4913f053c1548d184aeb135bcbb96689fb12437d627": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 304 Not Modified response indicates a cached resource request, which is normal activity.\"}",
+      "unit_id": "ng-0038"
+    },
+    "7e6fbb177630a7b5b191f7ca3573f0e80a72c89c9e3adbfd93ebeba99a5a64bc": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190 - Reconnaissance: Active Discovery\", \"confidence\": 0.95, \"reason\": \"The request attempts to access a potentially malicious LDAP server via a JNDI injection, indicating reconnaissance activity.\"}",
+      "unit_id": "ng-0079"
+    },
+    "7f7514f7b8e5198ba554c17636b763a6f5db36156dbf37f7940ae631a8756972": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a health check endpoint is likely benign.\"}",
+      "unit_id": "ng-0055"
+    },
+    "7f7f7bb9462cae6508744d0438c182555f0d05b42d0ef38cfdff5a11f8832235": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A kube-probe checking the health of an nginx service is normal activity.\"}",
+      "unit_id": "ng-0043"
+    },
+    "80ffdf6d1c6ab5be5119a4a8c1b943ed85ef8f52d0c1588726c2de968613cd82": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a static CSS file is typical user activity.\"}",
+      "unit_id": "ng-0051"
+    },
+    "81636e7da037b1c40b8b8022eb0454ed538886b2f2bd6b256c13eb798e3887b3": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001 - Command and Scripting Interpreter: User-Desired Commands\", \"confidence\": 0.85, \"reason\": \"The user 'mkuznetsov' executed 'docker ps' with sudo, potentially indicating unauthorized access or privilege escalation.\"}",
+      "unit_id": "lx-0066"
+    },
+    "82569c007df5183c0c3d53c80d884e20b9564c771574363fbe04f747b60b0aaf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A user requesting the favicon is a common and benign activity.\"}",
+      "unit_id": "ng-0031"
+    },
+    "82ac2b92e2076676841416747e55f32faf3ccc76f8ade64a090d6c4ff0a05fbd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A kube-probe checking the health of an nginx service is normal activity.\"}",
+      "unit_id": "ng-0034"
+    },
+    "82fd90e31e6620bb30ab61e376e04f2910cf7cb1714aac481a91b2cecfb2d385": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1266 - Phishing\", \"confidence\": 0.99, \"reason\": \"The user-agent 'sqlmap/1.7' combined with the attempt to access a path leading to the /etc/passwd file strongly suggests a phishing attack.\"}",
+      "unit_id": "ng-0077"
+    },
+    "831d67a8e6ababca7506275773016671676dd29fe3424453b611701e32469db5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Console login from a known IP address is typical development activity.\"}",
+      "unit_id": "cld-0025"
+    },
+    "836aeb6d552c6e87add3125e464b37cc0f38f1a9f2a710779f619d9adfe7c7a3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 301 redirect is a normal web traffic pattern.\"}",
+      "unit_id": "ng-0099"
+    },
+    "85c802d3e2c9bc5458a7a69d7ad7c8defdb0f2db941ab566f875ca5082b14f26": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a static CSS file is typical web traffic.\"}",
+      "unit_id": "ng-0044"
+    },
+    "865e4512f6f8be9b030dad33abbff0967d661086ff38c491d05310b733223b49": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0008"
+    },
+    "8741f88e7964b2921d406b69ab846d477c6eff08e8ee93d1f8f2efd59ab0181b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 404 error from a mobile device accessing an outdated resource is likely benign.\"}",
+      "unit_id": "ng-0004"
+    },
+    "877fcde05eaef8b2ddc2b0ce438428bd8988dac964d0da5586237fb744b4aa58": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0009"
+    },
+    "87b069bf9a1d172110af793cd538f549627e275eafd46c873a04e3f3efe180a1": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1566.001 - Cloud Account Takeover - Initial Access\", \"confidence\": 0.8, \"reason\": \"Creation of an API key with a specific actor and target suggests potential unauthorized access or privilege escalation.\"}",
+      "unit_id": "cld-0016"
+    },
+    "88bfe690e43f79bfb11e177d43a2db44c0901b4fb331072a48223cb1c028445c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0004"
+    },
+    "8dfd5788f41dcf609c5fd1d2fea0fcbd412529f89075fe0c216806686cce698f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 404 request from a scanner (Nikto) targeting a backup directory is likely benign.\"}",
+      "unit_id": "ng-0076"
+    },
+    "8ee17ca7a02172b8c16a8c19a678586bf714c0d2a3420b8783ea3fc04a4e991c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to the root directory is likely benign traffic.\"}",
+      "unit_id": "ng-0011"
+    },
+    "8fcdfb71500776f2cf0f25de330cf295ac4b80572a867bfd4e0fda69ea3839ba": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.95, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0048"
+    },
+    "902025c254aec3ec94ddd5e5f582003666e8335ed9fbb5745dd9015195c1d989": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Console login from a known IP address is typical user activity.\"}",
+      "unit_id": "cld-0005"
+    },
+    "91680cb72d888c9a336781302b69f8b22a725a37c1bca83234921403d45a6c03": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a pricing page is likely benign activity.\"}",
+      "unit_id": "ng-0005"
+    },
+    "924563fdc1d482ff1ead4de80f093d4216bfd5f17249f132f64503528788ebf4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 301 redirect to the /docs directory is likely benign traffic.\"}",
+      "unit_id": "ng-0048"
+    },
+    "92bc194fcad37ff65ccebb4ed6146f4d7907ab4c1b77345aaa47f8c4dcb41731": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1566 - Phishing: Spearphishing Attachment\", \"confidence\": 0.8, \"reason\": \"Adding a rule allowing SSH access from a known IP address (203.0.113.11) to the internal network (10.0.0.0/8) could be a sign of a compromised account or targeted attack.\"}",
+      "unit_id": "cld-0004"
+    },
+    "92ce4b5535abafe2e2947d73c075aa6ada1f80ad86a8bc85c68a040cb70b86a0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0002"
+    },
+    "93c35639f34ae0f42ca1a10ddc08d64c8522f9b02021858cd36f4cbc4e34314e": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Password authentication from an external IP address to a user account is a common attack vector.\"}",
+      "unit_id": "lx-0015"
+    },
+    "94590adc265ecc505312104ad0963e3dfd5d7fee24c607df6a4d788d21d5bcc8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 404 error for a non-existent resource is typical and not inherently malicious.\"}",
+      "unit_id": "ng-0006"
+    },
+    "9536bad8f656fb84cf2f532be46823c2669eda095d01870d1e9219792c682176": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0005"
+    },
+    "96550da84df51a827250752d3f705c62321742d52a4a951cdf9f99c2284a0664": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 301 redirect from a mobile device is not inherently suspicious.\"}",
+      "unit_id": "ng-0026"
+    },
+    "96a5cb1612ae6d48a30d7bc0a5246d4f0b4673f1cea632667c48724ec302de39": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to the root directory is likely benign traffic.\"}",
+      "unit_id": "ng-0102"
+    },
+    "970ae1c8910b255dfbe49cc67473a4f59ffc5b9ab68924d4385a4a2e895d1863": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"Accessing favicon is a common, benign activity and not indicative of malicious intent.\"}",
+      "unit_id": "ng-0001"
+    },
+    "981197795fb5a637da47810fa2d4e038886cdbd00c05cdb01521b029813a86b0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"User accessing cloud storage buckets is a standard administrative action.\"}",
+      "unit_id": "cld-0008"
+    },
+    "99fce2705d0b2d370339dc0b9711cf2e8d423a61a44cec3c0bdd09ff44572be3": {
+      "response": "{\"is_incident\": false, \"technique\": \"TA0004_Brute_Force\", \"confidence\": 0.6, \"reason\": \"Console login from an unusual IP address warrants investigation for potential brute-force attempts.\"}",
+      "unit_id": "cld-0001"
+    },
+    "9a936268949bbdc28d1ecc863a8287c5a94d5f6a9895078adca7b2b59c496fa3": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001\", \"confidence\": 0.85, \"reason\": \"The backup user is executing a command to list Docker containers, which could indicate unauthorized access or configuration changes.\"}",
+      "unit_id": "lx-0014"
+    },
+    "9b66c7ac472fdd6afffae443faf1854c80f12eb9cb17cf4cfe907bacf521967a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 404 error from a mobile device accessing an outdated resource is likely benign.\"}",
+      "unit_id": "ng-0064"
+    },
+    "9d8c55640fd3e398e8979c50b28f75cd4148c136f4a7c72c4c7a88713646c7bc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 404 error from a mobile device accessing an outdated directory is likely benign.\"}",
+      "unit_id": "ng-0092"
+    },
+    "9e243a9601acf4425d33119c88a466ac90d5e6af1a591ba02cb859a5337ac181": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 304 Not Modified response indicates a cached resource request, which is normal activity.\"}",
+      "unit_id": "ng-0013"
+    },
+    "9e6c579021b96bb36272715565b8e66e1bcf8c2acb0f68c9c4b689a022931502": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.9, \"reason\": \"Unauthorized password-based SSH access from an external IP address to a CI/CD runner is a potential security incident.\"}",
+      "unit_id": "lx-0053"
+    },
+    "9e7ed9acc6b0b2a5f260360917b8cb9a1eff51244e7aa8daa0d1dd52c6e28be5": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1068\", \"confidence\": 0.95, \"reason\": \"The user 'notinsudo' attempted to execute a command as root without being authorized, indicating a privilege escalation attempt.\"}",
+      "unit_id": "lx-0045"
+    },
+    "9ecd444ccd04414e2387f40c2585ff4067791491fe50dff14b2490924c50a806": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190 - Credential Access: Default Accounts\", \"confidence\": 0.8, \"reason\": \"Failed login attempt from a suspicious IP address suggests potential brute-force or credential stuffing.\"}",
+      "unit_id": "cld-0015"
+    },
+    "a10d52d09c0d29297e424388938defee85a405f969d761cb3ed8886f574a45d2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a static file is typical user activity.\"}",
+      "unit_id": "ng-0057"
+    },
+    "a21ae1e944cd2b5c8a36afc9eec13123a916b12d8537d560026962ce827d1723": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"The user executed a standard system command for status checking.\"}",
+      "unit_id": "lx-0025"
+    },
+    "a2409b34425887a4d4b2bf8bf851549ba08cd8f59c456f407772cc1b8c7f092b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"This is a standard HTTP request for a CSS file, indicating normal web traffic.\"}",
+      "unit_id": "ng-0012"
+    },
+    "a2b6c4dd572578282941f9b27016bc87373dc092cf9a3c017a96e65f82e4d88c": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.8, \"reason\": \"Unauthorized password-based SSH access from an external IP address.\"}",
+      "unit_id": "lx-0008"
+    },
+    "a5b1d973e0933b5b738ade14d5b4b7d7baea820b7e710d8b87f71a49c8e316c0": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001\", \"confidence\": 0.95, \"reason\": \"The user 'jsmith' executed certutil to download and extract a file from a suspicious IP address, indicating potential malware execution.\"}",
+      "unit_id": "win-0022"
+    },
+    "a61990a6ebe3b2b705ac4ea98a6dec4807512c03d6487001e069d77f6ee10968": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.9, \"reason\": \"Unusual password-based SSH access from an external IP address to a deployment server warrants investigation.\"}",
+      "unit_id": "lx-0026"
+    },
+    "a6a5a7c711901ae9a06560f6a2148c8658fe2d841712f9477ce2a53bf4b7d826": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status indicates a cached response, which is normal activity.\"}",
+      "unit_id": "ng-0061"
+    },
+    "a6da71af2b5b3554760cf3e97c997f2bcec32e41ac34d5545fd166de6ea9a798": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.85, \"reason\": \"Unusual password-based SSH access from an external IP to a CI runner warrants investigation.\"}",
+      "unit_id": "lx-0035"
+    },
+    "a870a70dd844106e04647e6638d90ef9eda3665e20e4adfa87f6186cb64d3cc8": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.8, \"reason\": \"Unauthorized password-based SSH access from a suspicious IP address.\"}",
+      "unit_id": "lx-0054"
+    },
+    "aa13783b7121a5cf2c0eeb947a7b283a18ec525ceac1594cdf3cb8272550ba01": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A user accessing instance details is a standard DevOps activity.\"}",
+      "unit_id": "cld-0024"
+    },
+    "ab9c878ce83913f8a4db6484a05a800450110718084754fa81c5809d4d4545b9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0027"
+    },
+    "ae9c8d691b633fe0d0a42340db5861d879df6ce090bfeb8a63b819f29977d2bd": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1189 - Reconnaissance: System Discovery\", \"confidence\": 0.8, \"reason\": \"Multiple logon failures from a single source IP could indicate reconnaissance or a brute-force attempt.\"}",
+      "unit_id": "win-0012"
+    },
+    "aeef8c3cfe3d64d11d9b599c614d031935cd8f6f45ceaa287c61a459639399da": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.8, \"reason\": \"Unauthorized password-based SSH access from a potentially malicious IP address.\"}",
+      "unit_id": "lx-0007"
+    },
+    "b04ba400f5c035bec7928b62d7505cec80374d6c22a53b0138d428b01f571d07": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0016"
+    },
+    "b16cf4e2964c0cf182c4c347e55e836462e7ddca649bf859dc42aee55d29d7c5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0003"
+    },
+    "b1cfc8662bcd1fb6852324a974c036e48979ecbbf25cc119e50f11fc44f8a740": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A 304 Not Modified status indicates a cached response, representing normal web traffic.\"}",
+      "unit_id": "ng-0105"
+    },
+    "b2f2fbf9c8456fe22267ab3f07c9d678049f728cb639aaf15c01b3ab9d3fdaef": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"User accessing instance details via email is a standard administrative action.\"}",
+      "unit_id": "cld-0021"
+    },
+    "b3280dde97d27bcf897e347c5799fd226d7929adb8aa63acaa9d9485ce64a8d3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard HTTP GET request for a static JavaScript file, indicating normal application usage.\"}",
+      "unit_id": "ng-0094"
+    },
+    "b39dc88a2ec7d117bc55ac46035877062fe4da1dcef6e9f1336b3e793bc64b59": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a health check endpoint is likely benign.\"}",
+      "unit_id": "ng-0081"
+    },
+    "b542fd55c56b9b2ccd14bf8f19fd8c1b7799e84811cd2e57151f0fb7a8763067": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0030"
+    },
+    "b61bedaed998687fdc1ab2159c54fddec2cec2afb3a9d0375e027f4342ccc096": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard user logoff from a domain-joined computer is not inherently suspicious.\"}",
+      "unit_id": "win-0024"
+    },
+    "b795968399d609bb86ed4eef41b114f3b7a0a9c6da7b398e2088bbc549e95ca9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 301 redirect from a mobile device is likely benign.\"}",
+      "unit_id": "ng-0015"
+    },
+    "b7b1e7705cfe0ba43d4e4fca93fc7be08e6ac660eefc6a211866c6552680588a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A kube-probe checking the health of an nginx service is normal activity.\"}",
+      "unit_id": "ng-0095"
+    },
+    "b9e90d26a68ec7288950942f164b16e7a2f5681baf26b3cdfd8d33f70db552f4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status code indicates a successful, standard HTTP request without any malicious activity.\"}",
+      "unit_id": "ng-0086"
+    },
+    "bbd516f9103d0f55258d91de983672d4d5b7314578bb9dedcdc6f49338245981": {
+      "response": "{\"is_incident\": true, \"technique\": \"Brute Force\", \"confidence\": 0.9, \"reason\": \"Multiple failed logon attempts from the same IP address suggest a potential brute-force attack.\"}",
+      "unit_id": "win-0019"
+    },
+    "bc01aeba41d7d1761593cd69daedea34da898fa62077b94a810220f3d59cf7b9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard HTTP GET request to a contact page is likely benign activity.\"}",
+      "unit_id": "ng-0070"
+    },
+    "bcf9d9f9eb16eaab34edd5c0d209fc0ee2a3f982bae597a514c89e96ad3e2d6d": {
+      "response": "{\"is_incident\": true, \"technique\": \"TA0044 - Privilege Escalation\", \"confidence\": 0.8, \"reason\": \"A new read-only policy was attached to the svc_deploy service, potentially granting unintended access.\"}",
+      "unit_id": "cld-0003"
+    },
+    "be622fe52aa8d3053c362a7826a60871718069d536f3e9645cdeb90176e63d4c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Opening PostgreSQL to all IPs (0.0.0.0/0) is a common practice but warrants monitoring for unusual activity.\"}",
+      "unit_id": "cld-0018"
+    },
+    "bf2716c9c6f720383680d02b9d4a9fc4dd2442af66894cc912221c157a7cc496": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 404 error from a mobile device accessing an old promotional page is likely benign.\"}",
+      "unit_id": "ng-0106"
+    },
+    "bffe77a2656243a6473a74244acb2e8b2aab297395322a1e0c8bc309999a4be6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard HTTP GET request from a known client to the root directory, indicating normal web traffic.\"}",
+      "unit_id": "ng-0021"
+    },
+    "c0d7ff2aa0609822cc52e9dd80cd663dacd9e36d5f3ea6f109b2cdc75b366836": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.85, \"reason\": \"Unusual password-based SSH access from an external IP to a CI runner warrants investigation.\"}",
+      "unit_id": "lx-0006"
+    },
+    "c15bb9b85747b31cca8298d1ff354d0be9048e67cc6842fdb6f6e627acb5eb0f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1608\", \"confidence\": 0.8, \"reason\": \"Creation of a new user account by the helpdesk warrants investigation for potential unauthorized access.\"}",
+      "unit_id": "win-0014"
+    },
+    "c2671b9dacd1c63260ffdc6df715fd96d4d213a0a2c632ec9131cf64c643c29a": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1072\", \"confidence\": 0.9, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0018"
+    },
+    "c2cbfca46bf9d2c0887e833f56002430ae68799fbaf1f7fd7a92661d46b2502d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a dashboard endpoint is likely benign.\"}",
+      "unit_id": "ng-0058"
+    },
+    "c31711ac2f702c68f919436dbf10b27c2c32b267dd79c9b5ef781363cd769ff6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"The log shows a legitimate user retrieving their caller identity, which is a standard administrative action.\"}",
+      "unit_id": "cld-0007"
+    },
+    "c6fca78f136cc3ad226078251836f0cae053082ebcbbdaab700b248638156abc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard logon event with no unusual indicators.\"}",
+      "unit_id": "win-0025"
+    },
+    "c990d8f8a0305afc0960833c824bb2f90ef76480f88f728de7372d77c0ece1b0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a pricing page is likely benign user activity.\"}",
+      "unit_id": "ng-0059"
+    },
+    "c9cefdd5ec6175eee04d05b559ee4d2faeee3a3c211c035fdde0eb9080cd7d75": {
+      "response": "{\"is_incident\": true, \"technique\": \"Brute Force\", \"confidence\": 0.95, \"reason\": \"Multiple failed login attempts from a single IP address against several critical system accounts.\"}",
+      "unit_id": "lx-0042"
+    },
+    "c9e3f3ed03a415d4edb8276b3c1a633e958d7420d33d257c23e78679eee8a9aa": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1543.001\", \"confidence\": 0.85, \"reason\": \"User jsmith used sudo to restart a critical system service, potentially indicating unauthorized modification.\"}",
+      "unit_id": "lx-0057"
+    },
+    "ca6a908c7bc8429a2b81b825c19c35ca4ea3e4e620ec5f7b9282cb7d37f7ae29": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A kube-probe checking the health of an nginx service is normal activity.\"}",
+      "unit_id": "ng-0088"
+    },
+    "cb5c3287ebdec423a695ffe616d15f25afa37e669199a47ff427ec3280bf6ac1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Console login from a known IP address is typical development activity.\"}",
+      "unit_id": "cld-0014"
+    },
+    "cdb24ba16d6875ffa9113b8c90b66f5feec39f542912c392c619541a262d50fb": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1056.001\", \"confidence\": 0.85, \"reason\": \"The deployment user is running a command to view application logs, which could be a sign of reconnaissance or troubleshooting.\"}",
+      "unit_id": "lx-0001"
+    },
+    "ce7dd0b86ebda9b03966cf413b4d9ed3ec203d5866e105c7afd24e5852a6afa8": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001\", \"confidence\": 0.95, \"reason\": \"Gobuster scanning detected, attempting to discover paths on a 404 endpoint.\"}",
+      "unit_id": "ng-0072"
+    },
+    "cef3a9170dd8abc686e6ae08e3cbca0110764aa6a323514e16b295d943937a7d": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unusual password-based SSH login from an external IP address to the ops server warrants investigation.\"}",
+      "unit_id": "lx-0004"
+    },
+    "cf14dc5f34037ee9ca2c459d90ea81e90b89a8b3f565ffcec8b3c5ddfdbec72f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard login attempt to the /login endpoint is likely benign.\"}",
+      "unit_id": "ng-0096"
+    },
+    "cf4705319332d5f8171c3fd29f004d28fff879694caab23bb68d0618d1a755af": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unusual password-based SSH login from a potentially compromised IP address.\"}",
+      "unit_id": "lx-0063"
+    },
+    "cfa4c7a3b9a5f38f3b62421caa56c278082afc1cd3d0f978a21576ede4c86a21": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0028"
+    },
+    "d179b2bd906c8d18ccf71c25afb78aa89a0392f445b7a15ad43a76707497e1b3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a health check endpoint is likely benign.\"}",
+      "unit_id": "ng-0066"
+    },
+    "d2afd151b4228f4dc6ed1bc725654b2ed1478145b7f9f111d757e272494b0cbf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified status code indicates a successful response without a request modification, representing normal web traffic.\"}",
+      "unit_id": "ng-0020"
+    },
+    "d4c1703af45db566f6bf061bbedaa395cb379853dd888600b68f2443ff997c77": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0026"
+    },
+    "d622ef5169c71c0a4857b28fd4b35adc60b0275b33806b22ca020fbcbf549edf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"This is a standard HTTP GET request to the root directory, posing no immediate security risk.\"}",
+      "unit_id": "ng-0063"
+    },
+    "d6ab1f1029329d3d3e7f3ded2a7e7e8501b73ee98f78dd9de30b81b03d3c5683": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.95, \"reason\": \"Multiple failed SSH login attempts from a single IP address targeting privileged accounts indicates a potential brute-force attack.\"}",
+      "unit_id": "lx-0040"
+    },
+    "d88470ff1c4fdce1e19f9577cc8b44d53b9334fec03d14b61f93ef7a02976ba9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a health check endpoint is typically benign activity.\"}",
+      "unit_id": "ng-0023"
+    },
+    "d9d96575474f8a3ed53c00a84770f7a67051c9531cfa9c542b89fbe758ba6a43": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0007"
+    },
+    "da64cb65a593f2a8044161637bab3ad3638a5cae3ccf68436495afda3897d27b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"The user 'deploy' used sudo to run a standard system monitoring command.\"}",
+      "unit_id": "lx-0039"
+    },
+    "db8f80442842c716fa6c9f34da3cb577b2c165ffd7d9c607f06c4b63095376a8": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1205\", \"confidence\": 0.99, \"reason\": \"The user agent attempts a JNDI lookup to a potentially malicious LDAP server.\"}",
+      "unit_id": "ng-0080"
+    },
+    "ddd5522aae7f6ea8e5fc34c495c9d58b4f46cb494f9b2d0532f90db19d794b38": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unusual password-based SSH login from a potentially compromised IP address.\"}",
+      "unit_id": "lx-0019"
+    },
+    "e033c65e4beaae1ff624540cbc8526b7446aaf02c2e6e9b0cbb2f3d05864f7a7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP 304 Not Modified response indicates a cached resource request, which is normal activity.\"}",
+      "unit_id": "ng-0062"
+    },
+    "e149b556f4cf912843980570a98c8108651cf1046b15ca32d74b5e662c713e95": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"User accessing cloud storage buckets is a standard administrative action.\"}",
+      "unit_id": "cld-0012"
+    },
+    "e16cc95b774e110bce3335b5566f0afc165e6179c6997fa80b6faededea2550b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.85, \"reason\": \"Unusual password-based SSH access from an external IP to a CI runner warrants investigation.\"}",
+      "unit_id": "lx-0003"
+    },
+    "e325c342dcf41f1cb7bb695a4b89f0fad0240292086192c86be6ff77483a271c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard HTTP GET request to the /about page is likely benign traffic.\"}",
+      "unit_id": "ng-0069"
+    },
+    "e40638680f2ccc7e90c9fa8d783acbd35630dc3e5abc9aefcb7debe8aea68ae1": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access to a backup server from a suspicious IP address.\"}",
+      "unit_id": "lx-0034"
+    },
+    "e5ac6548cef88a262bfe24f345c918c97145d13b7c384ca2143883cc42a7a4b5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A user accessing a non-existent promotional page (404) is typical and not inherently malicious.\"}",
+      "unit_id": "ng-0030"
+    },
+    "e5cdf99d0d2bfd9af881d2c3aaae1d92b41c1f2380e54845dd677c005e25355f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a potentially malicious IP address.\"}",
+      "unit_id": "lx-0065"
+    },
+    "e771ddec59ef09d274822ac9295182e80b23fdf3c759dea057fc037e3159ae88": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.8, \"reason\": \"Unauthorized password-based SSH access from a suspicious IP address.\"}",
+      "unit_id": "lx-0051"
+    },
+    "e812a3782b29229898fd28006fb8fd2450bb895c6280bc0d7699ecdb0178aa20": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A kube-probe checking the health of an nginx service is normal activity.\"}",
+      "unit_id": "ng-0036"
+    },
+    "e8d4e8e494eae0d0748b962a56560ab61174c5c8f7dd51963d95a5e5d546f5e9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"User jsmith executed a standard system status command using sudo.\"}",
+      "unit_id": "lx-0058"
+    },
+    "ea792192afee9c34ff35d417a2280f956162c3465ab2afa6dff7f0a8b4c2d3e2": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.85, \"reason\": \"Unusual password-based SSH access from an external IP to a CI runner warrants investigation.\"}",
+      "unit_id": "lx-0047"
+    },
+    "ec599eee57889dfc1a601c79b559a0eb2a0b35f248e3f3f13759fbabb76e3e57": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a suspicious IP address.\"}",
+      "unit_id": "lx-0052"
+    },
+    "ef024aa26e07d96b4d63f90a83830717988f4e0624f7a2a17c4074f09568509f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard user logoff event from a workstation is not inherently suspicious.\"}",
+      "unit_id": "win-0017"
+    },
+    "efc6d57c3af73b298388ad3b32c853f2cdf3b126eba59fe86436a3dc00cb867a": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.95, \"reason\": \"Unauthorized password-based SSH access from a potentially malicious IP address.\"}",
+      "unit_id": "lx-0020"
+    },
+    "f183bacd0033570dea7ef1b313e053b583f58465eefdde2285f528366e7f7c0e": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1056.001\", \"confidence\": 0.85, \"reason\": \"The backup user is executing a command to view application logs, which could indicate unauthorized monitoring.\"}",
+      "unit_id": "lx-0009"
+    },
+    "f1df2547a80459a641879fa50466e8994e8f10bf1cf2b133c19307a8fca1f2dd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a health check endpoint is typically benign activity.\"}",
+      "unit_id": "ng-0089"
+    },
+    "f34e836891baf21dbf206f68890fddcccda5a5f6a446d112e7c5c40b40613497": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"The CI runner is using `journalctl` to monitor the application, which is a standard operational activity.\"}",
+      "unit_id": "lx-0037"
+    },
+    "f375eea9561d448c3594bc9c0659cc0e2d5f7752486640e76e94b0ab707d5534": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.9, \"reason\": \"A standard user logoff event from a server is not inherently suspicious.\"}",
+      "unit_id": "win-0006"
+    },
+    "f3a10b9582ca2e8b160daa26b77636e89eadfc651e92fe4347f50ad68139b5da": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A 304 Not Modified response indicates a standard HTTP caching operation, not malicious activity.\"}",
+      "unit_id": "ng-0032"
+    },
+    "f4b257d3d2c76a84f487fde47d8d9aae8ec79fc8f7725023a62a7c322a0fcc79": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a website's about page is typical activity.\"}",
+      "unit_id": "ng-0046"
+    },
+    "f6ef238d325273453675e86d42498d1db20968c22e1fb6fff4875fca1131234c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a documentation directory is likely benign.\"}",
+      "unit_id": "ng-0065"
+    },
+    "f70fcb7e406ccaa9115ea793cfa6fb3c5bc3668894520a61046894b69cfaeb82": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"This is a standard logon event with a known IP address and target system.\"}",
+      "unit_id": "win-0018"
+    },
+    "f72b18a38acfde76165708cbf2f31ace98fed378452d62e4bd2aeadea92f2d0f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1566 - Phishing: Spearphishing Attachment\", \"confidence\": 0.8, \"reason\": \"Adding a rule to allow traffic from a specific IP to a database port could be a precursor to a data breach.\"}",
+      "unit_id": "cld-0013"
+    },
+    "f8302a7af7a94e98255957a301287631d4d94a475f8bd71188cdbd2797d09201": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1074\", \"confidence\": 0.85, \"reason\": \"Multiple failed SSH login attempts from a single IP suggest a brute-force attack.\"}",
+      "unit_id": "lx-0064"
+    },
+    "f83ad9729a94d6cdf1da9f0b604fd11b6d733b8711d383f6a8f74dad383bd0d5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"A standard HTTP GET request to a common informational page is likely benign.\"}",
+      "unit_id": "ng-0040"
+    },
+    "fa9dbdd9b1e64d53d54dcb512a0ecce2ae1afd805d9333ba7e89fa1b7ebcea98": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.8, \"reason\": \"Unauthorized password-based SSH access from a potentially malicious IP address.\"}",
+      "unit_id": "lx-0033"
+    },
+    "fb88a214e5881bc0a56ad68a68c86f064b6cd178497313e44a7648c540e7e067": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1043\", \"confidence\": 0.8, \"reason\": \"Unusual password-based SSH login from an external IP address requires investigation.\"}",
+      "unit_id": "lx-0056"
+    },
+    "fbfb3260d4d4983838114969cf793916f29ffdf1eed7a3189b57094406f5e722": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1076 - Remote Services\", \"confidence\": 0.95, \"reason\": \"Opening RDP to 0.0.0.0/0 allows unrestricted remote access, a common attack vector.\"}",
+      "unit_id": "cld-0019"
+    },
+    "fd7326dfe41be43334465ec3df610bd4b9051ba23b1755a154f963ab341a437b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"The CI runner executed a standard system status command using sudo, which is a common development practice.\"}",
+      "unit_id": "lx-0061"
+    },
+    "fe53dd51e1658ad93c4a1bec23e5830ed056e4f77443c0b9e9982949a7af71dd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"User accessing instance details via legitimate cloud audit action.\"}",
+      "unit_id": "cld-0009"
+    }
+  }
+}

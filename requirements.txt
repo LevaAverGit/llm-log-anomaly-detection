@@ -1,0 +1,16 @@
+# Core detection + evaluation stack. Pinned loosely; tested on Python 3.11.
+pydantic>=2.6,<3
+
+# LLM detector: local model via Ollama. langchain-ollama pulls the small
+# langchain-core it needs; the full langchain meta-package is not imported.
+langchain-ollama>=0.1,<1.0
+
+# Metrics and reporting (used for scoring, not for training a model).
+scikit-learn>=1.3
+pandas>=2.0
+
+# Sigma rule parsing.
+pyyaml>=6.0
+
+# Tests.
+pytest>=8.0

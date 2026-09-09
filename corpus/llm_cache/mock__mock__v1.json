@@ -1,0 +1,932 @@
+{
+  "model": "mock",
+  "note": "MOCK provider output — a deterministic offline heuristic, NOT a real model result. For tests/CI only; never report these numbers as LLM results.",
+  "prompt_version": "v1",
+  "provider": "mock",
+  "responses": {
+    "05583c44fead9f6d663b639b24a9da306e3920f73280235ac4e15da6de402036": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0017"
+    },
+    "06948ef9f822b63c5f79e5b8bba160c8d06324761ea5428b5065734dc23b4d47": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0006"
+    },
+    "06cbe12a0eab87ac106283e44f69780b661f4f02d9418acd978944a65ecaaed4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0103"
+    },
+    "0752a84b824b28e21ba8e42a1768f541a05537b0d0b7dce87a78d21f5463879e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] IAM policy change with no visible prior auth failures\"}",
+      "unit_id": "cld-0023"
+    },
+    "07f58b00762c3d444807274774f1d2bde05748d7f6181960fc9d726ff427b86f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0024"
+    },
+    "0833a331d6476c030712b1074b913b5880fe9e13d6cde374af8aa220b8a911ae": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0035"
+    },
+    "0c181150fcfc45d4d6dabd60d1e1062bf899afcb00d206da857d3ecd48a0bb4e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0004"
+    },
+    "0cde567753a9356c529615d2ecabf843fc339bca0b0d0498b7779c1a42a7a562": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] security group change that is not an internet-wide sensitive-port opening\"}",
+      "unit_id": "cld-0002"
+    },
+    "0d25efb71e219e716b249ecaed40a97e9dbf23b34df9a25ff2fa3f0c1242045d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0013"
+    },
+    "0eae23b744208024bbc148567e6c3159e37c0e241d4cd03fe0e1eefcd87b24ef": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] single denied sudo: suspicious but not conclusive alone\"}",
+      "unit_id": "lx-0045"
+    },
+    "12c48dc9dfc2c359876c39443d0794880e456509381829a704970428ddd5c8ec": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0063"
+    },
+    "144e55d602496256e058df4ae0b00f688e28add34463b1afe0807e6abbe4230a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0011"
+    },
+    "153adde05c425a7062caa32327910f3fbef66a1264d6af6e2225c97bd420c8d6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] IAM policy change with no visible prior auth failures\"}",
+      "unit_id": "cld-0003"
+    },
+    "15a7f49df9bb835fdd9f500842b4005e95f895b7b35a021ec1e4142404df94ec": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0043"
+    },
+    "1671506bf514674eb25cf8663f45c1a41f0434e0f42f815dfcb3c20448128e95": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0101"
+    },
+    "1865a4f4ca70dead5bb79efc24dc38428540c04442698dd4fdf4813e67c3c102": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0031"
+    },
+    "1892772e00477318a2f2aa800b469ecf288682207ee195f03736688269a9b252": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0054"
+    },
+    "19ff1439a1916db2d97c87ca0f380e2343ff54145f048692ca8846bf2b0ebd01": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0061"
+    },
+    "1a81d114b41ea7d1f04e29af0f25ee6d2e3f4e70948a2185e7348c9b8a7598a7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0013"
+    },
+    "1abc9be22792408088e995c69bd79e815c270d69d3e8e6b5714155d6dd882746": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.85, \"reason\": \"[mock] sustained SSH failed-password burst from one IP\"}",
+      "unit_id": "lx-0042"
+    },
+    "1b42640d43fd5f817e24fa510f56a8f53daf156089d1d5c94f1a12e6605c79d8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0022"
+    },
+    "1b627471dab4c917a62b664e57e56d4979690fe7aefa0be05e8778f8d0fcc679": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0090"
+    },
+    "1b6cda57e58949531dbe3deceb3327295aaf88f55f5b110e952aa25adb6d052c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0015"
+    },
+    "1e36b0d1a5d3263d7908f4c3debcc8c1ec8e517d8c71b7f1d9085558c3fbbdbe": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0062"
+    },
+    "1ffa7021899264b53702d6a6231f98cbb334beb4f1bc5102faeab442f6f68adf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0002"
+    },
+    "226e1512c394abb9aaa6afb9b4568894b5121659f1618a38dbadbab8da875aec": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] high 404 volume but from a normal browser: broken-link crawl\"}",
+      "unit_id": "ng-0071"
+    },
+    "2341ee13c23dc9d43727a37455aa3e121cfe586bae6dde4827777b176b05d24c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0067"
+    },
+    "24738d1446e26203c8d010f60149af5d1476ba5ebafcce5581983ebe8ec00455": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0027"
+    },
+    "251af7814b7695939f2fa6c2e39ef92154d91cac016ef6c6845f8533856623db": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0085"
+    },
+    "2569ad3fa647ad349424b266877dedfe77d7eef264793dd72cb6c6f538f4c04b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 0.8, \"reason\": \"[mock] security group opened to 0.0.0.0/0 on sensitive port 3389\"}",
+      "unit_id": "cld-0019"
+    },
+    "26428e7acfcb9f27185738b75f4413c40269b2c9536342e61b197b384b42ccc4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'describe_instances'\"}",
+      "unit_id": "cld-0024"
+    },
+    "26470b4a43f0f81dc1fd287ffd8693f6ed7c39399ddc1592348a1596baf6d229": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'console_login'\"}",
+      "unit_id": "cld-0001"
+    },
+    "274403433891cdd3f0d8cf055ef8362a9c1e041766b6ca1ce96c56222b7ce890": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110\", \"confidence\": 0.75, \"reason\": \"[mock] many failed web-login POSTs from one IP\"}",
+      "unit_id": "ng-0097"
+    },
+    "29481b256ac26b961ec2114a7100fd51a1d0e62d4a39e0d52d4e09ee21f64c1c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0099"
+    },
+    "2a12b4d6899496d88795e4ff0198edfc5355f947cb367eca3556035f56364382": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0012"
+    },
+    "2a14230c662a8869b9c6de7d372bc6bfea9d1f1cb3314926676f92ed2e2dc02d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0089"
+    },
+    "2b02f63eb4ac1fea9b5641481524219f59a186fb21c486d97186126286ef60e8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0065"
+    },
+    "2bf27f1fdd9c8085070ce40d0c2c085dbb56cab0c2b6026a91734481bd6cf68b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'describe_instances'\"}",
+      "unit_id": "cld-0021"
+    },
+    "2c064efb453cd835b8fa5546b2aeaedcaccc6a9f28ce3efb021c5806e566118f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1083\", \"confidence\": 0.7, \"reason\": \"[mock] systematic probing of sensitive paths\"}",
+      "unit_id": "ng-0073"
+    },
+    "2ce5c8c69d84fad9f69be6f65c236a8f10d61ec531f1c930a309d10bd3f2b4e8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0036"
+    },
+    "2db5cfee011bbb35dcc1bcbfdb159458dda79c01d30e769b0a7fef957a5a8a36": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0047"
+    },
+    "2eb23a66aea42b4cb78a08ebd8442c4be0feaa3403e00ad1a7acf8b4e298950e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0047"
+    },
+    "2edbb97468c0798e0d0e3af0b526757996b16e927949bc6b509ee11558570478": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.85, \"reason\": \"[mock] attack payload in the web request\"}",
+      "unit_id": "ng-0079"
+    },
+    "2fa564c90e6013263654a1a4c43436fff3ea347b5f795fdfda8a1ca3a932e06b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0009"
+    },
+    "2fe0966d2071a789f5d5ef322e6903a00fab01430eec9a558a88323405f7ce7d": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.85, \"reason\": \"[mock] attack payload in the web request\"}",
+      "unit_id": "ng-0078"
+    },
+    "30955c82b5e88cd84fbb6655a78a2cc35394680941e3397cc61f0c5736810fcf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0002"
+    },
+    "3252b142e21a31da9ebeb1e35688a7b91a42682dc62f6c585e6f5ba5beb65a6c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0055"
+    },
+    "32944c40816e00440cf49adc54d3ef55325910f1f85cdd3b099a7f29dfa9009c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0002"
+    },
+    "33e81f22565ce0c572d5d56dc51b02b87b14a1d674eba3b33e721cbddd2e9851": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0051"
+    },
+    "351c454255f1a0ad0469b936078ce6c8cedf7e34d9e4e12d6d528a0738637c20": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'console_login'\"}",
+      "unit_id": "cld-0015"
+    },
+    "3627e2e5d8c2e22422b43fde828c7ab2fff6d74841a011b73b920bd75aac6927": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0066"
+    },
+    "3a8497f581308d80ba479057efce8d2a42b16d49baefaf809f8e219ee804a334": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0057"
+    },
+    "3b6dbccb596d15b8ddfe04d2702b42f24dcf0884e6dcf02cf33fde0ad942e2c8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0020"
+    },
+    "3bbc0eba5e72eb03317acc8816a6f9ccdb88f912f5de47af7e0950d2916e45bf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0033"
+    },
+    "3bbf4e539386a4fcb1fb15cce644191937ab38b709b55c8144b1515c918d6373": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'list_buckets'\"}",
+      "unit_id": "cld-0012"
+    },
+    "3e686356be808259ba1cc4ab5369a8ca80b34fdd3f006826be546616e028551f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0052"
+    },
+    "3f7623788bbbee76349f6b2b67d6cb8b8a7df54f7e16a3061444b8364c4c45bf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0021"
+    },
+    "40778617bf25fa6e677ad3149f0cb24e022e1919e34333aed40e9421accaa24c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0030"
+    },
+    "414af6daa3403c4902b09dfc174ac7b1acf4601778f90ec7357ffec3593450b3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0041"
+    },
+    "42a12e6255d81fc945dd6441adcad573ece0541b93c110ab2724b5ef0ad094b4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] security group change that is not an internet-wide sensitive-port opening\"}",
+      "unit_id": "cld-0013"
+    },
+    "432a9f2c3e25463f4acd9607388a807fee8462aa6edbbed76ec7c7e30f056e10": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.85, \"reason\": \"[mock] attack payload in the web request\"}",
+      "unit_id": "ng-0074"
+    },
+    "438a43719f5502c1638f59c6f7c0266d292ef9e6b560df7436c93a4b42a36003": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0011"
+    },
+    "44241e81a17f8a15bb91cec4f370049f552d9799f248124ff4aeaba8aef3acfc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] isolated Windows logon failure\"}",
+      "unit_id": "win-0012"
+    },
+    "4873a933baaf8b339f3872519b2e81f28d1bc092ea162bfe04eff4ffe52d4247": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0050"
+    },
+    "48d35dcd394a34ecc2be34ab0dd3c7a3028547200ae3fbb87706c7e892fd660a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0029"
+    },
+    "4901a9375e2479178a7c0a86fb9f43965aa18c722005939ae3ad4f02d6fabf3d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0098"
+    },
+    "4a348a46565a719fa1b7f77a2f314732fd5a004015876b96503391c45cf17a37": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0010"
+    },
+    "4bbd53108c5a10a3a482aa5d78f490614205fb99f59b24bc7ad6d652ef3a1fc7": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"[mock] burst of Windows failed logons from one source\"}",
+      "unit_id": "win-0019"
+    },
+    "4c3a008cf29b86667bf3338e0cbb7e640351145a098da16e9296cfde347cdf06": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0025"
+    },
+    "4ec295ef20e5954addf0c8b862eca30f66b0167082192c0268b2e616f785f7ca": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0003"
+    },
+    "4ef223b8751669555319a0f914881af89cda9c71f5b02e7d399211dbe0633205": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0105"
+    },
+    "4fc55aef632c8749cdf59552188a7a9851292cae4ca133a8d27232ab8229fa80": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0095"
+    },
+    "5109605f2a351b9191c8357565cfa7a3a222e3c10b7c2b1c94d87a64e4a6dce2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0029"
+    },
+    "51889925e19615557ae9316eb814c91ac8bc14926dfe7380f37e17aa742748f8": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.85, \"reason\": \"[mock] sustained SSH failed-password burst from one IP\"}",
+      "unit_id": "lx-0040"
+    },
+    "5205f023878153ff340f152cb9c8d9edef77f8d57cfd02a9c1b382633cb894b9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0014"
+    },
+    "52d2e988f0500b90f705bd502982fdd9a4b82e1019060acc1ca68667ded96382": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0046"
+    },
+    "53b8f3258eb9afbda49eba3131656abf6b0280cb96297f6c1a043058dfd23fc4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0087"
+    },
+    "53d5dc85c3d13ca6b8fc9349b12aeeebeb8ecb21ab3725b9384c3a8d34418f05": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0028"
+    },
+    "57d74de6fd00593861135cd6f873e03605df095ac9745fc8d66faecbea7ee219": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'console_login'\"}",
+      "unit_id": "cld-0005"
+    },
+    "57febfc5e92a25d7d73c43db408dc073969d862eec61a863c84ccaa6e6b15f63": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0005"
+    },
+    "58da6be2b5209f46091cbe7adadff31f17a9e10afd9bcc2e3d6d0e7968e34422": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0006"
+    },
+    "58de20e4e1df2b1b178bcf9ba30e88b7271fe484db26ecd083a3ffcac621f59f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0070"
+    },
+    "5916d5fa58d181062eae0eae008b6a8cdf56315e7dd08a42002e6dba87fc286f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0065"
+    },
+    "597cc9d663b5c52244f1411540b0f854b935324d898885a2cdd912a9a637ba3e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0001"
+    },
+    "5a5eb4b722452ca49ef89e087975d1a1bc440eb5c9c6629039716158f2b9d6c4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'describe_security_groups'\"}",
+      "unit_id": "cld-0011"
+    },
+    "609431c98261a4e9ef198662a6a6b09adda13ec49fb59fc5178bc7caff02673a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0058"
+    },
+    "60c50d42bd0d3c0e392e778990b022fe594c14720d70d47c13ace5e1957a136a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0025"
+    },
+    "616c6e1fbabdd32169aae056ee9bfc9a2364206d4b03229ba4f950b04c4414ca": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0083"
+    },
+    "61c115917ecd8be16a402d7ae42699d93d707f071522ce22fa0e87236a6a779b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'list_buckets'\"}",
+      "unit_id": "cld-0008"
+    },
+    "632f32e212060febd594f2219b203c1c2dcf5267b83e7bdd98e211303dfd70a3": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1136.001\", \"confidence\": 0.55, \"reason\": \"[mock] new local account created: possible persistence backdoor\"}",
+      "unit_id": "win-0014"
+    },
+    "64299e6e452b5cd62ee285bb29e26e5f84ff8f73e3c7091ed52eab53b8719484": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0081"
+    },
+    "645b90879e4d070129e2ab82c2975ae26cf3c47de579bdb91edfa107e5ac1222": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0054"
+    },
+    "67918e77c5bb4f3c86f7a94cd8fd8de7907911080278e88a8bde4df275ddec1e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'describe_instances'\"}",
+      "unit_id": "cld-0009"
+    },
+    "67be579f48aff92bd479fbb70feedb72f3093dbadee8ce82190a101dd60e4bb7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0037"
+    },
+    "67bf77ff158907cc5d6e7453fedb9d29795eb70bd632c280995a68b36c29bb4b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0088"
+    },
+    "67e3ea0eb22650d24b7be3c4337525fe68ac4afa40e27ded5111ae9ee2d74b33": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0006"
+    },
+    "69685691cf8686cb5b0be86a87b79c0a4560872d11b89716198bc938daeef8eb": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0039"
+    },
+    "6b0b2a3e518db56c346697a136cb27df93e4986defc4e155be0a6e6be2933449": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0004"
+    },
+    "6c2eb45fb841b8e6611f0a4278c01281b4a3446f35cd06c4f7125c3adb89fc30": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0044"
+    },
+    "6cb405ebae5f6aba6f4888b388505d3f54eccca9dc7d347dd6790ba93f7f9144": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0020"
+    },
+    "6d770bc702254f1d76d3f39f8f9c23e51c87d4724077b6de3216c15140d6b64e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0005"
+    },
+    "6faaf7b026bec988d0a6eb52abc2807d29e7bc636879522dc6f4d4c966977ff1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0046"
+    },
+    "6ff50e905f5293b6d0acbd0e79920a8010b92ebaf1cdf040d59ee4d281d65600": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0058"
+    },
+    "708ec5999e6d97c22760db9c4ce09102935206231c9f4150957fbddd0a26f422": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'console_login'\"}",
+      "unit_id": "cld-0014"
+    },
+    "7138e7c491a96a8e8e4366870be06112df556824a307afca390f86b0894fcd5b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0100"
+    },
+    "75e49edaefca2ae07d7ab33ac171da0f3bf24bdfed47dc2fa4221cb68f144eb7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'get_caller_identity'\"}",
+      "unit_id": "cld-0007"
+    },
+    "76196130740658129d13842eceb4169800f0ea00ac728df2042fdb4976ff8307": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0052"
+    },
+    "7707fb9ff5f6d87fb7170c115c7e5f7e7ae8ccfa478a27daef89e658e15dff47": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0048"
+    },
+    "77d43ec8e641b60e029801e17b24ea4daaffef1772d531ce32fc2699d2abac8b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0036"
+    },
+    "7d88c72b89b54e8f020300a8b270972c83bbdfc53c4e425ded57f4aef45f31f1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0007"
+    },
+    "7fec020135ad766a1c11d716fcbef491eba554855f66bafb72227b8ad69f4b4d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0016"
+    },
+    "80b62884fbb88d95364b8cb1b8b51376e33316102c9989a4227b7a46638d47cf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0092"
+    },
+    "8141bc3d32093215c5df1ec4941ab6c81f0d403eedadc060c4d382344dfe3133": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.85, \"reason\": \"[mock] attack payload in the web request\"}",
+      "unit_id": "ng-0080"
+    },
+    "8176afc67803192db83043d383af2f9aaf149b833c2615b09d053ce9d1c97801": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0064"
+    },
+    "8185ecf9ddcdda832c9f7f56151981a6f3cc03ccb27b95712ab0200cbf8cefad": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0039"
+    },
+    "83b6b3efca7185913692f14a951367f1ebf7bbc57a623a38ab2b3796beab7ef7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0037"
+    },
+    "85e1f75575cfdf7ce60495448f6c02c5de146e33fa337b96e53a79c655dc0ab2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0021"
+    },
+    "86d4131be1e8f09eaa3a58602c2830a84fd1f57ff87b616736ad8a1fee74883c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0027"
+    },
+    "87f32d53f72bd3e57223110652695b5c221b118d4482a9d0077d6100f329fb1e": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1136.001\", \"confidence\": 0.55, \"reason\": \"[mock] new local account created: possible persistence backdoor\"}",
+      "unit_id": "win-0023"
+    },
+    "880a2110de035a241b99497fb63aa93a6ee5675130a5e064fb10f6891bb3bb79": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.85, \"reason\": \"[mock] sustained SSH failed-password burst from one IP\"}",
+      "unit_id": "lx-0043"
+    },
+    "89b0464730a9203734f3b7f561632904e87423d746f63721b15ae250105c5053": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0001"
+    },
+    "89f8d37552278ab694be55a03a78b6d4a90cf4d03dffce64274e07d5e91983de": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.85, \"reason\": \"[mock] attack payload in the web request\"}",
+      "unit_id": "ng-0075"
+    },
+    "89f97b24531433500c152f77c68bdf34b633bda9f88b9b1233da33ef81e2c573": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0019"
+    },
+    "8a7c6dce6a023e966873b1ac02a10f9ef6d2ae33c5839087095238181967e33d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0032"
+    },
+    "8ad9b5a49e88604d99bc1871d22b1605f373e939daa4ee4ee96db66e8cf0f1b2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0049"
+    },
+    "8adde2630f6a5cb93b4eabfc25e22eb6f6713f9cec31a1f505df860ab5c79fc6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0049"
+    },
+    "8c63b3dc2eec697625e4bb1f978900361e34012d66e48d3ea861b18e2308d3f7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0084"
+    },
+    "8cf3941db0953037be4d9121f0c9b9ed746131f2e5726fc964352dd9af6ff2a0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0028"
+    },
+    "8ed0342b2b806fd63056946dd7f2222e449c83ee10c1d31c634951535183828c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0041"
+    },
+    "8f0cd106f58012c98893b9df85ae8efc6ed566c1fd4e0227b79033f805e0b7be": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0016"
+    },
+    "8fdc257b95374983db28fae82879a44a68bfd6805beace7add0d5b9cab882a37": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0032"
+    },
+    "904356867c98fafbac6d97531f3a018e7759515589f091ca91f4d53b10746233": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'special_privileges_assigned'\"}",
+      "unit_id": "win-0020"
+    },
+    "909d0df16ae935f9502e6c5e21579905305a66a1369dc25d4ff745a2aadf8502": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0102"
+    },
+    "910f680e68d2600a93ba96d1760804fd72a57723195b6d49cd5093099dac664b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0093"
+    },
+    "9150090afb4a9ab07b15505c046537ef64dd0367d7ff9b91bb3e50ec2e229d62": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0086"
+    },
+    "92dfebba4ddcaa75fc6780dc4ee818568392ac58757086011ef1db6833415ab4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0030"
+    },
+    "92f7f0404ef326aa6452a4d04eee6a03ac20ab015ee84ef16ed5e6e74e290a70": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0015"
+    },
+    "943e255db7b8f29981bbaa182a69fb8cc20b87679b7c24656ef92d60feaf1a8d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0038"
+    },
+    "9681668498d06938d26bc28317221d2b420e194a7b503212c396341c5fb0bde7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0040"
+    },
+    "98cda0ddac65e21b6f38ae281c2008110525bf83529834389f7ae8decaf7c1e7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0003"
+    },
+    "99cb1bdf46004c40bdab86638d5d35fdae1ba9d4160f18daff3f62789fed6c78": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0051"
+    },
+    "9a0d89cea032c8d9f7e228f817bfad13367015d49f97c6795fff9a92e00287ac": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0104"
+    },
+    "9b929c0c87f88b788bac37e5f896cde7280bc569110a84ebafc3b9299bcf06b0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'api_key_created'\"}",
+      "unit_id": "cld-0016"
+    },
+    "9d97958dc45a289cee80f2ea9df83399188ec4e553050a9d9ed895cc4f8130b1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0008"
+    },
+    "9e1e91f12537352b6a38252825117119fb60ea22909c5dc26f12b4f8f5e36599": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0057"
+    },
+    "9f8eea9c6b0e5750fbdae216b43012f03ec37ee50c41aac1b44a87d0b799ac9a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0038"
+    },
+    "9fa625b97a0dd9f01d2914000b5978e53712b5a3438afb581f4e6b27f4276bf6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0027"
+    },
+    "a017506f9b693be8991a456596164e8704cbf8991a20539922d6c8b2b09a3ec0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0108"
+    },
+    "a04b8adcb5b3cf7165e43ddc27c23c41f8667439cc162e6becca9ee115e16bc8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'console_login'\"}",
+      "unit_id": "cld-0025"
+    },
+    "a1442ff948c0fa0a52c62a5cc7e3fb980b19a116d4b26509687dc8aaa0c07ea0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0024"
+    },
+    "a175775e62c9f361cd59603e3c5285ec9d695d47ea379cbf8d50606178371e42": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0026"
+    },
+    "a254a70001be57ac890a1ce9ac9d51f0b7e4ac51a50f95d9025d11a448f902a7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0022"
+    },
+    "a57236ab7ac7bc72315b10d42339f087d97642f13df424cf391f39a9f0886acf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0003"
+    },
+    "a8a581460ae15fb8fa019a058fa79025335a38e47cc93cb1f7ec15c4c3c0cc0a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0059"
+    },
+    "a94cfcf18345f9e09720a99424e676b79dabface6cb7056f152adc800c6f56e5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'console_login'\"}",
+      "unit_id": "cld-0006"
+    },
+    "ab18052437cc87e8fb976c55dfdb4bdbf92ee9b410acce9fd8b6e799a94bc1c4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0009"
+    },
+    "add491ab61a735d90f32a528331777af1400ce847c641603e99a0ecd968bc8f4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0031"
+    },
+    "ae28cb2d7c0777006c38b0dd15e314007cc4989591d1c4cbe7f262d390e7c3df": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.85, \"reason\": \"[mock] attack payload in the web request\"}",
+      "unit_id": "ng-0077"
+    },
+    "ae6fc76cf8c5a3a12c95c5290e12954e5aeed04d01a782d653ead232cac16936": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0063"
+    },
+    "aeffa571c4eb1fe3bb8ea3c7c75d525204f1831abaea411bbce2aa1d1b39bff4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0045"
+    },
+    "af140623154266dfc65a2eb4e028dbfd18a5b422ce7c2902871fc6f443360623": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0059"
+    },
+    "afac1dc2d18507bb6dc9f0bb16934c20f8f94713c2d859b9ac9a882b63faa5a2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0018"
+    },
+    "b12174e4c70212cdea89fbbdcd80744f77d99dc471d9959bec7c8628f9a7d3a4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0048"
+    },
+    "b2481d3b0549a14badcc6bfaec65265611a7ed3b1eddd267600ad6772a810afb": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'describe_security_groups'\"}",
+      "unit_id": "cld-0022"
+    },
+    "b2f04c4d42879c89097dcd46af3bb0408603669617b88773065cd90be5368aae": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0029"
+    },
+    "b4483c8f2472dc9bba1f0e5bcd6a260307201c0fed3973bcddef054189fd4e3d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0055"
+    },
+    "b57dc7e3429157fed48a21199de130f01efee751059ec88e32b45f3a2756638e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0061"
+    },
+    "b5f355d9ce56c18d31de824806dd7583ab756f0c3dcad57d24e18543f3429b6f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001\", \"confidence\": 0.8, \"reason\": \"[mock] encoded PowerShell command line\"}",
+      "unit_id": "win-0021"
+    },
+    "b65c4bf2f5ab990d6f63b599864fbc1756c4a4c2b790498f1ffa82b183b67e97": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'console_login'\"}",
+      "unit_id": "cld-0010"
+    },
+    "b67270b65ce758847bedff29b6aea2b3d6dd8d491b8939180b09b28bf97879de": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0044"
+    },
+    "b695e161a790dc73dc4d76c82c214b6cf7fc4dc1a957e3964f8ac1d543031588": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0011"
+    },
+    "b9fd0f29943993f69a6e5d1110238287987e1db27b35c9faad36ec21dd9dd63a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0007"
+    },
+    "ba0e47eca1b7fab05cadf95b0b8ccaa45a1052cc0d9bc79b37f598ea582339e0": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 0.8, \"reason\": \"[mock] security group opened to 0.0.0.0/0 on sensitive port 5432\"}",
+      "unit_id": "cld-0018"
+    },
+    "baed610e548a1842d26913816ca47339e1f642373dd01481de152f86de9fbf6e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0031"
+    },
+    "bd57830681b5df0e8c4502d39894d4e7d3e18bb0197857986677bb720ac67f96": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0008"
+    },
+    "bd69ca1e1418771f77b3f7c63eb8e2433f83ced4f020f3a2a53e932505bf0e64": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0017"
+    },
+    "beae646fbe8ffb9b274ebea18fb5c72def07219cb0aed9ec6bebcad1bd0f1e46": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0025"
+    },
+    "bee45f24a995549311ef702e104f638904c1adcb34272b0c51587741993f869d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0107"
+    },
+    "c15b62cd79badebe97a8b889aa47ff4b5ec79362e0575f333d1a1522f72871ce": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1105\", \"confidence\": 0.75, \"reason\": \"[mock] certutil downloading a remote executable\"}",
+      "unit_id": "win-0022"
+    },
+    "c29b78dace144aa52e01fd5a00c979f31a2bac1218a1c0cb3f179b3ba2dbdae2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.6, \"reason\": \"[mock] few SSH failures: below a brute-force bar\"}",
+      "unit_id": "lx-0010"
+    },
+    "c46bc52d41d35ed56f54e6d023e6d986f03a29a2af2f51b573649f25da22b618": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0009"
+    },
+    "c5cd1a12ca4a9ef75b82f32faf44d00d10b990befb318d5bb5ee137ddd076ff3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0064"
+    },
+    "c5f412726bf241b484f7508b9d7dc7af108cb5bbadcb31e3189e325b9595a972": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0013"
+    },
+    "c607535e0f90bf03f0fce85903df5a3c2cca51bc9d4045e429eae3506cdad51f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0056"
+    },
+    "c78ed5b5da3c9d3d5823bad6e923dbd6d7a2525b7d19edc41fbf086b620cdab6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0010"
+    },
+    "c89aaecd393d75a4ab7192a83dc452ef1cac45fe183d541a27f8b3bfa512aa4f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] IAM policy change with no visible prior auth failures\"}",
+      "unit_id": "cld-0020"
+    },
+    "c96078de6a4c5997e591393308e63cd5f696113b072db5284ebeba343ced79ff": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0007"
+    },
+    "cb3fb4506b1e3f4ec190ee8e12a472c20cecaf6dceb19b72d3c158c0f3a88ca9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0050"
+    },
+    "ccd87288d62388f33ee4d9b12ca377ffdae74aa871e89e724575c2bd16b170f3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0005"
+    },
+    "cf3a1dd44ca798575929cff68877b5ba94d5968ee1183544155e90b83e901bf2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0094"
+    },
+    "cfb1fb392765a1a1a237f875336551ba4182a6e251cc6debc2c5933710ac16f2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0032"
+    },
+    "d1d586211e5f28aa566f303f73061410ba605a53d01ff0ea68eec61962edde10": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0017"
+    },
+    "d2d5418a8c7ddbf97909b976d8b40b868b696f2f97b207ed6f3aab8b035c8725": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0034"
+    },
+    "d3681c18979028e709b025eb78f9961b760dbba15f51e8dda43cfd9c7a41edc8": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1595.002\", \"confidence\": 0.8, \"reason\": \"[mock] requests from a known scanner user-agent\"}",
+      "unit_id": "ng-0076"
+    },
+    "d370c8d2bea6809d7cc56ed572af61cda4d9dd553925cd008dfc3488124b37e1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0056"
+    },
+    "d3dec531e4911a7ebbd7cdc18ad8c5865f6b8dee66cd3ba46d97514a9ca703e6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0060"
+    },
+    "d4cb3bdbab275e8bd0804ba1f94ccf501aeba4e74ec8746b946d4634cf60cd34": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0023"
+    },
+    "d50c78b6dba3aa8a5a4065f7360a0ee7a54ec5fcbac0dc13249a388791926314": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0053"
+    },
+    "d5b7836c5e72c0822ddf7fdf225b2d5cc11ea6da225040e9baa1fd6c91bd31e5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0026"
+    },
+    "d6fd8a0a4686c56726df905de4afa040a4e4b9f61383fb404a887673fa680a28": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0019"
+    },
+    "d775856b3aa563b08414276bee23cf49f2365a2641643afb677702ce29346acb": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0012"
+    },
+    "d80501bed5ea826300d4193a3cf6938706365c57cceeefb81e1b8c076948c1ec": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0069"
+    },
+    "daf80b6ebe85ed4e9f725a649d7f927b83bf296a8f38b2219d1c16546dc6477f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0008"
+    },
+    "dbce4019bddc7b230c25b71313afab8742134b6572c2e0fcd791eb24b799c25a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0004"
+    },
+    "dbda358bac2836002f65e286306c7e8fe0922416d2a57262096e948948aecddc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0053"
+    },
+    "dd469cb3975071279db5f647744151967f29823cdfebcbe462b01efbffca53be": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0035"
+    },
+    "e0024a9982326fac9e3dcd7e7394b43faf189c362fa108cbdfb780da76c8d4f0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0014"
+    },
+    "e034ed7f24f94e933f3166e8a059353f1df4e88c2104e918f6b4f951a8e5429b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 0.8, \"reason\": \"[mock] security group opened to 0.0.0.0/0 on sensitive port 22\"}",
+      "unit_id": "cld-0017"
+    },
+    "e07869aa1bab3b6b336c9435c78728dbaecafae288b67beb7aaa7e33c841eb0e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0066"
+    },
+    "e087d21ed200aa54153ce65623f937cb37261b3f6464a56ff83eff83e1eee80b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0016"
+    },
+    "e17db559db70a55055065a44864cdf3d0531ac9969a27bc906fd651f9ec10e30": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0024"
+    },
+    "e1c1b024238a95ffb3cd6e984376318ed712c2e633ea48729b0631a235a2ef52": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0018"
+    },
+    "e1fdcc55bc97f58676757bdd43412e8bfc3a2373e7649803e1192ea3b27689fa": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] security group change that is not an internet-wide sensitive-port opening\"}",
+      "unit_id": "cld-0004"
+    },
+    "e241423e40efb95549ded934fc86a0d405e622fea5b6d0f0a9eda42914946474": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0001"
+    },
+    "e2f7c858608c396fa68066c92b2e32ff11fba75425b7ba851a8cd33dd706f403": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0026"
+    },
+    "e38deed236403d71b7f47799dba97ba834ee7fc86b1588f0de498f0bf9dd07d6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0033"
+    },
+    "e4e3b439d6d8457289ea6772453ebca91808e1da012b3217e4a477afa9ab3c59": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0034"
+    },
+    "e5972c4880087b54dd716cf74b17af54687de8b3eaecf51bc867a31b03e14538": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0082"
+    },
+    "e629b79c3e927817f0ae49ac8ce38525d79f5ec831d387216e5390a715453905": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1595.002\", \"confidence\": 0.8, \"reason\": \"[mock] requests from a known scanner user-agent\"}",
+      "unit_id": "ng-0072"
+    },
+    "e7e37f8f82ad39411d23826e82f688e7217bd8a788c21fb36d9f9aca287cd858": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0023"
+    },
+    "e9125159218d4300f05d5459a54fe19d9dae20af5969e6a90f78b5550e869844": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0068"
+    },
+    "ef87cc7ef81717fc7053e18e9b88aac6205139afce65ff4446196ae6ca1f8b43": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0030"
+    },
+    "f5d8ac8d05361e69d59a65114a328ed59120d3ed5c1076017c59036f988eea9b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'sudo_command'\"}",
+      "unit_id": "lx-0062"
+    },
+    "f652ca8dc9ff19f01e1a7fc6318ee0229368cc1b7167ac952a18808e5910ee36": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0018"
+    },
+    "f71ac5c296ec9004c075aa19520f65fcc1b9823b0e4bc075f93c934026bbeae9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0106"
+    },
+    "f7fc724f1d906703817ab337a7e4fc02e1e3768e073b6e03fb746a71c0f6dc1f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logon_success'\"}",
+      "unit_id": "win-0015"
+    },
+    "f8ffe8a66bfff406f620d7d0d6ca8d7845762e0c95c453a93c5f46cd4f65b877": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.4, \"reason\": \"[mock] successful SSH login with no visible prior guessing\"}",
+      "unit_id": "lx-0060"
+    },
+    "f93746a2321c010d9ece27b245f7dc77ce0f7574d70a5c5229fe769015692040": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0091"
+    },
+    "f9a272bf5499d81783d7a413af7075aa06add3216008b3b120a481d26bd1ab5d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] no incident signal for action 'logoff'\"}",
+      "unit_id": "win-0028"
+    },
+    "fa698751f0752670892a873b5c2a99e67521895d60e80bb269aaa7221ca6f1d1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0096"
+    },
+    "fb87e31b33992fe464a903e17291b24e77231a5fb9234eacaa5176f75da13d51": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"[mock] ordinary web request\"}",
+      "unit_id": "ng-0042"
+    }
+  }
+}
