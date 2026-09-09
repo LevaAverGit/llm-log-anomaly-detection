@@ -105,6 +105,35 @@ make run-llm                 # run the LLM detector live against a local Ollama 
   would take. The honest headline is that the LLM's value here is in triage, not
   in replacing rules.
 
+## Why this is commercially valuable
+
+Every SOC runs on rule-based detection, and every SOC leaks recall through the
+gaps between its rules — the correlations and host-process semantics no one has
+written a signature for yet. *"Should we add an LLM to catch what the rules
+miss?"* is a live, budgeted question on detection-engineering roadmaps, and it is
+expensive to get wrong: a detector that doubles alert volume costs analyst hours,
+not just compute.
+
+This project is the measurement that answers it before a team commits:
+
+- **It turns an architecture decision into numbers.** The rules-vs-LLM-vs-hybrid
+  table — precision, recall, false-positives-per-1000 on one labeled corpus — is
+  the evidence a detection lead needs to justify (or kill) an LLM in the pipeline,
+  instead of buying the hype.
+- **It quantifies the alert-fatigue cost**, the metric SOC economics turn on: this
+  run shows the LLM recovering the missed incidents but at a ~50% false-alarm
+  rate, and a naive hybrid inheriting that noise — a finding that saves a team
+  from shipping an unusable detector.
+- **It is reproducible and offline**, so the result can be re-run on a team's own
+  logs and model with one command — the difference between a blog opinion and a
+  decision a security org can stand behind.
+- **It maps to paid work**: detection engineering, SOC tooling, and the emerging
+  "LLMs in the security pipeline" evaluation work that AI-security and pre-sales
+  roles are scoping now.
+
+In short, it converts *"should we use an LLM here?"* into a measured, defensible
+answer — the deliverable a business pays a detection engineer to produce.
+
 ## Limitations
 
 - The labels encode one specific criterion (documented in
