@@ -101,12 +101,19 @@ _NGINX_TS_FMT = "%d/%b/%Y:%H:%M:%S %z"
 
 
 def _linux_ts(ts_str: str) -> datetime:
-    dt = datetime.strptime(ts_str.strip(), _LINUX_TS_FMT)
+    try:
+        dt = datetime.strptime(ts_str.strip(), _LINUX_TS_FMT)
+    except (ValueError, TypeError):
+        # A malformed timestamp must not abort the whole batch (mirror _iso).
+        return datetime.now(UTC)
     return dt.replace(year=YEAR, tzinfo=UTC)
 
 
 def _nginx_ts(ts_str: str) -> datetime:
-    return datetime.strptime(ts_str.strip(), _NGINX_TS_FMT).astimezone(UTC)
+    try:
+        return datetime.strptime(ts_str.strip(), _NGINX_TS_FMT).astimezone(UTC)
+    except (ValueError, TypeError):
+        return datetime.now(UTC)
 
 
 def _iso(ts_raw: Any) -> datetime:

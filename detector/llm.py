@@ -323,8 +323,11 @@ class OllamaProvider:
             ) from exc
         # Ask Ollama for JSON output and pin the seed for reproducibility; fall
         # back gracefully if a given langchain-ollama version rejects a kwarg.
+        # num_predict caps output length so one unit cannot generate unbounded
+        # tokens; dropped via the graceful fallback if a version rejects it.
         for kwargs in (
-            dict(model=self.model, temperature=self.temperature, seed=self.seed, format="json"),
+            dict(model=self.model, temperature=self.temperature, seed=self.seed, format="json", num_predict=1024),
+            dict(model=self.model, temperature=self.temperature, format="json", num_predict=1024),
             dict(model=self.model, temperature=self.temperature, format="json"),
             dict(model=self.model, temperature=self.temperature),
         ):
