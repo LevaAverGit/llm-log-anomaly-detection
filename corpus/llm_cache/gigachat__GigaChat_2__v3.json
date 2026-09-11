@@ -1,0 +1,931 @@
+{
+  "model": "GigaChat-2",
+  "prompt_version": "v3",
+  "provider": "gigachat",
+  "responses": {
+    "00b484a788829cb0d3aa27ccb68460bd23a1af01e67b3b2079d95a8b96bbbcf2": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0050"
+    },
+    "00f265a41fad23ea4794cfaad5b8b444626d5dddae311f4e70bc0199bcbb4225": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0010"
+    },
+    "025024300f48d25f5d5849b9d8393a7af57b256e1248b1372821898232e1af68": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 1, \"reason\": \"opened security group to unauthorized CIDR range\"}",
+      "unit_id": "cld-0004"
+    },
+    "080e867f1138c666a0a924df345eb758f00616ac1f188deb44feb65e83fcacdd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0081"
+    },
+    "0a2c62315a87a22945d384b78b6f31fa78fb0e999c8f849baeece80743074b69": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0011"
+    },
+    "0a3f5c396677c9be7af76d885d323cad674d7f71170feb1f88e20866de72e8e5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0025"
+    },
+    "0b100746d4c28e677ae2ff391277e5798d023a7542915e234f3733d7b8559089": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0012"
+    },
+    "0bc57a7dc96524e356a39244cc79deecc4238be34abdaed3d475af755e07e524": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.9, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0043"
+    },
+    "0bd3be266bada5f9ca522b4780e5b23167ae397b12ad0714fb97c14548b8bd2e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0011"
+    },
+    "0c9c052480b9d1477bc22b3285a701e363e920d2845d92172e54538ac4ea968d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login by known actor\"}",
+      "unit_id": "lx-0036"
+    },
+    "0d1c647e6d1f288f0b4e0af5907175a301b8dc699d15970e70b7447a4cd3ed2c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"ordinary browser 404 request\"}",
+      "unit_id": "ng-0064"
+    },
+    "0d6fc24fa19a3f4af2a80adffcaa5e6dd24829ae2722a4e2c0635383e4f53649": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0108"
+    },
+    "0dabf51c1322ab74c207dcedb7202339edd45eb466e026f1c4fbb5de721b09ca": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0055"
+    },
+    "0e56a5743311b91329d24da266eba6001e2033c62b202930a08f4bba9c684b8f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0003"
+    },
+    "0f17276248f062dff44cb0ba6c914c9ac3929adbb2a8687304bac24083e57789": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0034"
+    },
+    "11e5d5e701425f29e8b2b67cf056992ad128c9ab8b237aa156f4c0b966170604": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0024"
+    },
+    "12ff2ff1e733d830c2e2ae16398d16efd7220f5c06ff07ee900394119b02419a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"successful SSH login by authorized user\"}",
+      "unit_id": "lx-0038"
+    },
+    "138ce986a58a105424c972e1fbf322060700dbf8fefebdf5079c4c749173e145": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0084"
+    },
+    "1579ffa3fffd0cff35888bbc60d08da0ca84acc0b43ab26a7955c873a3a22643": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"ordinary browser 404 request\"}",
+      "unit_id": "ng-0017"
+    },
+    "15ce9c8336b9f35911ea8fae539e481eefc1e32bbbc8b5698cf10cfc6c22b4d5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful bucket listing action\"}",
+      "unit_id": "cld-0008"
+    },
+    "1640a7c1bcb47bbd033257a1abc99575b8d199b55f54742464b3dccad5abe052": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0017"
+    },
+    "165304eb0609bc013d2a403aead07853689f9e8b87e8340634245df5537e1f92": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0105"
+    },
+    "17fd2404a630d50ec10b41b89555d939edd3cd36db68f374e470c6eed2f60dba": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0003"
+    },
+    "1e095c86a8ea6b61df5ff09697c36d341d183123e825d85e7a7eb94325e64ce3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.0, \"reason\": \"successful SSH login by authorized user\"}",
+      "unit_id": "lx-0056"
+    },
+    "1eb9ba5aa1f4419d7c4d7bc1bda60ff16a0439904a5bceb59389ab0754f48d8c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized login\"}",
+      "unit_id": "cld-0010"
+    },
+    "2011f5bd4ec1e99fdf8abaf04ad03ef18e222745f38fde1000f19231bca044f3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0018"
+    },
+    "209b3fd474a427d49fb14f227b0018f5d2323539cbf40781c709c8e7f414b741": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"kube-probe health check\"}",
+      "unit_id": "ng-0095"
+    },
+    "20b7622056b0ad855b1049efb74bbe984ced127870815079bbea5c7bd3f894a9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0005"
+    },
+    "214814d9768a8c398674e72d5b10c6cadc54b73225affed6ca5710b4ccec39f9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0062"
+    },
+    "226dcaed1d69c3e4a9aa83ac20c0fe5935a5040e038eb22897f5655cd143de0c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0053"
+    },
+    "23442efff0e37460f835454c5f70e85692518aaacab14a4609f2bba3515693f0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0001"
+    },
+    "24dcadd82c558bc8025643322584b44b1b09ca1c23948b87b63cfa5370424a27": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login by authorized user\"}",
+      "unit_id": "lx-0060"
+    },
+    "273fad4502886b7a04d233121f15a136a7f1e9ae994b6da8b628cac547ed2ae1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful API call, no suspicious activity\"}",
+      "unit_id": "cld-0021"
+    },
+    "28bf5d691480cca4a614be66adc5a180fba5a5328565683c9ad2e2e1bddb1375": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"ordinary browser 404 request\"}",
+      "unit_id": "ng-0004"
+    },
+    "2abd68a74bb23c9d9a25339e8f45779d5fd3e17a45f47f5776e1afcd5023a284": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0024"
+    },
+    "2abe8ae2d464635ee1d255d277a886881d82aca1338ef0eaf661378ff347060d": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1059.001\", \"confidence\": 0.8, \"reason\": \"Encoded PowerShell command execution\"}",
+      "unit_id": "win-0021"
+    },
+    "2b4514a50468fdf5b4786fe572da873cae93d0fc1853f979759a8915f12466e3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0061"
+    },
+    "2b727363e7a54730684792a311bb91d23dc9cd2be857490c2f711929328e2cb3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0070"
+    },
+    "2cae54698acee82a1f950b2cc35d37561aa0df6fcb3f3b6460aea31b94ed1e26": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0010"
+    },
+    "2e98feaf7f15fd379d93027af7477cb76e8f281b14eecc24d732768998bca7e3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0009"
+    },
+    "2f4df23af4f21b193c19aae19f77bb098efebee590cd1cc8ece1887301964759": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser 404 request\"}",
+      "unit_id": "ng-0030"
+    },
+    "2f886ad366d91b01a3793c026e11164c3106200120638313ba213b1d8083c06c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0028"
+    },
+    "321753d232c5caddbad7402372b8167f38a03d7ff2039c0e1ea4fa8ac23c3cc2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0001"
+    },
+    "336d7c2ce131e0cd9825120f5f5e198272a298f31a563811ac17d041b70cebbe": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained burst of failed authentication attempts from the same IP address targeting the 'admin' account.\"}",
+      "unit_id": "win-0019"
+    },
+    "33790e2c17f2116243adf733b062b87ffea69b90bf6aa20b928401b18197325c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized login\"}",
+      "unit_id": "cld-0025"
+    },
+    "3518c284cb20f06fa208d8d5fe69100534261752c218e79215a2b4f6c2519058": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"successful SSH login by authorized user\"}",
+      "unit_id": "lx-0026"
+    },
+    "39ac07d0f3abc7605ddb6b636c9e74210ccbed688c96acafc348bc2d14c267ed": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0053"
+    },
+    "3c8b6b0105ce538af2e3f2d42e5fa148abbb3f3c11e5ed858f1bf241c7727235": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0007"
+    },
+    "3d53ed267bd007966b92b22133da41405edcbfdafadccffb1401ac77bc62a37c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0029"
+    },
+    "3dce3c45767573e287f542f2b7b806891d285054d46b04df6476a3f7568ae4c1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0107"
+    },
+    "3e97879cc54acb85d860e386b226af623373486b91b5d6ac1893ab41b77fa981": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0049"
+    },
+    "3f3a933f00f9fde67cf8d5d79d4a6a9e3fea72f971a5143377f5464423ae845a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0015"
+    },
+    "3f64d4f75c48ed71a571b7427e787c3a663ec10c797d968efd8e321c89ffe77d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"routine web crawling\"}",
+      "unit_id": "ng-0071"
+    },
+    "40bd558f5e8403d4521e145b84d0712b811445ca64db1f2b6fd3a867a5db86aa": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0078"
+    },
+    "42af8d548796a4451955ece3bb2fdc7f75566b3c2e23dca349681487eedbb450": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0008"
+    },
+    "4579a125da7d87a89a36396e4dcac9b824b682969ea8533e8b6aeba2972c31b4": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 1, \"reason\": \"Exploit public-facing application using JNDI injection\"}",
+      "unit_id": "ng-0079"
+    },
+    "45d683a7135e47efc7ea495fa5ee1e7806587ec123b610bc3b1dc4509136d43b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0028"
+    },
+    "4631dc0d25aae46122fdfadbd5ddbb6023a40e7cf21a167457827f769ee4f837": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.9, \"reason\": \"Sustained SSH brute force attempt from a single IP address\"}",
+      "unit_id": "lx-0042"
+    },
+    "48f123bf0c253f14cdac8875552272c37ba85ee2950da40c5e9f6fcd127c77cd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0026"
+    },
+    "4923473eb7d5bd038013da343673282de4f1c973ab35b58ed178a8d070150023": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0037"
+    },
+    "4accf515bcda673b01b212483965de831744cd2d8f67f16a6e54efe5dce97296": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0010"
+    },
+    "4c5d41502f71e108f64ad6989ca727a1364a896ff68f7f1c190856b9043ef46e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0029"
+    },
+    "4c864fe52bc925043520b9ec621e2597d5ceb851c7a7218d6d331ed7b150216d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0016"
+    },
+    "4cb3b398df977d11a2be7bac8b4169653c58b4e58d73460874a5fc1a317447fd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0041"
+    },
+    "4cbb07b20cf5cd5e26367322c804e7b35502fdc13222dacc81445ccdf0142cbb": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 1, \"reason\": \"Web exploitation using SQLi\"}",
+      "unit_id": "ng-0077"
+    },
+    "4d7d3ab25492937c37454768731f5c5741447a3c1f44d02d2c378766d04b9d40": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0002"
+    },
+    "4d8e52f8aaf9c2f6028136896e8ff399d76110c9ed6a9ec908f1341076969481": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0065"
+    },
+    "4e1ed9099c73d8b7b6c1208cb4efa4424f3eb5faecf3f5c70d0cdefe9591b7b1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful API call by authorized actor\"}",
+      "unit_id": "cld-0009"
+    },
+    "4ea526f2f8a2816470de21fcf2e45f3f597881731353caaeaacb73b3aa6765c5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"kube-probe health check\"}",
+      "unit_id": "ng-0049"
+    },
+    "4ecc44204c857a8771075641812fd718ff586c74eb9128b869dbcf80cc5d7aae": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"Special privileges assignment is not an incident\"}",
+      "unit_id": "win-0020"
+    },
+    "5019f0343010973605d98dd9babc36f985fd63711275e2aa2fa609fffe7d15c8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0032"
+    },
+    "51554b98eb19460727ee129fe8be389979b5d316ca3e3447c8e5b6135cf6c598": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0089"
+    },
+    "51b91557c4993e8959755c023f74de3606d1a8470f3344222daa1bf19824e430": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0083"
+    },
+    "52ae6d30e892892db297d5721759631f1609a03ad9c3df1238df1f43fc9f6ee1": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0064"
+    },
+    "52f08652ae153d15e719e9b95cfceacc085caa992843d46f31cc0540df1bf71a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0066"
+    },
+    "54a2b3301c0019881c7a7469f4a41169026525642016640cfc8d23cd11e39aa3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized login\"}",
+      "unit_id": "cld-0005"
+    },
+    "550f6d582f3eeb69872a8ed69e861b45a8f23b23ffe73d2865121f0f64828807": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0054"
+    },
+    "564ac7594b17423323241e8b685154e0e1e194c23943f985727f4ede1b3f675f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"routine health check by kube-probe\"}",
+      "unit_id": "ng-0034"
+    },
+    "5697f04c097036902ff968797135d0cec17b6bf44dba44c2d2b49506dfa680bf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Nikto scan, harmless 404\"}",
+      "unit_id": "ng-0076"
+    },
+    "56a173dd289f79f8e4be8bc5cccb6a93696e8b6f313175fd6605561050d34714": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0044"
+    },
+    "575b27d09a182218cb629c723c113a7796f86e32780d8b4174aa34b4d4503ee1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login, within normal usage patterns\"}",
+      "unit_id": "lx-0047"
+    },
+    "5762e536e3b02ea7b645c182cb8cdf681b023289e5d970f4b6244c93c3769f46": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized login\"}",
+      "unit_id": "cld-0006"
+    },
+    "576f2b4f73e6786f19fca32bad828db2f8cc34c904c9c02d34f867b0b088a33e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"Normal IAM policy attachment\"}",
+      "unit_id": "cld-0023"
+    },
+    "57f7d13e25f435b7424d0f083a930fb4f626f15946510849f007cf777c81aca5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0063"
+    },
+    "58961196594b98403448c36a323dc7df315fd53774441ea38cb9185b3f600c75": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0019"
+    },
+    "589a8dc92e15414b5457a91846b3b6d88c72d8ce4267b4497c15e9ca17c71668": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0048"
+    },
+    "59155bd29a436c6491b3a86ebdb07952c8a36ed423829a51ab2be7f71acecb7a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser 404 crawl\"}",
+      "unit_id": "ng-0006"
+    },
+    "5b3e2e90cae4d0761d7d3f3356f92856f71bafd2930b114ef5e4d51ac2aeb81d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser 404 crawl\"}",
+      "unit_id": "ng-0013"
+    },
+    "5b663bf0c4fd886f5df77e00e6d36c35dc3aa8978a75236b7c0b331d63565e85": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0011"
+    },
+    "5c379bff0de3037c49a6cb79b3e53e6800759f29fbc9446388570a4475faa933": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0020"
+    },
+    "5d027056681f468c6d66436d99dca417731a60d9f8653aa3a82d6ee6b26b39af": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 1, \"reason\": \"Web exploitation using SQL injection\"}",
+      "unit_id": "ng-0075"
+    },
+    "5f90c4e1aef22d2b31404068e153ede00404cd9c9e5b1e8a79899b2dba4807d7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0058"
+    },
+    "6168e0d80f48dfb490d6e69280a8c95dbf7f27edfab9ca1c2479f41543ee18bd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0057"
+    },
+    "626e4639ea0274bf2d8cc0e58f69aaa52860ff1d232a51d7f319ac63e1856391": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0041"
+    },
+    "62f5d1b169f3cd5f5e3542f99f1d993ba68debd37bccfd18723665eebcb0e10c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0033"
+    },
+    "64b02c2db34ad26466feae48a5a80905c004bc04fe5a43066ffb04df7716c9c8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0061"
+    },
+    "65253dd6d8a127a8f60d100696579d69c97af443850707a8a21731ec2c4d67f9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized login\"}",
+      "unit_id": "cld-0014"
+    },
+    "66a5000d9e213f23e2b69fc05cc3f2d8698d9d03f907e647b31d04ec9150628d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser 404 crawl\"}",
+      "unit_id": "ng-0054"
+    },
+    "66f39db6acd5923621c22b49ed35c8ee0bbb36799d2641fc6b564c798a73e120": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0023"
+    },
+    "68be1d3f7f30dd06e08252a7225ce20c71eed2d3d0ab5ceeb156c9a7dae4d063": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Credential brute force attempt detected\"}",
+      "unit_id": "ng-0097"
+    },
+    "698006385e6abc633e3ab2b98aff0cd237fdc90570b3a5b53c3b5bb2f689b419": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0032"
+    },
+    "69cd75818dec84c5f1ef4bd2fbb10ee066462c0cc70a7f8b430f3d5004126405": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0096"
+    },
+    "6af68ef1f09b5c5142da91a6cdb3fa030b17918729e4c327a46192e71dfd37fa": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal logoff event\"}",
+      "unit_id": "win-0006"
+    },
+    "6bff6e3d7bc95860352697fc0c36f7230f76d7267bc676b42e2f50e7fc9a03aa": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt targeting multiple accounts\"}",
+      "unit_id": "lx-0040"
+    },
+    "6cb6121b5dbe8c92a7ef606df89b1c392fc5eddc4ff9f15c6da697975054cfde": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0004"
+    },
+    "6d583f43726be92cc02c1d3620a45fcacc34be9e5360484c63ca00073600c097": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0046"
+    },
+    "71c2e2d7709271f9906aed439ce343cab0449f7fe4c3ec59499caa87883825df": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0055"
+    },
+    "7224ad92bd1d9eebb807ec223b0508e2af2c73702a0cea76ced39428ddbee5fe": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 0.9, \"reason\": \"Web exploitation attempt using SQL injection\"}",
+      "unit_id": "ng-0074"
+    },
+    "727eed02946f5d4e842e3705cc21a001248262093101adb337dfe4038d25a6c4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login, within expected usage pattern\"}",
+      "unit_id": "lx-0020"
+    },
+    "736a0617d64e422b254877f727e5d99c0c08413b5afbe3a2eeb20ad12cc465b3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0091"
+    },
+    "748b4e41ee83e268036c208e321404a65e04ca8acc17f92ef379b86f85339fbe": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0005"
+    },
+    "749e5d4d54d26592ef8b0f25c2e2fa7e94195f65bb718045ce3a2161ace3c248": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0052"
+    },
+    "752f4f65f67c0c7bf3e0f1c5dc13181e20f61aca4b0d418878edc754ad95394e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"low-volume 404 request\"}",
+      "unit_id": "ng-0106"
+    },
+    "767ccc30eeebd741d820b58fef17f1dff36d8ede56e3687aa61684514573ba76": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0066"
+    },
+    "76988bfc784b471085fd0cc6a6faedabe2f46c7d920ba1180cd748a84548eca3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0090"
+    },
+    "774f5b0b011c59ce2c5883a7c75603dd74a566afbc74941f5badb6546a96cc4a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"ordinary browser 404 request\"}",
+      "unit_id": "ng-0092"
+    },
+    "784998f4d8c0291f30caab9f23e2dc9130dfe171f19763b773be254d70a464d1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0094"
+    },
+    "7a4f254af75894fd0d97cd4d74564f29769098891edbb987a4cc1f1820e3ec3c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0057"
+    },
+    "7d2f491f20824d12c7e0e4c5000becf90eb6aae6af3a646586600f0e56a8f841": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained burst of failed authentication attempts from the same source\"}",
+      "unit_id": "win-0012"
+    },
+    "7f385b720c8a9c762a46a717f144f2a0fd108d494bf481fac8a7e678c9b54e3c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful SSH login, within normal usage\"}",
+      "unit_id": "lx-0059"
+    },
+    "7fc2a36924adab8012e06f10dfaef80bdd42bebbbd92f6dd8129720eb1cf7496": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful logon, no suspicious activity\"}",
+      "unit_id": "win-0018"
+    },
+    "855762fff5168c54d25f076f3771d7c66a953f2472874004e2853f32124654fd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful SSH login, within normal usage\"}",
+      "unit_id": "lx-0003"
+    },
+    "863123f621b675539fc626033ec12668443d502044590bdc2b505eac5a563ef1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0030"
+    },
+    "87fc5318638b263850d9cd750e0482f769bdfb5a40509986cdcf6c6a9dab685c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful bucket listing action\"}",
+      "unit_id": "cld-0012"
+    },
+    "89c8ea8e10a977102fa3e808794b4c62d700ae425d51d50949ff91ba73d43d3e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0035"
+    },
+    "8ce37794a7436364b387f16c52212f0e6000f784f324e0fb9c4d23b6f7a5feb6": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0018"
+    },
+    "8e256cbd65c4b8096523aa61bcc0e7ca0260ac0c7c064c154eb99b83afd67729": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0002"
+    },
+    "8ec04223c0f2cc8cce0889433128f09705d1aed735e0e5bf59885f92a566e7d0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful identity lookup, no anomalous behavior\"}",
+      "unit_id": "cld-0007"
+    },
+    "8fd64646c11a1375475d481d98c5fe7ffac68259372663059324d3e166e46f11": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0098"
+    },
+    "903984946fe15a264f856cf300db1f1200af61b587ae740cc22c94d40747b07c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized login\"}",
+      "unit_id": "lx-0028"
+    },
+    "91a02f83790ee47ccd4b39de176c4757007248270061c4469aad30edf06e408f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0025"
+    },
+    "92361ce1b31ba7dbc2ebbb6ef285a3f7e03539f5b551d5535e8a1eb437d1a10a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0038"
+    },
+    "92ef83c0d4122cfe3760a0126a3eb160932971f1548e9d1f5bd76d270c6efb95": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0101"
+    },
+    "93941cf66bd8c27d08505ad523aa3c02a6b7701dc4f993d45609e15701bafebe": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0051"
+    },
+    "942245a71c758c2ed25d4bc0e2bbcc933e9031559eafb2217bf1b78f95d82cb6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0015"
+    },
+    "94b56aec382b85768419b067f7c8478553a40e0d94b765a0e9699bf1cb983976": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0014"
+    },
+    "95d276e87271f0e2525b81085605032a2d62e3383eb6cc95e5e41195c978edf1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0060"
+    },
+    "960a6b1fc4051b151ad526dc1f7a08d3d33d18f550f6ae07935f442828ee908c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0042"
+    },
+    "9a6713fc4857a75baeeb2090f242aff4900114f9bd9c1d52721654ef30b25e75": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"New account creation by authorized actor\"}",
+      "unit_id": "win-0014"
+    },
+    "9b12b94a4454cdfb5d04e5d971bbd177e8ebd864fb7a6cdc777e968646667a91": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"API key creation is a routine administrative action\"}",
+      "unit_id": "cld-0016"
+    },
+    "9b1d0075c8ebce9122bb0f3d0328f31c97d0e38e5aa1d4445b737783369f7fbe": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0062"
+    },
+    "9c00bd2a056987b57600b493beec7a27b0332fede6ab5068f766981b30733259": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 1, \"reason\": \"opened SSH access to unrestricted IP range\"}",
+      "unit_id": "cld-0017"
+    },
+    "9ff305b4c3081c7192f83c7430a4bb201d1b7eafb74f831714ebb3a231a76d2f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0021"
+    },
+    "a091f6f3fc8b153e01c82355e0fac5a57b413e57899f80c5fd48bdb6af4fda3c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0085"
+    },
+    "a28b0db69717d5fe436ba67bc34bc6085e508b85626b4e4a5c8ef63f3c1256c3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0023"
+    },
+    "a2f63f9e1030cc65ab16103cb35a318f1e689719516641629a98df17fee5aa10": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1190\", \"confidence\": 1, \"reason\": \"Exploit public-facing application using Log4Shell/JNDI\"}",
+      "unit_id": "ng-0080"
+    },
+    "a335b8e5865bd143aad75bd4f3c3331d8039e63feaab11bde92c246fb2f7915d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"routine HTTP GET request\"}",
+      "unit_id": "ng-0087"
+    },
+    "a39c84618a2a298baf690440107eb13d58a27cc3f363d70188ed66f4acedd104": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"Cloud identity change for authorized service account\"}",
+      "unit_id": "cld-0003"
+    },
+    "a4aeb6688b913bf0602abe58da41f877517d648c1fe324e193ab9f6c28d22d5f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0033"
+    },
+    "a4e54766f204053dfd955d2b0b146cdc4de9fb49b086e06952a5f571976b255d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0050"
+    },
+    "a5a83ac707745452a7cd962059d9578f405924b59172c45b985d08eb57cb74dc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0104"
+    },
+    "a7efd13d4f75e6ac9b3b97eb3d9ae974cd4b90e3c01adfc8ae2eb2feb6bff4e7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0086"
+    },
+    "a82bffc2d9622ed7587e39137789bf4a4e5620f138416b9072ce7b64170ae70f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained SSH brute force attempt\"}",
+      "unit_id": "lx-0032"
+    },
+    "a981a8f1a09a81a1c6ada578a90e53ae119754fb71a4a793d9a06fb22114d14e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login, no anomalous behavior detected\"}",
+      "unit_id": "lx-0007"
+    },
+    "ac6db65e8df8039c85eee16ec55471d082a982f1891c5c4233141c3d544e933c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login by authorized user\"}",
+      "unit_id": "lx-0004"
+    },
+    "ad9baadbdc07166e10c7ad422e7d4c6d255fb1d5fc734843d784b0dd14b0e1d5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0069"
+    },
+    "adda9fe79317880545f20fdc3f5ebacd3a1c1dd67d32b45137ed16c356417342": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0027"
+    },
+    "ae1139a6a771fa1db1f91aa91901edee543253654933fbfcf8a0430b7dbc3dad": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized login\"}",
+      "unit_id": "cld-0001"
+    },
+    "ae943c056d2887e80995022d49babaa6b4a089ad9013b7df0e77589d8289deff": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0051"
+    },
+    "af8107aaf95966245ced483cb973ce733a8271b21667b7e0f10d4d416384b9d1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0068"
+    },
+    "afbae9fb9dfc1e8b993dc4d834e38106ba7cc2c5593d281c9948969dee7fb756": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful SSH login, no anomalous behavior detected\"}",
+      "unit_id": "lx-0005"
+    },
+    "b0979bfecad098160b800c9d8472c56d9a4ffccf2c9eb98c5f7f17d0272d243b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login by known user\"}",
+      "unit_id": "lx-0008"
+    },
+    "b15c88460b467e71a6c71a9ecd0987d2b6e2f6708392cb653bf0c2fd97235d5b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0021"
+    },
+    "b26329f0fb58385052dcb388316b5b99096ddd991aef1e9e81c38b3fe4fca213": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0024"
+    },
+    "b27016de8724ba92d82ac303377bddd2c699254d51af179c9a13dce6df232dcc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0002"
+    },
+    "b417c3e63028a9d1518ece92521b43a0849e6755e147c2bdc8460def5937d8a9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0052"
+    },
+    "b42c6dde631d98a524583e41535c9fca053226a56ae93ca4297fbbe2b98e96f6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"successful SSH login by known user\"}",
+      "unit_id": "lx-0044"
+    },
+    "b7dd44df1a12e0da48df73ba6ee73c37c9ee422c10189e035cb4e53d6f7f416a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful describe_security_groups action, no indication of malicious activity\"}",
+      "unit_id": "cld-0011"
+    },
+    "b990e58542b439796c37e19bde872b3aaf2dbc86dd8aa1d13570f33ac02d80c7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0013"
+    },
+    "baf9d6a3632d5b07a6ef7010abc061228a4c254f9744b38550663623265dce02": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"routine health check by kube-probe\"}",
+      "unit_id": "ng-0027"
+    },
+    "bb7575500a0e375e95a07cf38f0f8a778676be046dd1839b66ce859f952775f3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"kube-probe health check\"}",
+      "unit_id": "ng-0036"
+    },
+    "bd117e95d5b1cbd02f91050fdd28cbef6e7fd805ff3330131a6c07f4417a51a0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0037"
+    },
+    "bd2c4fc273bc9978c79442b2e575c0a7176280a1161232507dc89f5b3b1b7552": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0027"
+    },
+    "be0aa1ea1636ae44cc63d40a64e650a8433f4432b70abe2aff3a91a73a09ec2b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1098\", \"confidence\": 0.8, \"reason\": \"Identity manipulation through attaching full access policy\"}",
+      "unit_id": "cld-0020"
+    },
+    "bec91c579ef344712d02ac88d865c8e327c9cfb9c701c0a8c2a84a14fa072923": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"normal sudo attempt by unauthorized user\"}",
+      "unit_id": "lx-0045"
+    },
+    "c0d903aa945aa993dad70804f3b5b89dd10f88bc1ef25899cc88f7445f9f7662": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0039"
+    },
+    "c17a2c3d820bff8f401505de14e71bc4bfb8a3b6238a30d541593998d7e0c139": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0031"
+    },
+    "c458cc54fc24302d5020ba1db7cd5c72bf743a9787d3e2617d93b19ead57c9e9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0022"
+    },
+    "c6f09f214f2cab14c2426dc15bf50a9bd45eef2857689ff0daccbf504eccd8c9": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1136.001\", \"confidence\": 1, \"reason\": \"New account creation following a credential brute force attempt\"}",
+      "unit_id": "win-0023"
+    },
+    "cb6a29b9900dc5f6150e9a72c8936b995e63f406abf2036ffa72f76bd6d2070b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0039"
+    },
+    "cc82634aa2402656fb28f40be1523e77538e3854c4062c6c307ab62ef1acdd63": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0099"
+    },
+    "cda8f551773350d2ae04381732edac84ae7252ba370c702a6e776e890b1ed869": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0031"
+    },
+    "ce7bdd911b12624d751681f1b64df25bf1797a40e34311caea9de349d9c021c0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0026"
+    },
+    "ce95eaaec7ca5c50a166ee67acc5bcf259192349f65046a29cd3355c05c3d4c3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0025"
+    },
+    "ce9cd433569bb3b6f16d4f32fcf76431554f69344130d6dcf25b2c0db54113bc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0056"
+    },
+    "ced765ca5d7eaab0790489d5de168793501ab9689b9d001d36d998f2b5a14452": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 1, \"reason\": \"opened security group to 0.0.0.0/0 on remote access port\"}",
+      "unit_id": "cld-0002"
+    },
+    "cf8b903b201f468a23844ba9e8c49a8bebb3bba4c6569241f1da518f5042763c": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 1, \"reason\": \"opened RDP access to unrestricted IP range\"}",
+      "unit_id": "cld-0019"
+    },
+    "d118781c3234d539972626741071984618e742945e0f51dcd31a5b61e3752db4": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 1, \"reason\": \"opened security group to unauthorized CIDR range\"}",
+      "unit_id": "cld-0013"
+    },
+    "d1a183ab2714edc66021d4c0a971378e5a88b4bd5be1e2029bbc5026d845922b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1562.007\", \"confidence\": 1, \"reason\": \"opened security group to 0.0.0.0/0 on database port\"}",
+      "unit_id": "cld-0018"
+    },
+    "d33806d0bfebddb89327bfa5c664a2ad008b9b01ebe4fa254acabeeacb0cd534": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0093"
+    },
+    "d740989a931b1227aa4dd8e6b14b7beb6dd91a30b5b57ca06afc434e9335f1ca": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0009"
+    },
+    "d816a405e3eabe5e19d00441b90a8532ee5a619e0ff5db87f7430c95563f400b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0047"
+    },
+    "d8e5174c5abd02d696e67df84b5847ffc420ea55678bc99f594309d7f1b29a34": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"successful SSH login by known user\"}",
+      "unit_id": "lx-0022"
+    },
+    "d9c0bd87b10e35d13524727a95d1a1b189bc31c8d377600162fbd6f4fb77dde6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful describe_security_groups action by authorized actor\"}",
+      "unit_id": "cld-0022"
+    },
+    "da534565febbcbbaa5b4777a3b45d4fd1c94560e5123a1a8cd1e317d7125dbc3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0065"
+    },
+    "dc486d90748f7be43bd99e93e3cedf24cef2db5072f90a885ccdf10320ac5957": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0082"
+    },
+    "ddaf7172bd520506186b26e7787f4c0ce9d613208b6c758ee7801221c30fe4de": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0008"
+    },
+    "de9f7c74c0f64415be410681ac14fa9c3ed441d8d6193e06bbbe0055fdc18aff": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"routine health check by kube-probe\"}",
+      "unit_id": "ng-0088"
+    },
+    "df8a6f03488f7e9e494a0948f8412308b341ee4c23c81da1d6b3548994a29037": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0102"
+    },
+    "e1ab4acea246c6f983e48b63cc06c169c94d44b5128d05024cebaa3126303833": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"normal logoff\"}",
+      "unit_id": "win-0029"
+    },
+    "e1f3921d885fea01daa9d9fb727e9e5f50b55280a2870d2c3a04664085360b60": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"successful authorized SSH login\"}",
+      "unit_id": "lx-0031"
+    },
+    "e253b84214a97cbe86fbab50007a25f4041f491e8d8bbd5878498c251981ba4d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0063"
+    },
+    "e3cb1bb585ab56e1e735526692ea2d8425482f73368d81a14dfa6d6d853d2966": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0019"
+    },
+    "e5caaa26c54a14e354bf243f5fa1012056b61f0cd7958e03cb492a9c04a5ef4b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login, within normal usage patterns\"}",
+      "unit_id": "lx-0006"
+    },
+    "e65f047eb01fb3b026ec9a244366b3f9101bcac37751739c7c5a06a66641c699": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0045"
+    },
+    "e6d6fca4b29dcb91c4eb5eea70292d42dbda40f83f8529d8181c3588dab0f995": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login by authorized actor\"}",
+      "unit_id": "lx-0030"
+    },
+    "e85373b9d78e111a0f492b52ad3367d8d5b2af4b79456413eca5a6a1e62aabec": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0048"
+    },
+    "e8bf5ac2847896a483c6b2cd4447ebf52f04b36ad503105a206c3cac47614041": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful SSH login, within normal usage\"}",
+      "unit_id": "lx-0012"
+    },
+    "e97e92121cae5c80d7dcc0cc35b8be227675a68d845f4e24ec88d305c9b61cc7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"kube-probe health check\"}",
+      "unit_id": "ng-0043"
+    },
+    "eba2de26611e6d24fac43b2e8260b7f2ff2e29cf8d597b7f026fb4c3d16ed4e2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0103"
+    },
+    "ecf27116fa2e13ae46c1d71ebaf755efbb3c813ed47913a1fda9c64c6b14359a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0016"
+    },
+    "edc17fb8d7034e482dac10abae088c2f7a43c439575559751e0b3814c9f2647e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0014"
+    },
+    "f07d18c13680ec4b4b90329389264b004cf5795e4faeff55b95ec51581275964": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0100"
+    },
+    "f120a2d3543a2eea7d5722420ce43a9828facdeb21c696098ab44ec61b049ea7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0058"
+    },
+    "f15a499c54712ab7445d59d1c08cec86e99875270c156c18d368a5c4709fac95": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0067"
+    },
+    "f183d1e5c570ec1e7d7a840cb9f0e437bc0fb1717bdca4e17d2a0ab571c9b3a4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary web browsing\"}",
+      "unit_id": "ng-0059"
+    },
+    "f1bcea9e807b69f8d86d5a0b1de71c9170e05b0ea0846166a45e699ada364954": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"ordinary browser request\"}",
+      "unit_id": "ng-0001"
+    },
+    "f1c0abf66c6cfb1b05ce596435573121869c2bc2454784b176cd05bf5654c0dd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"authorized administrative action\"}",
+      "unit_id": "lx-0013"
+    },
+    "f1e7ef95ee1cf8bd8dee8dbb6448ab6eff2750291693f7abf00a4f9c8cd838ae": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful authorized logon\"}",
+      "unit_id": "win-0015"
+    },
+    "f1ee9bee99f55adbf578447349d95163a9ae39e9a85f40ed2834f856dfa2973a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0046"
+    },
+    "f2585a53c8e0d9b8379a5d5a07a0fbdc8c04e5b6280bdde65049c7804668c7ad": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary HTTP GET request\"}",
+      "unit_id": "ng-0007"
+    },
+    "f29cf96d140470804829aad7a412678d38c3034fe6e074b84cef85676769a06a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login, within normal usage patterns\"}",
+      "unit_id": "lx-0035"
+    },
+    "f39c3f6655617936a537ea5d54cd5748399adcd16fdafcfe01353eabeb4c7102": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"successful API call by authorized actor\"}",
+      "unit_id": "cld-0024"
+    },
+    "f3e5aef977fc69e05219655779ede2e854d1c733e0b6c1802ede9284c3ecca80": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0016"
+    },
+    "f4bf9534d9f39df15bce58b17f5f55ac07fa198f487ee44b6b7a7d1c1821124d": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1105\", \"confidence\": 0.8, \"reason\": \"LOLBin download using certutil\"}",
+      "unit_id": "win-0022"
+    },
+    "f5c7f72512374569d24f7cc13c8e6b8e7d0b01f9b7d9468f7a9e81ecb4663309": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 1, \"reason\": \"normal logoff\"}",
+      "unit_id": "win-0009"
+    },
+    "f762955ee07fc2886ba90ca2ca749647eab04737ff44295457f29b296e24e756": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1110.001\", \"confidence\": 0.8, \"reason\": \"Sustained burst of SSH login failures\"}",
+      "unit_id": "cld-0015"
+    },
+    "f7a3be9a9140065762f05d5baca4051f8fedae3ae6057250e4ec000b4a63e808": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.5, \"reason\": \"successful SSH login by known actor\"}",
+      "unit_id": "lx-0017"
+    },
+    "f7c44d0087d515caf966fd9cd57cd5c8dbf8ebb3b686b3ce3adf5c53133ee312": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0, \"reason\": \"ordinary browsing\"}",
+      "unit_id": "ng-0040"
+    },
+    "fc5a3a7eba35d85e8f0f0b4def01e81468becf37fa8ba64e6dafc5d08a67588b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1595.002\", \"confidence\": 0.8, \"reason\": \"Systematic probing of sensitive paths using a scanner tool\"}",
+      "unit_id": "ng-0072"
+    },
+    "ffb62b746c8b59f0873ceb27c37c08a2beb2c4012482bf4d289e56cd3311fc13": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1083\", \"confidence\": 0.8, \"reason\": \"Systematic probing of sensitive paths\"}",
+      "unit_id": "ng-0073"
+    }
+  }
+}

@@ -8,4 +8,7 @@
 #
 # Without the package or the GIGACHAT_CREDENTIALS environment variable the
 # GigaChat model is skipped and reported as unavailable — never faked.
-langchain-gigachat>=0.3,<1.0
+# Pinned <0.4: the 0.3.x line targets langchain-core 0.3.x, matching the core
+# stack in requirements.txt (langchain 0.3.x). 0.4+ pulls langchain-core 1.x,
+# which conflicts with that stack.
+langchain-gigachat>=0.3,<0.4

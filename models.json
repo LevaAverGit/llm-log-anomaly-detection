@@ -4,7 +4,7 @@
     {"provider": "ollama", "model": "gemma3:latest", "label": "gemma3"},
     {"provider": "ollama", "model": "qwen2.5:7b", "label": "Qwen2.5 7B"},
     {"provider": "ollama", "model": "deepseek-r1:7b", "label": "DeepSeek-R1 7B"},
-    {"provider": "gigachat", "model": "GigaChat", "label": "GigaChat (Sber)"}
+    {"provider": "gigachat", "model": "GigaChat-2", "label": "GigaChat-2 (Sber)"}
   ],
   "versions": ["v1", "v3"]
 }
