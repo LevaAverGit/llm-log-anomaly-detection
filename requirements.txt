@@ -5,6 +5,10 @@ pydantic>=2.6,<3
 # langchain-core it needs; the full langchain meta-package is not imported.
 langchain-ollama>=0.1,<1.0
 
+# The GigaChat (Sber) cloud provider used by the cross-model comparison is an
+# optional extra kept out of the core install so it stays light and offline.
+# Install it with `pip install -r requirements-gigachat.txt` (see that file).
+
 # Metrics and reporting (used for scoring, not for training a model).
 scikit-learn>=1.3
 pandas>=2.0

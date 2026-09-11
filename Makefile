@@ -8,7 +8,7 @@ VENV   := .venv
 PY     := $(VENV)/bin/python
 PIP    := $(VENV)/bin/pip
 
-.PHONY: install test run run-llm corpus clean
+.PHONY: install test run run-llm run-models corpus clean
 
 ## install: create a virtualenv and install dependencies
 install:
@@ -40,6 +40,17 @@ run-llm:
 	$(PY) -m runner.run --approach llm --prompt v1 --refresh
 	$(PY) -m runner.run --approach llm --prompt v3 --refresh
 	$(PY) -m runner.run --all --from-cache
+
+## run-models: HEAVY. Cross-model comparison — the same corpus and prompts
+##             (v1 + v3) across every model in models.json, then render the
+##             "Cross-model comparison" README section and reports/models_summary.*.
+##             Needs each Ollama model pulled (ollama pull qwen2.5:7b, etc.);
+##             gemma3 reproduces from the committed cache. GigaChat is included
+##             only if `pip install -r requirements-gigachat.txt` is done and
+##             GIGACHAT_CREDENTIALS is exported — otherwise it is skipped and
+##             reported as unavailable. Edit models.json to match what you have.
+run-models:
+	$(PY) -m runner.run --cross-model
 
 ## clean: remove caches and generated reports
 clean:

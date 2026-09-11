@@ -1,0 +1,8 @@
+run,model,precision,recall,f1,fp_per_1000,tp,fp,fn,tn,n_units
+rules,Rules (Sigma baseline),0.9474,0.8182,0.878,4.33,18,1,4,208,231
+ollama__gemma3_latest__v1,gemma3 · v1,0.2381,0.9091,0.3774,277.06,20,64,2,145,231
+ollama__gemma3_latest__v3,gemma3 · v3,0.156,1.0,0.2699,515.15,22,119,0,90,231
+ollama__qwen2_5_7b__v1,Qwen2.5 7B · v1,0.7391,0.7727,0.7556,25.97,17,6,5,203,231
+ollama__qwen2_5_7b__v3,Qwen2.5 7B · v3,0.5938,0.8636,0.7037,56.28,19,13,3,196,231
+ollama__deepseek_r1_7b__v1,DeepSeek-R1 7B · v1,0.8182,0.4091,0.5455,8.66,9,2,13,207,231
+ollama__deepseek_r1_7b__v3,DeepSeek-R1 7B · v3,0.5714,0.7273,0.64,51.95,16,12,6,197,231

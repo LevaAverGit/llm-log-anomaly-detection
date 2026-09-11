@@ -1,0 +1,11 @@
+# Optional: the GigaChat (Sber) cloud provider for the cross-model comparison.
+#
+# The core install (requirements.txt) stays light and fully offline-reproducible.
+# Install this only if you want to include GigaChat in `make run-models`:
+#
+#     .venv/bin/pip install -r requirements-gigachat.txt
+#     export GIGACHAT_CREDENTIALS="<your Sber GigaChat authorization key>"
+#
+# Without the package or the GIGACHAT_CREDENTIALS environment variable the
+# GigaChat model is skipped and reported as unavailable — never faked.
+langchain-gigachat>=0.3,<1.0

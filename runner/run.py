@@ -19,6 +19,8 @@ Usage
     python -m runner.run --approach llm  --prompt v3 --from-cache
     python -m runner.run --approach hybrid --prompt v3 --from-cache
     python -m runner.run --all --from-cache      # the four README rows at once
+    python -m runner.run --cross-model           # same corpus + prompts across several models
+    python -m runner.run --models ollama:gemma3:latest,ollama:qwen2.5:7b --versions v1,v3
 
 Run keys and the prediction-file contract
 ------------------------------------------
@@ -231,7 +233,9 @@ def rules_verdicts(units: list[LabeledUnit]) -> dict[str, Verdict]:
 # --------------------------------------------------------------------------- #
 # LLM arm (batch: one classify_many call, which persists the cache).
 # --------------------------------------------------------------------------- #
-def _build_llm_detector(prompt: str, provider: str, refresh: bool, from_cache: bool = False) -> Any:
+def _build_llm_detector(
+    prompt: str, provider: str, refresh: bool, from_cache: bool = False, model: Optional[str] = None
+) -> Any:
     from detector import llm as llm_mod  # lazy: may not exist yet
 
     detector_cls = (
@@ -256,6 +260,9 @@ def _build_llm_detector(prompt: str, provider: str, refresh: bool, from_cache: b
         "version": prompt,
         "provider": provider,
         "backend": provider,
+        # Only pass a model when the caller named one (cross-model runs), so the
+        # single-model path keeps using the detector's own default.
+        **({"model": model} if model else {}),
         "refresh": refresh,
         "refresh_cache": refresh,
         "force_refresh": refresh,
@@ -271,7 +278,8 @@ def _build_llm_detector(prompt: str, provider: str, refresh: bool, from_cache: b
 
 
 def llm_verdicts(
-    events: list[Event], prompt: str, provider: str, refresh: bool, from_cache: bool = False
+    events: list[Event], prompt: str, provider: str, refresh: bool, from_cache: bool = False,
+    model: Optional[str] = None,
 ) -> dict[str, Verdict]:
     """Classify ``events`` with the LLM detector and return ``id -> Verdict``.
 
@@ -280,7 +288,7 @@ def llm_verdicts(
     """
     if not events:
         return {}
-    detector = _build_llm_detector(prompt, provider, refresh, from_cache)
+    detector = _build_llm_detector(prompt, provider, refresh, from_cache, model)
 
     for batch_name in ("classify_many", "predict_many"):
         batch = getattr(detector, batch_name, None)
@@ -541,6 +549,152 @@ def run(args: argparse.Namespace) -> int:
     return 0
 
 
+# --------------------------------------------------------------------------- #
+# Cross-model comparison (the same corpus and prompts across several models).
+# --------------------------------------------------------------------------- #
+def _resolve_model_specs(args: argparse.Namespace):
+    """Resolve the (specs, versions) for a cross-model run from CLI / config."""
+    from eval import cross_model as cm
+
+    if args.models:
+        specs = cm.parse_models_arg(args.models, default_provider=args.provider)
+        versions = args.versions.split(",") if args.versions else list(cm.DEFAULT_VERSIONS)
+    else:
+        config_path = Path(args.models_config)
+        if not config_path.exists():
+            raise FileNotFoundError(
+                f"no --models given and models config not found at {config_path}. "
+                "Pass --models 'ollama:gemma3:latest,...' or create the config."
+            )
+        specs, versions = cm.load_models_config(config_path)
+        if args.versions:
+            versions = args.versions.split(",")
+    return specs, cm.normalize_versions(versions)
+
+
+def run_models(args: argparse.Namespace) -> int:
+    """Run the corpus across several models and render the cross-model section."""
+    from detector import llm as llm_mod
+    from eval import cross_model as cm
+
+    labels_path = Path(args.corpus)
+    reports_dir = Path(args.reports_dir)
+    pred_dir = Path(args.pred_dir)
+
+    specs, versions = _resolve_model_specs(args)
+    if not specs:
+        print("No models to run (empty --models / config).", file=sys.stderr)
+        return 1
+
+    # Mock wall: a mock model is a test heuristic, never a real result, so keep
+    # its output out of the committed reports/README entirely.
+    uses_mock = any(s.provider == "mock" for s in specs)
+    default_dirs = pred_dir == PRED_DIR_DEFAULT and reports_dir == REPORTS_DIR_DEFAULT
+    if uses_mock and default_dirs:
+        scratch = ROOT / "reports" / "generated" / "models"
+        pred_dir = scratch / "predictions"
+        reports_dir = scratch
+        print(
+            "(mock model present: redirecting cross-model artifacts to "
+            f"{scratch}/ so mock output never reaches the committed reports/)",
+            file=sys.stderr,
+        )
+        default_dirs = False
+
+    models_dir = pred_dir / cm.MODELS_SUBDIR
+    models_dir.mkdir(parents=True, exist_ok=True)
+
+    units = load_corpus(labels_path)
+    events = [u.event for u in units]
+    print(
+        f"Cross-model run over {len(units)} units, {len(specs)} model(s) x "
+        f"{len(versions)} prompt version(s): "
+        + ", ".join(f"{s.label}" for s in specs),
+        file=sys.stderr,
+    )
+
+    # Rules baseline reference row (deterministic, offline) alongside the models.
+    try:
+        rules_v = rules_verdicts(units)
+        write_predictions(models_dir, cm.RULES_RUN, units, rules_v)
+    except Exception as exc:  # pragma: no cover - rules engine should be present
+        print(f"[skip] rules baseline: {exc}", file=sys.stderr)
+
+    produced: list[str] = []
+    failures: list[str] = []
+    for spec in specs:
+        # GigaChat: skip cleanly (and report) when it cannot really be used,
+        # rather than fabricating output or failing per unit.
+        if spec.provider == "gigachat" and not args.from_cache and not llm_mod.gigachat_available():
+            msg = (
+                f"[skip] {spec.label}: GigaChat unavailable "
+                f"({llm_mod.GIGACHAT_ENV} unset or langchain-gigachat not installed)"
+            )
+            print(msg, file=sys.stderr)
+            failures.append(msg)
+            continue
+
+        for version in versions:
+            key = cm.run_key(spec.provider, spec.model, version)
+            print(f"\n=== {key}: provider={spec.provider} model={spec.model} prompt={version} ===",
+                  file=sys.stderr)
+            try:
+                verdicts = llm_verdicts(
+                    events, version, spec.provider, args.refresh, args.from_cache, model=spec.model
+                )
+            except Exception as exc:  # model unreachable, cache miss under --from-cache, etc.
+                msg = f"[skip] {key}: {exc}"
+                print(msg, file=sys.stderr)
+                failures.append(msg)
+                continue
+
+            write_predictions(models_dir, key, units, verdicts)
+            produced.append(key)
+            p, r, f1, tp, fp, fn = _quick_metrics(units, verdicts)
+            print(
+                f"    {spec.label} {version}: P={p:.3f} R={r:.3f} F1={f1:.3f} "
+                f"(tp={tp} fp={fp} fn={fn}) -> {models_dir / (key + '.jsonl')}",
+                file=sys.stderr,
+            )
+
+    # Render the cross-model section (its own README markers only). Skipped when
+    # a mock model was involved or the output dirs were redirected.
+    if uses_mock:
+        print(
+            "(skipping cross-model README render: a mock model was involved and its "
+            "numbers must never be reported as real results)",
+            file=sys.stderr,
+        )
+    elif not default_dirs:
+        print(
+            "(skipping cross-model README render: --pred-dir/--reports-dir were "
+            "redirected, so the repository README is left untouched)",
+            file=sys.stderr,
+        )
+    else:
+        try:
+            written = cm.render(specs, versions, models_dir,
+                                labels_path=labels_path, reports_dir=reports_dir)
+            print(
+                f"Cross-model README section updated ({', '.join(written) if written else 'no markers found'}).",
+                file=sys.stderr,
+            )
+        except Exception as exc:
+            print(f"(cross-model README render failed: {exc})", file=sys.stderr)
+
+    print(f"\nCross-model predictions in {models_dir}/ ; reports in {reports_dir}/.")
+    if not produced:
+        print("\nNo model produced results. Skipped:", file=sys.stderr)
+        for msg in failures:
+            print(f"  {msg}", file=sys.stderr)
+        return 1
+    if failures:
+        print("\nSome models were skipped (unavailable / not pulled / cache miss):", file=sys.stderr)
+        for msg in failures:
+            print(f"  {msg}", file=sys.stderr)
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="python -m runner.run",
@@ -557,7 +711,31 @@ def build_parser() -> argparse.ArgumentParser:
         help="Run the four README rows (rules, LLM v1, LLM v3, hybrid) and refresh the README.",
     )
     parser.add_argument("--prompt", choices=["v1", "v2", "v3"], default="v1", help="LLM prompt version.")
-    parser.add_argument("--provider", choices=["ollama", "mock"], default="ollama", help="LLM backend.")
+    parser.add_argument("--provider", choices=["ollama", "mock", "gigachat"], default="ollama", help="LLM backend.")
+    parser.add_argument(
+        "--models",
+        default=None,
+        help="Cross-model comparison: comma-separated provider:model specs "
+        "(e.g. 'ollama:gemma3:latest,ollama:qwen2.5:7b,gigachat:GigaChat'). "
+        "A bare model name uses --provider. Overrides --models-config.",
+    )
+    parser.add_argument(
+        "--models-config",
+        dest="models_config",
+        default=str(ROOT / "models.json"),
+        help="JSON file listing the models (and versions) for the cross-model run.",
+    )
+    parser.add_argument(
+        "--versions",
+        default=None,
+        help="Comma-separated prompt versions for the cross-model run (default: config or v1,v3).",
+    )
+    parser.add_argument(
+        "--cross-model",
+        dest="cross_model",
+        action="store_true",
+        help="Run the cross-model comparison from --models-config (used by `make run-models`).",
+    )
     parser.add_argument(
         "--from-cache",
         dest="from_cache",
@@ -587,10 +765,13 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Optional[list[str]] = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
-    if not args.all and not args.approach:
-        parser.error("specify --approach {rules,llm,hybrid} or --all")
+    cross_model = bool(args.models) or bool(getattr(args, "cross_model", False))
+    if not cross_model and not args.all and not args.approach:
+        parser.error("specify --approach {rules,llm,hybrid}, --all, or --models for a cross-model run")
     if args.from_cache and args.refresh:
         parser.error("--from-cache and --refresh are mutually exclusive")
+    if cross_model:
+        return run_models(args)
     return run(args)
 
 

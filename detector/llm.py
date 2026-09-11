@@ -9,12 +9,18 @@ The pipeline for one :class:`Event` is:
 4. Parse the text leniently into a :class:`Verdict` (never raises on malformed
    model output — it degrades to a low-confidence benign verdict instead).
 
-Two providers are supported:
+Three providers are supported:
 
-- ``"ollama"`` — the real detector. Talks to a local `Ollama <https://ollama.com>`_
-  model (default ``gemma3:latest``) via LangChain's ``ChatOllama`` at
-  ``temperature=0``. Requires ``ollama pull gemma3:latest`` and the
-  ``langchain-ollama`` package.
+- ``"ollama"`` — the local detector. Talks to a local `Ollama <https://ollama.com>`_
+  model (default ``gemma3:latest``, but any pulled model — Qwen, DeepSeek, ... —
+  can be selected by name) via LangChain's ``ChatOllama`` at ``temperature=0``.
+  Requires ``ollama pull <model>`` and the ``langchain-ollama`` package.
+- ``"gigachat"`` — a cloud detector: Sber's `GigaChat
+  <https://developers.sber.ru/portal/products/gigachat>`_ via the
+  ``langchain-gigachat`` package. The authorization key is read from the
+  ``GIGACHAT_CREDENTIALS`` environment variable and never hard-coded. When the
+  package is not installed or the variable is unset the provider is reported as
+  *unavailable* and the run is skipped — it never fabricates a verdict.
 - ``"mock"`` — a deterministic, offline heuristic used by the tests and CI so the
   whole pipeline (prompt building, caching, parsing) can run without a model.
   **Mock output is NOT a real model result** and must never be reported as one:
@@ -32,6 +38,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 from pathlib import Path
 from typing import Any, Optional
@@ -44,6 +51,13 @@ PROMPTS_DIR = _REPO_ROOT / "prompts"
 CACHE_DIR = _REPO_ROOT / "corpus" / "llm_cache"
 DEFAULT_MODEL = "gemma3:latest"
 DEFAULT_PROVIDER = "ollama"
+
+# GigaChat (Sber) cloud provider. The credential is read from the environment;
+# no secret is ever stored here.
+GIGACHAT_ENV = "GIGACHAT_CREDENTIALS"
+GIGACHAT_SCOPE_ENV = "GIGACHAT_SCOPE"
+DEFAULT_GIGACHAT_MODEL = "GigaChat"
+DEFAULT_GIGACHAT_SCOPE = "GIGACHAT_API_PERS"
 
 _MOCK_NOTE = (
     "MOCK provider output — a deterministic offline heuristic, NOT a real model "
@@ -345,14 +359,100 @@ class OllamaProvider:
         return content if isinstance(content, str) else str(content)
 
 
+def gigachat_available() -> bool:
+    """True only if GigaChat can actually be used: package + credential present.
+
+    A GigaChat run is skipped (never faked) whenever this is False, so the
+    runner can report the model as unavailable instead of inventing output.
+    """
+    if not os.environ.get(GIGACHAT_ENV):
+        return False
+    try:
+        import langchain_gigachat  # noqa: F401
+    except ImportError:
+        return False
+    return True
+
+
+class GigaChatProvider:
+    """Cloud detector: Sber's GigaChat through ``langchain-gigachat``.
+
+    The authorization key is taken from the ``GIGACHAT_CREDENTIALS`` environment
+    variable (never hard-coded). If the package is missing or the credential is
+    unset, using the provider raises a clear error so the runner skips this model
+    and reports it as unavailable — it must never fabricate a verdict.
+    """
+
+    name = "gigachat"
+
+    def __init__(
+        self,
+        model: str = DEFAULT_GIGACHAT_MODEL,
+        temperature: float = 0.0,
+        seed: int = 0,
+        scope: Optional[str] = None,
+        verify_ssl_certs: bool = False,
+    ):
+        self.model = model
+        self.temperature = temperature
+        self.seed = seed
+        self.scope = scope or os.environ.get(GIGACHAT_SCOPE_ENV, DEFAULT_GIGACHAT_SCOPE)
+        self.verify_ssl_certs = verify_ssl_certs
+        self._client = None
+
+    def _ensure_client(self) -> None:
+        if self._client is not None:
+            return
+        credentials = os.environ.get(GIGACHAT_ENV)
+        if not credentials:
+            raise RuntimeError(
+                f"The 'gigachat' provider needs the {GIGACHAT_ENV} environment "
+                "variable (a Sber GigaChat authorization key). It is unset, so "
+                "this model is skipped rather than guessed. Export it and retry, "
+                "or use provider='mock'/'ollama' instead."
+            )
+        try:
+            from langchain_gigachat import GigaChat
+        except ImportError as exc:  # pragma: no cover - environment dependent
+            raise RuntimeError(
+                "The 'gigachat' provider needs the 'langchain-gigachat' package "
+                "(pip install -r requirements-gigachat.txt). It is not installed, "
+                "so this model is skipped."
+            ) from exc
+        # Ask GigaChat for reproducible output; drop kwargs a given
+        # langchain-gigachat version rejects, mirroring the Ollama fallback.
+        for kwargs in (
+            dict(credentials=credentials, scope=self.scope, model=self.model,
+                 temperature=self.temperature, verify_ssl_certs=self.verify_ssl_certs),
+            dict(credentials=credentials, scope=self.scope, model=self.model,
+                 verify_ssl_certs=self.verify_ssl_certs),
+            dict(credentials=credentials, scope=self.scope, model=self.model),
+            dict(credentials=credentials, model=self.model),
+        ):
+            try:
+                self._client = GigaChat(**kwargs)
+                return
+            except TypeError:
+                continue
+        self._client = GigaChat(credentials=credentials)  # last resort
+
+    def generate(self, prompt: str, event: Optional[Event] = None) -> str:
+        self._ensure_client()
+        response = self._client.invoke(prompt)
+        content = getattr(response, "content", response)
+        return content if isinstance(content, str) else str(content)
+
+
 def get_provider(name: str, model: str = DEFAULT_MODEL, temperature: float = 0.0, seed: int = 0):
-    """Construct a provider by name (``"ollama"`` or ``"mock"``)."""
+    """Construct a provider by name (``"ollama"``, ``"gigachat"`` or ``"mock"``)."""
     name = name.lower()
     if name == "mock":
         return MockProvider()
     if name == "ollama":
         return OllamaProvider(model=model, temperature=temperature, seed=seed)
-    raise ValueError(f"Unknown provider '{name}'. Use 'ollama' or 'mock'.")
+    if name == "gigachat":
+        return GigaChatProvider(model=model, temperature=temperature, seed=seed)
+    raise ValueError(f"Unknown provider '{name}'. Use 'ollama', 'gigachat' or 'mock'.")
 
 
 # --------------------------------------------------------------------------- #
@@ -500,7 +600,14 @@ class LLMDetector:
     ):
         self.prompt_version = prompt_version if prompt_version.startswith("v") else f"v{prompt_version}"
         self.provider_name = provider.lower()
-        self.model = "mock" if self.provider_name == "mock" else model
+        if self.provider_name == "mock":
+            self.model = "mock"
+        elif self.provider_name == "gigachat" and model == DEFAULT_MODEL:
+            # The Ollama default model name is meaningless for GigaChat; fall
+            # back to GigaChat's own default when no model was requested.
+            self.model = DEFAULT_GIGACHAT_MODEL
+        else:
+            self.model = model
         self.provider = get_provider(self.provider_name, model=self.model, temperature=temperature, seed=seed)
         self.template = load_prompt(self.prompt_version, prompts_dir)
         self.cache_dir = Path(cache_dir)
@@ -608,7 +715,7 @@ def load_corpus_events(labels_path: Path | str) -> list[Event]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run / warm the LLM detector cache.")
-    parser.add_argument("--provider", default="mock", choices=["mock", "ollama"])
+    parser.add_argument("--provider", default="mock", choices=["mock", "ollama", "gigachat"])
     parser.add_argument("--model", default=DEFAULT_MODEL)
     parser.add_argument("--prompt", default="v1", help="Prompt version, e.g. v1 (or 'all').")
     parser.add_argument("--corpus", default=str(_REPO_ROOT / "corpus" / "labels.jsonl"))

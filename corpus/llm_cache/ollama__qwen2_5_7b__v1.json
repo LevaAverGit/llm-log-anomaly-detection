@@ -1,0 +1,931 @@
+{
+  "model": "qwen2.5:7b",
+  "prompt_version": "v1",
+  "provider": "ollama",
+  "responses": {
+    "005a81788995ab8f20c0dbcb59888ee1b9d015252e1dc6153629bd6b77f2861e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status code indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0093"
+    },
+    "015da7891312b491e2f00afe0f7a61f138139b4c0d11f5d8549c71ee47ea0be4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0011"
+    },
+    "01bad6300dc25c02bd7463f6f333ced9a85eb983b734698903bbf8ab04b9f956": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0052"
+    },
+    "02c0a5a310fad5c8a940cc316910ad8bf594a0e5cb9dd33dc7132825ba814625": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Failed SSH login attempts are common and do not necessarily indicate a security incident.\"}",
+      "unit_id": "lx-0024"
+    },
+    "02d87e3679f70be3aa4006622913224cbb7a84709bd0662481848e80d7ffe071": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0033"
+    },
+    "038a3d6f1c27e2e913fdb80185a4abfd3bec23632163088244bd2ddc90a66724": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a publicly accessible dashboard endpoint\"}",
+      "unit_id": "ng-0067"
+    },
+    "055d1838bbe31f7501ff35fa1108deeea8383a3efc6d3caabf71bd81935f1b1a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0007"
+    },
+    "0816de014367b5f922ec72bc363e048b3a3b8210b1326bcaac4e232fb573a264": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Common sudo command for Docker inspection\"}",
+      "unit_id": "lx-0029"
+    },
+    "083c19456881f2fb044c411afe6403e1766344213fda5dca7032d03f6b28a441": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates resource not found, which is not a security incident.\"}",
+      "unit_id": "ng-0106"
+    },
+    "0bc79e496125e7fbf3ce1e9b46c83ab302a2d2fd69164b9115241c6dad84f6e9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0004"
+    },
+    "0ca4ea13299783bd0bf9979430a518fb4359a0b7005a03d50b4216654d813f4e": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1046\", \"confidence\": 0.85, \"reason\": \"Targeting of sensitive files and directories\"}",
+      "unit_id": "ng-0073"
+    },
+    "0dd2c719bfdc6aded23701c76243e87aa3961592307436bb97b217d3c86146ec": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a blog page is common and expected.\"}",
+      "unit_id": "ng-0107"
+    },
+    "0ef7ef9e1e5673b762082d64ad977eaef2da7e6aa3ea3f8f4e06f40a35941561": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Describe instances action is common and does not indicate a security incident.\"}",
+      "unit_id": "cld-0021"
+    },
+    "0f8ad7664de35a33e20e5ea15cd2dd9c300c99f6759c07d3ca13e8b39be59c2c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and routine activity\"}",
+      "unit_id": "lx-0017"
+    },
+    "0fe9b1f542810c6f89f0a6ad10f37d832f8aa0bcadc3ecb936124083449d8dc0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0022"
+    },
+    "11513ad80abd0998bece0e16aa54ba5c7ee88297eb0939608e4aa81a01c11cc3": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1096\", \"confidence\": 0.8, \"reason\": \"Allowing RDP access from any IP (0.0.0.0/0) is risky.\"}",
+      "unit_id": "cld-0019"
+    },
+    "115fb4857b5a1a2844882b1ec68ba791368f382f58f9f89c03409f21dcb9e0e1": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1106\", \"confidence\": 0.8, \"reason\": \"Download and execution of a payload from a suspicious IP address\"}",
+      "unit_id": "win-0022"
+    },
+    "129d20dc5e60fd87039ad531e0719842bad7394dae5bc75436d7862950aecff4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Command execution for system monitoring, common and non-suspicious\"}",
+      "unit_id": "lx-0013"
+    },
+    "133c78d405c5becf2d1a8e3bcc4410727b9f7a7e69ce4643e51fb79a68e83e69": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Health check request from kube-probe\"}",
+      "unit_id": "ng-0043"
+    },
+    "17492418d85c5510382984e54bf4368924b2cb7b1e714d5e2d63924b5d97ed41": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity.\"}",
+      "unit_id": "lx-0034"
+    },
+    "174f057df0d64aa381466bffdc2d2917bea8290b30faa8ddd946eb6cee8ca6f9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0035"
+    },
+    "1a30170fc941fae59ea5ff81bae8685b2c0ab3442f1c47ae96e24540dd9509b4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0020"
+    },
+    "1aa38067fbe12a43f613844a66be2506f761d5bb17763fec78ae1194e260a5df": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Failed SSH login attempts are common and do not necessarily indicate a security incident.\"}",
+      "unit_id": "lx-0032"
+    },
+    "1c74d28354fb801e4e0ae19d89bdab693a7f0d65bce4c871ab90bf8c5f392446": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0005"
+    },
+    "1cb6a43424bdb20c0a9e2a1bd3f71b489fac911fd9979d99cc57be84dc162878": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Health check request from kube-probe\"}",
+      "unit_id": "ng-0088"
+    },
+    "1d9ebf7ac2c2057197bf1a5c5a0c94a89461e1b0b5674f391c4ae73b86254f57": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a common page with status 200\"}",
+      "unit_id": "ng-0046"
+    },
+    "1e14a83444126f2618a267589e2e5683acbeac31ebdcfe454aab2294075c7a92": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0006"
+    },
+    "1fe85d6aa6d220f35ee06950f4f7b90e5e6de86bcff2d40598e8dfa3f8f73f9f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public page\"}",
+      "unit_id": "ng-0025"
+    },
+    "210f427f1e3324bee7fb90aaa7eac0aafc6a7e1f5f77fa7af6f5466475a6b22a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0002"
+    },
+    "215583284dd6777af10de4992635e6ed5246a403933757a8582d662f6eff90c0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Command execution for system monitoring is common and not suspicious.\"}",
+      "unit_id": "lx-0001"
+    },
+    "2173299156f7d00fe0ed2c43178073198d370eb78efc3fef14b3179583130b32": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0009"
+    },
+    "2218e99e3d093f73377d57eb1b206b7b7c1756d625901d4b1638c84f347ea219": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0026"
+    },
+    "2261372fc2fab74ee4735c42144981e97c31f4c033e865055cea2524ebd0e131": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0007"
+    },
+    "23152d19be97529a563ac3dc58a03ae1249b6f8398827b84187823580373307f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0025"
+    },
+    "273243d54950d5217a98045a2fc7a492bee78b9cf358b55e0fc21a0ca3ddec67": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0086"
+    },
+    "277c7175b7d5778b6cf008dcbb94a0af059c86ca6f99b63a0ed39234394cbb47": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0010"
+    },
+    "2976ec20f575e4d7c41cbebddacf5b080f0559b26070d657747e22c49c1d8544": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates resource not found, which is not an incident.\"}",
+      "unit_id": "ng-0064"
+    },
+    "2ad196d8d8594225cd1a08666036c0f034797a311069e1e8170ba2c41cd483f0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and common\"}",
+      "unit_id": "lx-0051"
+    },
+    "2b85c62aedea215cb093efd8fc143f0b76abac9eec51525a003a2a4ac8488b5f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0031"
+    },
+    "2bf8e76337fbbe09abc9cedd7962a91f644be00720df23e4512a8b29c687ddaa": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0059"
+    },
+    "3054952d9d2e8b348da6353bcfc5d03b579bc69f0b4dc7844e5a7a6fc9582e69": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and routine.\"}",
+      "unit_id": "lx-0063"
+    },
+    "3394043fc17c7ed2ee214899065918373f25b15500651cc435bc62d08c560ce7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0013"
+    },
+    "34ba70269fcc26dcc9f96e7932587ba61fed98e8897b7166e8f0f71c129c3494": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0085"
+    },
+    "367215e00095f37ca278f888ad1b9b92f97115e465d141ea8b2f17772c6e16ff": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0005"
+    },
+    "368fcc79afb5698789d56f51a2a62d0f3c8b7046193c0d15678aa77690ed77bf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status code indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0008"
+    },
+    "369e7f8b6df0ab622658f831fa23d9735984b3aebad7658dac2744e6e0340d51": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login accepted via password, which is expected behavior.\"}",
+      "unit_id": "lx-0008"
+    },
+    "3c270b18e53c90e23efd505aa4db758fbc365e29569293ad0c570bd0d628c9e0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0003"
+    },
+    "3d9f84e442e181df930fbf23d393ab841da12b3f0206eb1f259e18be47d90ac3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status code indicates a cache hit with no new content.\"}",
+      "unit_id": "ng-0013"
+    },
+    "3e851cf3884e6800097c24fad393a67924f0f1edf92f21919b9b1a8ee0779579": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1049\", \"confidence\": 0.95, \"reason\": \"SQL injection attempt detected\"}",
+      "unit_id": "ng-0074"
+    },
+    "40ff7d2e63d47b7db8ff6d564f4b0cf43362727ffffe0d1f617815f98ed651b5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"API key creation is a common action in development environments.\"}",
+      "unit_id": "cld-0016"
+    },
+    "41cdde76ef1279920a4590112ef45c41b2bfdc84c19d6b5d35d875a18eed9f92": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0030"
+    },
+    "424783029aafbbc5e180ae5de7534478a2284e79a75433f2888fa23c831fc78e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Normal HTTP GET request for a static file.\"}",
+      "unit_id": "ng-0035"
+    },
+    "436017df7a260faae4d3dc785c435c702c2e8d2a50120143f85252783a2316c6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Favicon request is common and typically benign.\"}",
+      "unit_id": "ng-0031"
+    },
+    "44416b9d6a6a06ece07a3f7d5709bc26cd29177aab825789fa5ec047d0848721": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status code indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0062"
+    },
+    "46fef4a21db56f0a6a6b7633e64e6d156bc5dc2ce8304d69437d77c037df42b2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Login attempt was successful and does not indicate malicious activity.\"}",
+      "unit_id": "cld-0025"
+    },
+    "4a2dab141df06b200f4ff92d6b47b7572aff03e9e7cf1a1b4819e8af9bf4a206": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a blog page is common and non-suspicious.\"}",
+      "unit_id": "ng-0016"
+    },
+    "4b893a41e424a53a5a325d0f015b6cbc11d98dcaf77511f2cda1c5a1ec258ce7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Common sudo command for system monitoring\"}",
+      "unit_id": "lx-0066"
+    },
+    "4cee963a477bc361036432eb73ee345f19f8a1a024408c38e3114bbf546fde06": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Login attempt was successful and does not indicate malicious activity.\"}",
+      "unit_id": "cld-0006"
+    },
+    "4cf94cbcb84e5fc7ca0c7ee59fcd859bb0fd78bf413a6759e598f6417519b847": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0038"
+    },
+    "4d38bdf47f4633cd9d37b08ddf5397624b046faa76473a9cd952b2c207a0e254": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and routine.\"}",
+      "unit_id": "lx-0019"
+    },
+    "4dc163b61327f7ae2837d90c24307f8fd85f969bdbb01bed3d9faa100616acef": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 301 status code is a common redirect and does not indicate a security incident.\"}",
+      "unit_id": "ng-0033"
+    },
+    "4ebf5074bfecdd37970bba6ce444673dc18424ff8a490981012e129323d17a89": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Policy change for read-only access is a common administrative action.\"}",
+      "unit_id": "cld-0023"
+    },
+    "50aea67365fc4296f502c1e92be75a989122a80cf4952244792a27b2d0fcf910": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public page\"}",
+      "unit_id": "ng-0059"
+    },
+    "510812110e8910352533bac91ec94ead06b6d7de8a5a02388611c9b4057b18ed": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Favicon request is common and expected.\"}",
+      "unit_id": "ng-0001"
+    },
+    "516d35d6cc8c6034f3608050db38840a44a23ea65135ec1bf7ba8f0ce46be2e0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0028"
+    },
+    "51e87ed8afbef577a8e50f2e70f6f2bdf2c0fefc6f0453d1813c7d498e24084c": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1077\", \"confidence\": 0.85, \"reason\": \"Multiple failed SSH login attempts for non-existent user\"}",
+      "unit_id": "lx-0041"
+    },
+    "51f05c1ceeb1f34e71cc3eaf5644f1685a44f53d50ff86a7ae173286c53c2138": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a static file with a common user agent.\"}",
+      "unit_id": "ng-0060"
+    },
+    "52133fc57ec0b772818038f4de46356fe10bdeaf7e10f6302abd3b4a066d3e52": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and routine activity\"}",
+      "unit_id": "lx-0027"
+    },
+    "525bf7433cc7484dbc0531b2d570f8d04360498c8e353ff511218b661b65a773": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for health check endpoint with normal status code\"}",
+      "unit_id": "ng-0089"
+    },
+    "527ed5e4e44902603fc9a0a53a99ef1217c5ae426567110ef04d932958f77983": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"List buckets action is common and does not indicate a security incident.\"}",
+      "unit_id": "cld-0008"
+    },
+    "53a837325899ac8413f27392679042d12fa6082bb9b8abd040dd8fbfeb7b4bd8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Describe instances action is common and successful.\"}",
+      "unit_id": "cld-0024"
+    },
+    "53f1f3779c9df360d4f1cf6aede498a886476a2e0a241881a886f18eed1359df": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Failed SSH login attempts are common and do not necessarily indicate a security incident.\"}",
+      "unit_id": "lx-0064"
+    },
+    "55122a8a68ddce650ed786accc2ac36e5a31379bb01f7bb97e16e5de50edd597": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity.\"}",
+      "unit_id": "lx-0031"
+    },
+    "5690ea84ac577efeaac850fa2b99fa759ea958e2787b557eda4d0de2a4b55f71": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public page\"}",
+      "unit_id": "ng-0005"
+    },
+    "5882391c6e3a528dc86708b4b1e7381d04119838d335e90a1a05f2d6be58782e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Systemctl command to restart an application is a common administrative task.\"}",
+      "unit_id": "lx-0057"
+    },
+    "58c6091eced813cbc84805001b22cc9a036c9b81942c22227f00cea534fe8d3c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Normal HTTP GET request for a static file.\"}",
+      "unit_id": "ng-0024"
+    },
+    "5952f394d98b99e817049c67030c0aa2ca077c9ad4a2f07b818c9254eb8c8988": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity.\"}",
+      "unit_id": "lx-0049"
+    },
+    "5978191e3d49e93f504ab66ffe298a14d243466d032ad70c60b577ca462f0a15": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Process creation is common and does not indicate a security incident.\"}",
+      "unit_id": "win-0021"
+    },
+    "5a9ebb17cb40a53ad232354bd43e78e89b97e396647a014629e1202c2b83ae7e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a blog page is common and non-suspicious.\"}",
+      "unit_id": "ng-0104"
+    },
+    "5b883efd239fd4d1f715b95a71cfff02b207d4364048208dcb6c444462b20fff": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for health check endpoint with common user agent.\"}",
+      "unit_id": "ng-0055"
+    },
+    "5d94bc9cafa72b1de86b39b7421e410cfbcd37f8931c293061a44ec6d39975d9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0012"
+    },
+    "5fba4aba3be436bc97f583f34b865a961729562a1fa710edf163a907a54dc94a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Login success for legitimate user\"}",
+      "unit_id": "cld-0010"
+    },
+    "613d77e286e60615ae7b24b42f0b4269935e7512e37e7131dc0830eea5dcb182": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for health check, common and benign activity.\"}",
+      "unit_id": "ng-0087"
+    },
+    "6224d7577dc90ec4226718b25797e530ad2d45aeef8bf7e7af601d55e2885f7f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1195\", \"confidence\": 0.95, \"reason\": \"Potential LDAP JNDI injection attempt\"}",
+      "unit_id": "ng-0079"
+    },
+    "64b6ee01000a9461b5fe171dd6541cfb28628d875cfe53cde9489ec119c86ea7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Normal HTTP GET request for a static file\"}",
+      "unit_id": "ng-0051"
+    },
+    "6707156ed7436126603dd2f5b35bc23b633d77869ff77c08e8068dc2da9238cd": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1077\", \"confidence\": 0.95, \"reason\": \"Multiple failed SSH login attempts for critical accounts\"}",
+      "unit_id": "lx-0040"
+    },
+    "68d4898479296755f992231e7c158a4fc6d14e8674c3b0add4674fbacd5b0cad": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0020"
+    },
+    "695b080dec3e3eac356a2cd3d235345b4545ea1f50d3ee9acec9b3ab763c7750": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates the requested resource was not found.\"}",
+      "unit_id": "ng-0017"
+    },
+    "6a1e2c27abc8dfd3610f5094d058a20e6edc45e0443a527a6ae2de4c61fa2c16": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"GET request for health check endpoint with expected status code.\"}",
+      "unit_id": "ng-0042"
+    },
+    "6b97e090b42e60b7b60eda96bfa9d87e154e9f50f33022f195359d58f8261676": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Security group rule addition is a common administrative action.\"}",
+      "unit_id": "cld-0013"
+    },
+    "6efc50eaee041236bf9e6e776eb62c01ee633e9b6aefeb3d00c4871c7f647f7c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0038"
+    },
+    "6f7722669fcd41768b798794bb70695ff3df813e574bd57ddb1c0c9cbc8bfd88": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 301 status code is a common redirect and does not indicate a security incident.\"}",
+      "unit_id": "ng-0014"
+    },
+    "6ffa2474d84aa3512c34f9fb487f4ee2877012e5ae299f32dfd8edbc77af6c49": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Adding a security group rule for port 443 to allow all IP addresses is a common administrative action.\"}",
+      "unit_id": "cld-0002"
+    },
+    "728a971ab28b76116b92cc6276f5fbffdc05c9b6c0f56cd4f657e24cdc950794": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Command executed successfully and appears to be a routine system administration task.\"}",
+      "unit_id": "lx-0009"
+    },
+    "7575618f7c4f8c4cb71bffe8c2501c77b0863786ef3d8edb89313a904f553e12": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"GET request for /ping endpoint is common and expected.\"}",
+      "unit_id": "ng-0078"
+    },
+    "75b9ac84f366299272d146acf06372809d2b2be09842838f58587b3227387817": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request to /login with status 200 is a common and benign activity.\"}",
+      "unit_id": "ng-0096"
+    },
+    "75e9717fff952aa6a81a6284a38f9632aa024d8067343765324780a49002ffcc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful authentication\"}",
+      "unit_id": "lx-0047"
+    },
+    "7b6f9a2f417080d99399df5e39cb1b181ea2f0f2c1e29f635464e780fca8d492": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0003"
+    },
+    "7c62ad7b050b89261a29fa460a1278a44bbf308db3463a62a16e6a1b131b0975": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a common page with status 200\"}",
+      "unit_id": "ng-0084"
+    },
+    "7c87dda72252e778d439ad59468aa022fa2d6b3c88f0b9ac7ee6c0db0f0a5b7e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for health check endpoint with normal status code.\"}",
+      "unit_id": "ng-0007"
+    },
+    "7d89cd43ffa0e8f6d582fb0eea4d42eff2b776dda020cf70a5ebb31659c25b5e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Common HTTP GET request with no suspicious activity.\"}",
+      "unit_id": "ng-0063"
+    },
+    "7e5b5e93a50344f5caa24ab46721703b1d8d74ebe55ac3599db753f47a269022": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a static file with a 200 status code is typical and not indicative of a security incident.\"}",
+      "unit_id": "ng-0047"
+    },
+    "7f943f0d2a09d787baf7730e86a56cd4c36cb15b73c2f6992c3df77842025f13": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public endpoint\"}",
+      "unit_id": "ng-0100"
+    },
+    "8062a8483f59a41804844fd3ea31a1b50bbda33ba3e474607afc58660a036853": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 301 status code is a common redirect and does not indicate a security incident.\"}",
+      "unit_id": "ng-0003"
+    },
+    "81204ecb5007d26d0dec713e96ac89a70b0beccfc0097255610bb3e0878620cd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a publicly accessible dashboard endpoint\"}",
+      "unit_id": "ng-0037"
+    },
+    "8132f0c3bfc15c4c7b5be27822f455308b2bdfba667bbf7f3c30a414270b254c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0036"
+    },
+    "8279d9b41899f39b02326dbe99961674a6564a74402f8aa39e9d1c8669d070bb": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Normal HTTP GET request for a static file.\"}",
+      "unit_id": "ng-0057"
+    },
+    "839b004b1ba2c91d07453ad61f9b81d6552118c7ec73fa5adbbb51994746ce5a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Multiple failed login attempts but no successful breach.\"}",
+      "unit_id": "lx-0048"
+    },
+    "83e302a4608d3abdd44bb3938d3ed8bc151c500efaa69d86236c03c1cb22b33c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0004"
+    },
+    "8451920992adead081b946ff0193264ce64b81e2d8e1b7be3879a382ff9a45e7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0018"
+    },
+    "84680d5cbf5b78897b31a1cd2d8a29c52cb84c8c9ef8161ba981a1c16682a849": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Favicon request is common and expected.\"}",
+      "unit_id": "ng-0028"
+    },
+    "85320a84dde4edac12b86488850add9a7f3d14e88933eb2dbc5e19ba326295d0": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and routine.\"}",
+      "unit_id": "lx-0028"
+    },
+    "85f2b476226891721175d9eecdb6f9b78c715a22c1fa05f99c2d05b33b19990e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Normal HTTP GET request for a static file\"}",
+      "unit_id": "ng-0044"
+    },
+    "87f58911eb79e7214ab862595950a42aebc627e044e3609dd78d1fb608533d61": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 301 status code is a common redirect, not indicative of a security incident.\"}",
+      "unit_id": "ng-0099"
+    },
+    "886a0fb578733ea12f30dfed2ec5f13d527715bee98b4d969edf28872d0f690c": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1068\", \"confidence\": 0.9, \"reason\": \"User not in sudoers file attempted to use sudo.\"}",
+      "unit_id": "lx-0045"
+    },
+    "8a1618fced121a5e94902bdb56d255dafc1b745b358e08fa77c3394cddb58703": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Systemctl command to check nginx status is a common administrative task\"}",
+      "unit_id": "lx-0039"
+    },
+    "8a940de5ea8ca14f092087d19a6adafbbadf5af0c9ed911f03d8a20df25840c6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0027"
+    },
+    "8adf4646f8cdb622bc1b7f32b3fe0603c1ae2184c3323f1a267998d8ecaa8945": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0065"
+    },
+    "8c4e3f9e12e01d32bc3b099edb3d12be14af5219ea71851cf0e2a4bcd27bad25": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a common page with status 200\"}",
+      "unit_id": "ng-0040"
+    },
+    "9155297f564893b1233e5981cb7c0a5831c4b881c47217d53bbbb00c9ab4cb01": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 response indicates the resource was not found.\"}",
+      "unit_id": "ng-0076"
+    },
+    "92321fc2b8ad74848b3e96deaae7606cad398d918e4d6d2a54d9cdd544a911f3": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public page\"}",
+      "unit_id": "ng-0019"
+    },
+    "9368ba8216c2da6f47e36ef9bff48aa05b46ce113d5040a1c1ab10f6a249d9ef": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public document directory\"}",
+      "unit_id": "ng-0065"
+    },
+    "94ac1d3de752325fc0e35f25255c8ac50cc60239093de5e64074532da9468be7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Login success for legitimate user\"}",
+      "unit_id": "cld-0001"
+    },
+    "952d8f330c2151075308e288218dd7e7b04180e9781dc54ddc93fa80aee576ac": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0061"
+    },
+    "953c0cf73e55999a78811c755d9c6ca6965b24e2f378790c877e488c79734325": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request to the root path is a common and benign activity.\"}",
+      "unit_id": "ng-0011"
+    },
+    "95998b1e67c63bf2fb70101c7c180ed62c2d37ca268fa9fc85d0450b76f4d520": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0030"
+    },
+    "977cf49b5a0a79b3937be1929b7d81a8e45a8d16fbfa44867b2e262eed678625": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0026"
+    },
+    "9801317c2bda95afd5302102fbe3df78803cdd9b47ccc9b9cbe573bb57971f04": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Describe instances action is common and successful.\"}",
+      "unit_id": "cld-0009"
+    },
+    "980dcbc4618d997e0632b0dabb842082d7eb271193c47e4a726c4ef8e9f1e990": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a directory, likely a benign redirect.\"}",
+      "unit_id": "ng-0048"
+    },
+    "9a40691155169cc0164834fba81ebf39c5cdf06b8cd025d0e23313fc3b2f9310": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1077\", \"confidence\": 0.85, \"reason\": \"Multiple failed login attempts for admin user\"}",
+      "unit_id": "win-0019"
+    },
+    "9a9eab41979945d6c62a540edf9136cb8cef12fdc5411f25c7f6db18a50760c1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0015"
+    },
+    "9cb63713882fabedbf306e6df973e64708475877462046e58aabe7b62861082d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Health check request from kube-probe\"}",
+      "unit_id": "ng-0036"
+    },
+    "9d826d12f0803fe853a5ebb90789fa3c047c09fc5935062bf4f3b453f1d798aa": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Command execution for system monitoring is common and not suspicious.\"}",
+      "unit_id": "lx-0062"
+    },
+    "9f28280e8013dc126577d5b4aab7d48985ed07a422164cc160094f5702a7a215": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a common page with a 301 status code is typical and not suspicious.\"}",
+      "unit_id": "ng-0010"
+    },
+    "a114772467d8e8f59093df04b1ad83d84b5b9b62d3bae2ea9e48ab6f917b74a6": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1078\", \"confidence\": 0.8, \"reason\": \"Failed logon attempt to DC.\"}",
+      "unit_id": "win-0012"
+    },
+    "a1bffed4826c119a18e6354b3f0b2201edbffec213198b30111f6fa143f3dd7b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"User account creation by helpdesk is a common administrative activity.\"}",
+      "unit_id": "win-0014"
+    },
+    "a22b2b04763f47ae239d8c6813ecddbbdaa7e05ede78ac907e49e117c8b62fd0": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1096\", \"confidence\": 0.8, \"reason\": \"Opening PostgreSQL access to all IP addresses is risky.\"}",
+      "unit_id": "cld-0018"
+    },
+    "a29ea0bb894137fbb5325ae9129b05761baded1fee10a30ee6de1871a0145b4a": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1077\", \"confidence\": 0.95, \"reason\": \"Multiple failed SSH login attempts targeting administrative accounts\"}",
+      "unit_id": "lx-0043"
+    },
+    "a30718d6968836c1ba969999ae6a188f9404e7f8ade8658c56882e7c360bb236": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0018"
+    },
+    "a431d0a55c0aef3b142b3ad875d548937f0c53a70c612d0b55e6d970e5aa6838": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Policy change for read-only access is a common administrative action.\"}",
+      "unit_id": "cld-0003"
+    },
+    "a45070e8af7196097300202776caae3c2efd1cc66f4393a7bf89bc940ab40402": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1049\", \"confidence\": 0.95, \"reason\": \"SQL injection attempt detected.\"}",
+      "unit_id": "ng-0075"
+    },
+    "a48b0cc94f236de2a1efcc1cc3b524d2670d3ff76e85203eb813625f9620cbfc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status code indicates a non-incident, as it denotes a cache hit.\"}",
+      "unit_id": "ng-0041"
+    },
+    "a956dd0a4073ee951059823b3b55816a8236246d6305e35811be60dd6315d792": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Multiple 401 responses suggest an unsuccessful authentication attempt, but no further action indicates a benign activity.\"}",
+      "unit_id": "ng-0097"
+    },
+    "a9a0d6135c5de085b2987ff7acde51170552030d734f3984f6696021b71b0eb7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0060"
+    },
+    "aa9b456d8a8397686466bfe8ab8531e9c42dd6829ae52eb36ad505cd136917fd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and routine.\"}",
+      "unit_id": "lx-0015"
+    },
+    "ab0f3dbd6a89141879a29f4eeed8414687de580296e6f751797861b53632cd7d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Failed password attempts are common and do not necessarily indicate an incident.\"}",
+      "unit_id": "lx-0011"
+    },
+    "ac63496eaa2cbe2854b83f644015e5bb8803843661a8f105c16a13900d345e54": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Failed login attempts do not necessarily indicate an incident.\"}",
+      "unit_id": "cld-0015"
+    },
+    "ace7cf09ec33489c2ddd6c677a68787b411fffabc29a53f1f127060853c69e70": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0002"
+    },
+    "ad1b0aa25d9e209926dc4224b3f08b176c1c596412820eb75763e7c31edbe93f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 301 status code indicates a permanent redirect, which is not inherently malicious.\"}",
+      "unit_id": "ng-0009"
+    },
+    "b1debf9aabb037c6c3d5474362f713af1cc7b5dd0817f9e2d694de3656535ad7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0032"
+    },
+    "b2308b1065a1705486ab8ab09d059b4d15554c9f8b11dab516bacf80ea9cfadf": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1096\", \"confidence\": 0.8, \"reason\": \"SSH access opened to all IP addresses\"}",
+      "unit_id": "cld-0017"
+    },
+    "b3601c071754b4da1cac58f9cc69ab96d0f1a8ecd25cd9c1b94d0913adce9956": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates resource not found, which is not a security incident.\"}",
+      "unit_id": "ng-0006"
+    },
+    "b379206e48ab395a5794dff6e1e4f13426a45759dac249c52e23923d90621a19": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Common sudo command for Docker inspection\"}",
+      "unit_id": "lx-0014"
+    },
+    "b3bb7d1bf1bc3dc1fdef76dc0392924814efba6db03a3120732f180e9c68cf35": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a common page with a valid status code\"}",
+      "unit_id": "ng-0069"
+    },
+    "b6195ed7d21d0a5bc2c3d06aeeaab378095c16c9a132d366a615492368fcd296": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public endpoint\"}",
+      "unit_id": "ng-0083"
+    },
+    "b82338d9e4567ef582aa7447f9483444b3558f689ddf05ad8e559daa189bd2af": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a static file with a common user agent.\"}",
+      "unit_id": "ng-0091"
+    },
+    "b8ca030f5d9e9f6b00b5f634f5f674a9b6e43fe943bc6c82fd112a8b47bd6af1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"301 status code is a common redirect and does not indicate a security incident.\"}",
+      "unit_id": "ng-0015"
+    },
+    "b8d21cdc4d43cbb07336b250242346297be6d26937d1ef79422cb385748ebd19": {
+      "response": "{\"is_incident\": true, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Repeated failed SSH login attempts\"}",
+      "unit_id": "lx-0021"
+    },
+    "b945ec2bf34ab49ab429bfef51947cce817c670fbd33e21648c546db0eac8220": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, but successful and common activity\"}",
+      "unit_id": "lx-0044"
+    },
+    "bae2059c6708af8de5f4a8a82e602657d11fc46e58d1fd611c41f0b506698518": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a static file with a common user agent.\"}",
+      "unit_id": "ng-0012"
+    },
+    "bcaece221d766d1f182fe9334ee2ea49a2f1919d781ded6a20b027073b5e83b4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request to a common endpoint with a valid status code\"}",
+      "unit_id": "ng-0070"
+    },
+    "bd63df2dae7313dbefe46e304fc9853a9add65809fce2dd7a510bded5d80bf12": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Health check request from kube-probe\"}",
+      "unit_id": "ng-0027"
+    },
+    "bf15367c1278beacb88aa87d41a73f2221b52f745ea80bafba937169a53d6a39": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0022"
+    },
+    "bfe2ffaaf3f6d6095cc5c3cd0a4a8a864101fe11adeaae7374a9b2def739ae9c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Common sudo command for system monitoring\"}",
+      "unit_id": "lx-0046"
+    },
+    "c02da40fa3d9799a4bb7d979750cb733ca9e7640e0b873d9500ca6ac271a11a1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0008"
+    },
+    "c0494114e598e2a50436ef17b910d4e37c8bc46c995eaac9bb89f010610b4f20": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0001"
+    },
+    "c079ddf30309b1ab427dfb9d86547321fb507ef712c41ea270159e571132ec69": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1195\", \"confidence\": 0.95, \"reason\": \"JNDI LDAP injection attempt\"}",
+      "unit_id": "ng-0080"
+    },
+    "c08135be17cce15afb67c69ddf0f2db3c2667c70bbbf783e811033f912965d8c": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1197\", \"confidence\": 0.95, \"reason\": \"Attempted file inclusion exploit\"}",
+      "unit_id": "ng-0077"
+    },
+    "c15b0c3d4ceb45985674ab4dd31da9425865c93c85b842275aa81f7b20196cfe": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Common HTTP GET request for public content\"}",
+      "unit_id": "ng-0029"
+    },
+    "c1b8a282dbd38edf9b35baaec389895cca52058c60adacbe222b5f221d7294a1": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Command execution for system monitoring, common and non-suspicious\"}",
+      "unit_id": "lx-0037"
+    },
+    "c2d3f25c72fc7ddf4f5a085fc31c89a1e3101d8f64be4d97a9f551d3f6f2f15b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Common administrative command for checking service status\"}",
+      "unit_id": "lx-0058"
+    },
+    "c43a111cbad4bca55380c856e316be0548f3153f2fc112aa3b5c93dd24c7b70b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 301 status code is a common redirect and does not indicate a security incident.\"}",
+      "unit_id": "ng-0081"
+    },
+    "c495f4e772e44307a7b62391f7dc5f415cabf3505ddbad707c0f1fc614315ab8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Normal HTTP GET request\"}",
+      "unit_id": "ng-0090"
+    },
+    "c49ec7a3c52f1521c324d7282a85fa7a2e831d68229d42c58cfc19451d1dbc08": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Describe security groups action is common and successful.\"}",
+      "unit_id": "cld-0022"
+    },
+    "c5a1adb17a0304f437d872f28ee7a544e5ae24788a59be549c764c1dc187d038": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a publicly accessible dashboard endpoint\"}",
+      "unit_id": "ng-0098"
+    },
+    "c5c0317d9a9e2f9f8cb7c059826f4b779ad6233b4d017402fe46cd639729c246": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Systemctl command to restart an application by an authorized user\"}",
+      "unit_id": "lx-0055"
+    },
+    "c68653c3c9009804594e8eb183b763c4ae98101c62d8adf50ecd81f6d0007336": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Login attempt was successful and does not indicate malicious activity.\"}",
+      "unit_id": "cld-0014"
+    },
+    "c6f08ddf3c53ee94fa8f27b2e4b69d53430f68c7f96d3bd678b8880e78c8a04b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a publicly accessible dashboard endpoint\"}",
+      "unit_id": "ng-0045"
+    },
+    "c7c3e551df779e2b8f2875b88506d6267b0387cf8bb78d291164453aae8af946": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates resource not found, which is not a security incident.\"}",
+      "unit_id": "ng-0030"
+    },
+    "c7d310d4d585fd8f6e4cb98b3dfaa150f1ac4b345705d7729386e709dfdf4ff5": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0016"
+    },
+    "c818e585eb4deaf6bfa4a38f9e1a34f10c781b33a40d8642445d42eabd71f11d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0053"
+    },
+    "cb1e776812f66ab1116edf3b848e73bb2e4acfbdeb81e568b399fc818e839dc7": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Get caller identity request succeeded and appears normal.\"}",
+      "unit_id": "cld-0007"
+    },
+    "cb4c61a5814b365b0d5270bfc2856863095ba08bf70e13ddb7aedf61582f895a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a blog page, common and expected activity.\"}",
+      "unit_id": "ng-0101"
+    },
+    "cbd2e3062edcb8687fa897899836ffa45bc20d6efaed3169cf4d5064c786801c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Favicon request with status 304 is common and benign.\"}",
+      "unit_id": "ng-0056"
+    },
+    "cd10e8233947c89723424e82f535913ae46259f2a0cf89db7d336c31f3c98df9": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0054"
+    },
+    "cd3d51d3befc17cd1ab51ef234a82dac16c283d69ee12a58b8043ecb7161b2c4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a publicly accessible dashboard endpoint\"}",
+      "unit_id": "ng-0082"
+    },
+    "ce7ab25f729f53679353877dcda74c6431a6c6f308f88ce378fad9f84d188a93": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for health check endpoint with normal status code\"}",
+      "unit_id": "ng-0023"
+    },
+    "ced0ca365466b0b39bc913a1012c5251236250f692f01ccb18eeb64f2d0a33af": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for health check endpoint with common user agent.\"}",
+      "unit_id": "ng-0066"
+    },
+    "cfacd9c8fe8d4b782dd62b77d2a6a2c40cdec3e50cd46a5becd766c713f2a370": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0050"
+    },
+    "d16f1b5f5033105f737e1553b9bd60a1ad40849a9591893d625b6314fea202d2": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"List buckets action is common and does not indicate a security incident.\"}",
+      "unit_id": "cld-0012"
+    },
+    "d34d492a9ca15c3198e19624a68b22fc003916e10b0eb829044ac821df6a9cc6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Common HTTP redirect, no malicious activity detected.\"}",
+      "unit_id": "ng-0039"
+    },
+    "d3a04f79f3b3b37cef5a3857a25d6899479850fd0e5f7322bb8ef12676627a95": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1077\", \"confidence\": 0.95, \"reason\": \"Multiple failed SSH login attempts targeting administrative accounts\"}",
+      "unit_id": "lx-0042"
+    },
+    "d57d6932e9c051d80b27fe799066e520772cbf892634a6206c771d1ebacccb1f": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1210\", \"confidence\": 0.85, \"reason\": \"Gobuster brute-forcing\"}",
+      "unit_id": "ng-0072"
+    },
+    "d7fc1aa72e28d4d237a311e97beb75d96d3b78f152804252066bb158946b1c35": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a static file with a common user agent.\"}",
+      "unit_id": "ng-0094"
+    },
+    "d9e8acacaf1d25b74d0b3f867b9804f08dc09bb909ae5d47161146d1ba00da4d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Common HTTP GET request with no suspicious activity.\"}",
+      "unit_id": "ng-0021"
+    },
+    "dc4c010053bd4cac9a5cc99071c71362c4092313f2684b483ccef860aaff0516": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Common HTTP GET request for a page redirect.\"}",
+      "unit_id": "ng-0026"
+    },
+    "dfe107fecd8dddc064ea6550d7ac5e9240fa3181e4e4a1a597c74e22ecc14f57": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a static file with a common user agent.\"}",
+      "unit_id": "ng-0103"
+    },
+    "e14e90c0c3ff634d151b2294c8a04483a9f9bf8ff8cb27931863fe0770fe1fd8": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Special privileges assigned to a user is a common administrative action.\"}",
+      "unit_id": "win-0020"
+    },
+    "e28aa6a872f1f69706e825f16fffba0b7bf9cabb66c9fcbd8f938210841100da": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0006"
+    },
+    "e2d1c951c0f0ea1b006f32ba188f56f400bc6d3f7ba9b7e0e74b9d7e499bb8c6": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1078\", \"confidence\": 0.85, \"reason\": \"Policy attached to service account with full admin access\"}",
+      "unit_id": "cld-0020"
+    },
+    "e2f4324b445b51d27dbc35fa13dceec2498ee97b308b12aee7d4663b87f05569": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Systemctl command to restart an application is a common administrative task.\"}",
+      "unit_id": "lx-0016"
+    },
+    "e2f65488c1f11f5476e47abdf47355c30fbc467305ca8505d512f9fbdb8d6871": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Describe security groups action is common and successful.\"}",
+      "unit_id": "cld-0011"
+    },
+    "e40a6f01f8bd82ab8e4132515e199335c28ded0a54be714874aaca8187be106d": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Login attempt was successful and does not indicate malicious activity.\"}",
+      "unit_id": "cld-0005"
+    },
+    "e4590d89d553eb576c5554e70d7454e33ae42eb7863238632e4a125bf5201e81": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Health check request from kube-probe\"}",
+      "unit_id": "ng-0095"
+    },
+    "e4c9305324ad998693f09db9e65ec029c1a8d9ca36b63b3fe9c123cac0b6e21b": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1077\", \"confidence\": 0.8, \"reason\": \"Multiple failed SSH login attempts\"}",
+      "unit_id": "lx-0050"
+    },
+    "e56d8be3785c5bea386432eff6d406e56288d055dfdc1340352a4d08f1f4457a": {
+      "response": "{\"is_incident\": true, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Multiple failed SSH login attempts\"}",
+      "unit_id": "lx-0018"
+    },
+    "e6fe3124a37321bb45498b4924a0329e76d772a977a17812c2f5b3f8079f08e4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates resource not found, which is common and not necessarily malicious.\"}",
+      "unit_id": "ng-0092"
+    },
+    "e8e0db0f2547ef33f3c464c0e25cf5fa394a8bc7a8b753d1865af2f2015a399e": {
+      "response": "{\"is_incident\": true, \"technique\": \"T1064\", \"confidence\": 0.8, \"reason\": \"Creation of a user account named 'backdoor_user' suggests potential unauthorized access.\"}",
+      "unit_id": "win-0023"
+    },
+    "ead0d0a69ae112a378168f221cb0911ab2945251d5cb0656caeff93e9b5c4597": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0029"
+    },
+    "ec54a6a05c6f0a6afdca4a63a8aa5fd82d828f1d4df0e7ef12715d2452795f11": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0052"
+    },
+    "ed32df73c0905bd651d9532d1eedf3459a527e8cf9f0508da25ecc15f880e2cd": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP 304 status indicates a cache hit, which is normal.\"}",
+      "unit_id": "ng-0105"
+    },
+    "ed723f5a0886aad8f7a877d655360b448d57a0c024e74483f8ec0a2b2852ef6e": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0002"
+    },
+    "ee9ae1106089ea0a6e287b2773baaf2ebc6565dfcfc074a31b05c2bd279c0425": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Security group rule addition is a common administrative action.\"}",
+      "unit_id": "cld-0004"
+    },
+    "efe356a1d5bc1fc307aec5d4fa030197ef70554fe170eec8c9b02e881792f4da": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and routine\"}",
+      "unit_id": "lx-0056"
+    },
+    "f041395ea9c04a5a43e981df3d2d2ae82733e99ccf2b69ff32504c47bd65c6ec": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Common sudo command for system monitoring\"}",
+      "unit_id": "lx-0061"
+    },
+    "f0489c9a830ba3f24a6c16699631776303ff3530209da9947bf8217d3d394e5f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Multiple 404 requests to sequential paths are likely a bot or crawler activity.\"}",
+      "unit_id": "ng-0071"
+    },
+    "f166b4118655c0403fb999b631c432d6fa6f7579cefd9a95711af0da19b137cc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates resource not found, which is not an incident.\"}",
+      "unit_id": "ng-0004"
+    },
+    "f1c4b2b49fb5169b1cd3194883ea78c02fca2e133ce5d11fc89f01ed2ad3b51a": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a publicly accessible dashboard endpoint\"}",
+      "unit_id": "ng-0058"
+    },
+    "f34c398a3630cf5e675b13f0eb0ad95827503e1a04609d4aef316c2aee590d49": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0024"
+    },
+    "f3a48f2ca8afac8369cfc3f6f477d7546f80ee6c5c118480ebea511aaba8b38f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logon success event is a normal activity.\"}",
+      "unit_id": "win-0032"
+    },
+    "f44f0fbcdbba3fa2d4c23987068cc8969fc6ebedc951ed496de90436a79a40cc": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.8, \"reason\": \"Common administrative command for checking service status\"}",
+      "unit_id": "lx-0025"
+    },
+    "f57bb63ed7b1a7740e97915307b85d9b9a0642dc4705a2a80aecbb79b54bbb58": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a public document directory\"}",
+      "unit_id": "ng-0108"
+    },
+    "f998f964ec165304e9d831b1bee95424a589d416402a30eb027ef36b48f707ca": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request for a static file with a 200 status code is typical and not indicative of a security incident.\"}",
+      "unit_id": "ng-0053"
+    },
+    "f9e6c9f4036e07b21596fc2ef9d2f4a2c75c6f832653de1e601e9b6d20297704": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Health check request from kube-probe\"}",
+      "unit_id": "ng-0049"
+    },
+    "fa987592f78df701830a8982ea1c4a9aced45f2b2436e2bf84737ad764d04c28": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"404 status indicates resource not found, which is not a security incident.\"}",
+      "unit_id": "ng-0054"
+    },
+    "fb092746d62fdb362fae6f636be9fde6084044d4c945cb6d5d4ba38ce47f0ba6": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"SSH login via password, successful and expected activity\"}",
+      "unit_id": "lx-0023"
+    },
+    "fb6474d116a49b1b968f256ddfadd4946c28eb6176238e4a843ebca91790d00b": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.7, \"reason\": \"Multiple failed login attempts, but no indication of malicious activity.\"}",
+      "unit_id": "lx-0010"
+    },
+    "fbb971a20dac193c0d9e1a9567394f4a3b7ad363265bdc0f272712dd0e59097f": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request to root path is common and expected.\"}",
+      "unit_id": "ng-0102"
+    },
+    "fd27e5153c6dc6101378cd39e9e64635c2655e4bf301ec7939930e92db74dfaf": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Health check request from kube-probe\"}",
+      "unit_id": "ng-0034"
+    },
+    "fd620785774f99c1cea92715a553aa329cadff992f9529723f92b5d1680ab5f4": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"HTTP GET request to the root path is common and expected.\"}",
+      "unit_id": "ng-0068"
+    },
+    "fe482780a7ed317f4ef589c46d0a2a26c2c2cb22a7e5e315d6215a4ca482ae1c": {
+      "response": "{\"is_incident\": false, \"technique\": null, \"confidence\": 0.95, \"reason\": \"Logoff event is a normal activity.\"}",
+      "unit_id": "win-0017"
+    }
+  }
+}
