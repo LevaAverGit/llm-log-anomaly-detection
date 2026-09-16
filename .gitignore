@@ -9,3 +9,7 @@ dist/
 build/
 *.egg-info/
 PLAN.md
+
+# The global core.excludesFile ignores prompts/; here it holds the versioned
+# prompt templates the detector loads, so keep them tracked in this repo.
+!prompts/
