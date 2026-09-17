@@ -1,5 +1,10 @@
 # llm-log-anomaly-detection
 
+[![CI](https://github.com/LevaAverGit/llm-log-anomaly-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/LevaAverGit/llm-log-anomaly-detection/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C)
+
 Compare rule-based and LLM-based incident detection on one honestly-labeled log
 corpus, and measure exactly where each approach wins and loses.
 
